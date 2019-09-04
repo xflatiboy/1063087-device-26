@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Dmitry Sorokin](https://up.htmlacademy.ru/htmlcss/26/user/1063087).
-* Наставник: `Неизвестно`.
+* Наставник: [Лиля Зилюкина](https://up.htmlacademy.ru/htmlcss/26/user/803445)
 
 ---
 
