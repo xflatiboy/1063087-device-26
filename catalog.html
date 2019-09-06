@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+ 	 <meta charset="utf-8">
+ 	 <title>Каталог товаров</title>
+  </head>
+  <body>
+  	<header>
+  		<a href="index.html">DEVICE</a><br>
+  		<input type="text" name="search" value="Поиск по сайту"><!--Точно ли с помощью валью создается "заднее" поиск по сайту? -->
+  		<!-- При добавлении иконок не забыть их привязать к самим кнопкам -->
+  		<button>Валентин Петухов</button>
+      <button>Выйти</button>
+  		<button>Сравнить</button>
+  		<button>Корзина</button><br>
+  		<a href="catalog.html">Каталог товаров</a><!-- "+" в макете кнопка или ссылка?-->
+  		<!-- Скорей всего, "доставка" и "контакты" будут ссылкой-якорем, но это не точно -->
+  		<a href="">Доставка</a>
+  		<a href="">Гарантия</a>
+  		<a href="">Контакты</a>
+  	</header>	
+  	<nav>
+     <h1>Моноподы для селфи</h1>
+     <a href="index.html">Главная</a>
+     <a href="catalog.html">Каталог товаров</a>
+     <a href="">Моноподы для селфи</a>
+    </nav>
+    <main>
+      <div>
+        <hr>
+        <p>Цвет</p>
+        <input type="checkbox" checked name="color">Черный<br>
+        <input type="checkbox" name="color">Белый<br>
+        <input type="checkbox" checked name="color">Синий<br>
+        <input type="checkbox" checked name="color">Красный<br>
+        <input type="checkbox" name="color">Розовый<br>
+        <hr>
+        Bluetooth<br>
+        <input type="radio" name="Bluetooth" checked>Есть<br>
+        <input type="radio" name="Bluetooth">Нет<br>
+        <button>Показать</button>
+        <!-- br добавил для "красоты" пока что, неуверен, нужны ли они будут потом,после добавления стилей, не ругай сильно :P -->
+      </div>
+      <!--Тут немного затупил... Нужны ли тут дивы, чтобы разбить каждую единицу товара? Чисто теоретически, можно сделать через таблицы, а возможно и еще какие то варианты, более подходящие -->
+      <div>
+        <div>
+          <img src="img/self" alt="Фото любительской селфи-палки"><br>
+          Любительская селфи-палка
+          500 руб.
+        </div>
+        <div>
+          <img src="img/pro-self" alt="Фото профессиональной любительской селфи палки"><br>
+          Профессиональная селфи-палка
+          1 500 руб.
+        </div>
+        <div>
+          <img src="img/water-self" alt="Непотопляемая селфи"><br>
+          Непотопляемая селфи-палка
+          2 500 руб.
+        </div>
+        <div>
+          <img src="img/follow-me" alt="Следуй за мной"><br>
+          Селфи-палка "Следуй за мной"
+          4 900 руб.
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+       <a href="index.html">DEVICE</a>
+       <p>г. Москва, ул. Строителей, 15</p>
+      </div>
+      <div>
+        <a href="">Доставка</a>
+        <a href="">Гарантия</a>
+        <a href="">Контакты</a><br>
+        <a href=""><img src="img/facebook" alt="иконка фейсбука"></a>
+        <a href=""><img src="img/instagram" alt="иконка инстаграма"></a>
+        <a href=""><img src="img/twitter" alt="иконка твитера"></a>
+      </div>
+      <!-- как и в шапке, не забыть картинку привязать к кнопке -->
+      <div>
+        <button>Войти</button>
+        <button>Сравнить</button>
+        <button>Корзина</button>
+        <p>Тел.: +7 (495) 495-95-95</p><br>
+        <img src="img/htmlacademy" alt="иконка html academy">
+      </div>
+    </footer>
+  </body> 
