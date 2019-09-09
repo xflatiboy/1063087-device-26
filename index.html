@@ -21,62 +21,61 @@
 				<a href="#">Контакты</a>
 			</nav>
 		</header>	
-		<main>
-  		<!-- !!!Я идиот, и только позже прочел, что этого пока что делать не нужно было
-  		
-  		<div>
-  		 <img src="img/little later" alt="картинка селфи палок">
-  		</div>
-  		<div>
-  			<p>Делай селфи, как Бен Стиллер</p>
-  			<p>Самая длинная палка для селфи доступна в нашем магазине.<br>
-  			Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограм</p><br>
-  			
-  			<a href="#">Подробнее</a>
-  			<input type="radio" name="little-info" checked>
-  			<input type="radio" name="little-info">
-  			<input type="radio" name="little-info"><br>
-  			<table>
-  				<tr>
-  					<td>8,5 м</td>
-  					<td>5 кг</td>
-  					<td>Карбон</td>
-  				</tr>
-  				<tr>
-  					<td>Длина палки</td>
-  					<td>Вес палки</td>
-  					<td>Материал</td>
-  				</tr>
-  			</table>
-  		</div>
-  		 
-  		<ul>
-  			<li><a href=""><img src="img/little later too" alt="картинка очков"></a><br>Виртуальная реальность</li>
-  			<li><a href=""><img src="img/little later too" alt="картинка моноподов"></a><br>Моноподы для селфи</li>
-  			<li><a href=""><img src="img/little later too" alt="картинка экшн-камер"></a><br>Экшн-камеры</li>
-  			<li><a href=""><img src="img/little later too" alt="картинка фитнес браслетов"></a><br>Фитнес-браслеты</li>
-  			<li><a href=""><img src="img/little later too" alt="картинка умных часов"></a><br>Умные часы</li>
-  			<li><a href=""><img src="img/little later too" alt="картинка квадрокоптеров"></a><br>Квадрокоптеры</li>
-  		</ul>
-  		
-  	  <section>
+		<main>  		
+  		<section class="description">
+  			<img src="img/little later" alt="картинка селфи палок">  			
+  			<p class="like_a_Stiller">Делай селфи, как Бен Стиллер</p>
+				<div class="">
+  				<p>
+  					Самая длинная палка для селфи доступна в нашем магазине.<br>
+  					Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограм
+  				</p><br>  			
+  				<a href="#">Подробнее</a>
+  				<input type="radio" name="little-info" checked>
+  				<input type="radio" name="little-info">
+  				<input type="radio" name="little-info"><br>
+  			</div>
+  			<!-- нормально ли, то что тут так много дивов? или я поступил безграмотно?-->
+  			<div class="firstcolumn">
+  				<p>8,5м</p>
+  				<p>Длина палки</p>
+  			</div>
+  			<div class="secondcolumn">
+  				<p>5кг</p>  			
+  				<p>Вес палки</p>
+  			</div>
+  			<div class="thirdcolumn">
+  				<p>Карбон</p>  			
+  				<p>Матеирал</p>
+  			</div> 			
+  		</section>
+  		<section class="items">  		 
+  			<ul>
+  				<li><a href=""><img src="img/little later too" alt="картинка очков"></a><br>Виртуальная реальность</li>
+  				<li><a href=""><img src="img/little later too" alt="картинка моноподов"></a><br>Моноподы для селфи</li>
+  				<li><a href=""><img src="img/little later too" alt="картинка экшн-камер"></a><br>Экшн-камеры</li>
+  				<li><a href=""><img src="img/little later too" alt="картинка фитнес браслетов"></a><br>Фитнес-браслеты</li>
+  				<li><a href=""><img src="img/little later too" alt="картинка умных часов"></a><br>Умные часы</li>
+  				<li><a href=""><img src="img/little later too" alt="картинка квадрокоптеров"></a><br>Квадрокоптеры</li>
+  			</ul>
+  		</section>
+  	  <section class="services">
   	  	<div>
   	  		<button>Доставка</button>
   	  		<button>Гарантия</button>
   	  		<button>Кредит</button>
   	  	</div>
   	  	<div>
-  	  		<h2>Доставка</h2>
-  	  		
-  	  		<p>Мы с удовольствием доставим ваш товар прямо к вашему<br>
-             подъезду совершенно бесплатно! Ведь мы неплохо<br>
-             заработаем, поднимая его на ваш этаж.
+  	  		<h2>Доставка</h2>  	  		
+  	  		<p>
+  	  			Мы с удовольствием доставим ваш товар прямо к вашему<br>
+            подъезду совершенно бесплатно! Ведь мы неплохо<br>
+            заработаем, поднимая его на ваш этаж.
           </p>
           <img src="img/little later again" alt="Человек с почтой">
   	  	</div>
-  	  </section>
-  	  
-  	  <section>
+  	  </section>  	  
+  	  <section class="brands">
   	  	<ul>
   	  		<li><img src="img/dji" alt="логотип dji"></li>
   	  		<li><img src="img/spgadgets" alt="логотип spgadgets"></li>
@@ -84,16 +83,13 @@
   	  		<li><img src="img/vive" alt="логоптип vive"></li>
   	  	</ul>
   	  </section>
-  	-->
-
-  		<!-- В этой секции не буду делать перенос строки с помощью <br>, когда добавим стили можно будет посмотреть, как текст перенесется самостоятельно -->
   		<section class="about_us">
   			<h2>О нас</h2>
   			<p>
-  					Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+  				Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
   			</p>
   			<p>
-  					Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
+  				Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
   			</p>
   			<ul>
   				<li>Деловые Линии</li>
