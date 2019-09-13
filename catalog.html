@@ -6,59 +6,96 @@
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="img/device.svg" alt="логотип device"></a>
-      <img src="img/search.svg"><input type="text" name="search" value="Поиск по сайту"><!--Точно ли с помощью валью создается "заднее" поиск по сайту? -->
+      <a href="index.html" aria-label="ссылка на главную страницу"><img src="img/device.svg" alt="логотип device"></a>
+      <img src="img/search.svg"><input type="search" name="search" placeholder="Поиск по сайту"><!--Точно ли с помощью валью создается "заднее" поиск по сайту? -->
       <!-- При добавлении иконок не забыть их привязать к самим кнопкам -->
-      <a href="#">Валентин Петухов</a>
-      <button>Выйти</button>
-      <a href="#">Сравнить</a>
-      <a href="#">Корзина</a>
-      <!-- два разных варианта, первый вариант - нужно связать более грамотно, второй - самый просто способ. -->
-      <a href="catalog.html">Каталог товаров</a><!-- "+" в макете кнопка или ссылка?-->
+      <a href="#" alt="ссылка на ваш профиль" aria-label="ссылка на страницу вашего профиля на сайте device">Валентин Петухов</a>
+      <button aria-label="кнопка чтобы выйти из вашего профиля на сайте device">Выйти</button>
+      <a href="#" alt="ссылка на страницу сравнения таваров" aria-label="ссылка на страницу сравнения таваров">Сравнить</a>
+      <a href="#" alt="ссылка на страницу корзины, с выбранными товарами" aria-label="ссылка на страницу корзины, с выбранными товарами">Корзина</a>
+      <button type="menu">Каталог товаров</button>
       <!-- Скорей всего, "доставка" и "контакты" будут ссылкой-якорем, но это не точно -->
-      <a href="#">Доставка</a>
-      <a href="#">Гарантия</a>
-      <a href="#">Контакты</a>
+      <a href="#" alt="ссылка на страницу с доставкой" aria-label="Информация о доставке">Доставка</a>
+      <a href="#" alt="ссылка на страницу про гарантии" aria-label="Информация про гарантию">Гарантия</a>
+      <a href="#" alt="ссылка на страницу с нашими контактами" aria-label="Наши контакты">Контакты</a>
     </header>	
     <h1>Моноподы для селфи</h1>
     <nav>
-      <a href="index.html">Главная</a>      
-      <a href="catalog.html">Каталог товаров</a>      
-      <a href="#">Моноподы для селфи</a>
+      <a href="index.html" alt="ссылка на главную страницу DEVICE" aria-label="ссылка на главную страницу device">Главная</a>      
+      <a href="catalog.html" alt="ссылка на каталог с товарами" aria-label="ссылка на каталог с товарами">Каталог товаров</a>      
+      <a href="#" alt="ссылка на страницу с моноподами для селфи" aria-label="ссылка на страницу с моноподами для селфи">Моноподы для селфи</a>
     </nav>
-   <main>
-      <section class="filter">
-        <p>Фильтр:</p>
-        <div>
-          <p>Стоимость</p>
-          <p>От 0</p>
-          <p>До 5000</p>
-        </div>
-        <hr>
-        <div>
-          <p>Цвет</p>
-          <input type="checkbox" checked name="color">Черный
-          <input type="checkbox" name="color">Белый
-          <input type="checkbox" checked name="color">Синий
-          <input type="checkbox" checked name="color">Красный
-          <input type="checkbox" name="color">Розовый
-        </div>
-        <hr>
-        <div>
-          Bluetooth
-          <input type="radio" name="Bluetooth" checked>Есть
-          <input type="radio" name="Bluetooth">Нет
-        </div>
-          <button>Показать</button>
-      </section>
+  <main>      
+    <form class="filter" method="get" action="">
+      <p>Фильтр:</p>
+      <div class="price">
+        <p>Стоимость</p>
+        <input type="range">
+        <p>От 0</p>
+        <p>До 5000</p>
+      </div>                                
+      <fieldset>
+        <legend>Цвет</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="black" id="color-black" checked>
+            <label for="color-black">
+              Черный
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" name="white" id="color-white">
+            <label for="color-white">
+              Белый
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" checked name="blue" id="color-blue">
+            <label for="color-blue">
+              Синий
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" checked name="red" id="color-red">
+            <label for="color-red">
+              Красный
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" name="pink" id="color-pink">
+            <label for="color-pink">
+              Розовый
+            </label>
+          </li>
+        </ul>
+      </fieldset>                    
+      <fieldset>
+        <legend>Bluetooth</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="Bluetoothhave" id="havebluetooth" checked>
+            <label for="havebluetooth">
+              Есть
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" name="Bluetoothdont" id="nobluetooth">
+            <label for="nobluetooth">
+              Нет
+            </label>
+          </li>
+        </ul>
+      </fieldset>          
+      <button type="submite">Показать</button>
+    </form>      
       <section class="products">
         <div>
           <p>СОРТИРОВКА:</p>
           <button>По цене</button>
           <button>По типу</button>
           <button>По популярности</button>
-          <button><img src="img/icon-up-dir.svg" alt="стрелка вверх"></button>
-          <button><img src="img/icon-down-dir.svg" alt="стрелка вниз"></button>
+          <button aria-label="кнопка пролистать каталог выше"><img src="img/icon-up-dir.svg" alt="стрелка вверх"></button>
+          <button aria-label="кнопка пролистать каталог ниже"><img src="img/icon-down-dir.svg" alt="стрелка вниз"></button>
         </div>    
         <div>
           <div>
@@ -82,38 +119,38 @@
             <p class="price">4 900 руб.</p>
           </div>
           <div>
-            <button>Назад</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>Вперед</button>
+            <button type="button">Назад</button>
+            <button type="button">1</button>
+            <button type="button">2</button>
+            <button type="button">3</button>
+            <button type="button">Вперед</button>
           </div>
         </div>
       </section>
     </main>
     <footer>
       <div>
-        <a href="index.html"><img src="img/device.svg" alt="логотип device"></a>
-        <address>г. Москва, ул. Строителей, 15</address>
+        <a href="index.html" aria-label="ссылка на главную страницу"><img src="img/device.svg" alt="логотип device"></a>
+        <address aria-label="наш адрес">г. Москва, ул. Строителей, 15</address>
       </div>
       <div>
-        <a href="#">Доставка</a>
-        <a href="#">Гарантия</a>
-        <a href="#">Контакты</a>
+        <a href="#" alt="ссылка на страницу с доставкой" aria-label="Информация о доставке">Доставка</a>
+        <a href="#" alt="ссылка на страницу про гарантии" aria-label="Информация про гарантию">Гарантия</a>
+        <a href="#" alt="ссылка на страницу с нашими контактами" aria-label="Наши контакты">Контакты</a>
       </div>
       <div>
-        <a href="#"><img src="img/facebook.svg" alt="иконка фейсбука"></a>
-        <a href="#"><img src="img/inst.svg" alt="иконка инстаграма"></a>
-        <a href="#"><img src="img/twitter.svg" alt="иконка твитера"></a>
+        <a href="#"><img src="img/facebook.svg" alt="ссылка на device в facebook"></a>
+        <a href="#"><img src="img/inst.svg" alt="ссылка на device в instagram"></a>
+        <a href="#"><img src="img/twitter.svg" alt="ссылка на device в twitter"></a>
       </div>
       <!-- как и в шапке, не забыть картинку привязать к кнопке -->
       <div>
-        <a href="#">Валентин Петухов</a>
-        <button>Выйти</button>
-        <a href="#">Сравнить</a>
-        <a href="#">Корзина</a>
-        <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="иконка html academy"></a>
+        <a href="#" alt="ссылка на ваш профиль" aria-label="ссылка на страницу вашего профиля на сайте device">Валентин Петухов</a>
+        <button aria-label="кнопка чтобы выйти из вашего профиля на сайте device">Выйти</button>
+        <a href="#" alt="ссылка на страницу сравнения таваров" aria-label="ссылка на страницу сравнения таваров">Сравнить</a>
+        <a href="#" alt="ссылка на страницу корзины, с выбранными товарами" aria-label="ссылка на страницу корзины, с выбранными товарами">Корзина</a>
+        <a href="tel:+74954959595" alt="наш телефон" aria-label="наш телефон для связи">Тел.: +7 (495) 495-95-95</a>        
+        <a href="https://htmlacademy.ru/intensive/htmlcss" alt="ссылка на htmlacademy" aria-label="ссылка на сайт htmlacademy с интесивами"><img src="img/logo-htmlacademy.svg" alt="иконка html academy" aria-label="иконка htmlacademy"></a>
       </div>
     </footer>
   </body>
