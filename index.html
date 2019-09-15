@@ -6,52 +6,32 @@
 	</head>
 	<body>
 		<header>
-			<a href="index.html" aria-label="ссылка на главную страницу"><img src="img/device.svg" alt="логотип device"></a>
+			<a href="index.html" aria-label="на главную страницу"><img src="img/device.svg" alt="логотип device"></a>
 			<img src="img/search.svg"><input type="search" name="search" placeholder="Поиск по сайту"><!--Точно ли с помощью валью создается "заднее" поиск по сайту? -->
-			<a href="login.html">Войти</a>
-			<div class="visually-hidden">
-				<h3>Личный кабинет</h3>
-				<p>Введите свой логин и пароль</p>
-				<form class="lk" method="post" action="">
-					<p>
-						<input type="text" name="login" placeholder="email@example.com" id="user-login">
-						<label for="user-login">Логин</label>
-					</p>
-					<p>
-						<input type="password" name="password" placeholder="•••••••••" id="user-password">
-						<label for="user-password">Пароль</label>
-					</p>
-					<p>
-						<input type="checkbox" name="rememberme" id="remember">
-						<label for="remember">Запомните меня</label>
-						<a href="#">Восстановить доступ</a>
-					<button type="submit">Войти</button>
-
-				</form>
-				<button type="button"><img src="img/modal-close.svg"></button>
-			</div>
+			<a href="login.html">Войти</a>			
 			<!-- ссылки -->
-			<a href="#" alt="ссылка на страницу сравнения таваров" aria-label="ссылка на страницу сравнения таваров">Сравнить</a>
-			<a href="#" alt="ссылка на страницу корзины, с выбранными товарами" aria-label="ссылка на страницу корзины, с выбранными товарами">Корзина</a>
+			<a href="#" title="ссылка на страницу сравнения таваров" aria-label="на страницу сравнения таваров">Сравнить</a>
+			<a href="#" title="ссылка на страницу корзины, с выбранными товарами" aria-label="на страницу корзины, с выбранными товарами">Корзина</a>
 			<nav>
 				<!--тут у нас будет всплывающая менюшка-->
-				<button type="menu">Каталог товаров</button>				
+				<a href="catalog.html" title="ссылка на каталог товаров" aria-label="Каталог товаров">Каталог товаров</a>				
 				<!-- Скорей всего, "доставка" и "контакты" будут ссылкой-якорем, но это не точно -->
-				<a href="#" alt="ссылка на страницу с доставкой" aria-label="Информация о доставке">Доставка</a>
-				<a href="#" alt="ссылка на страницу про гарантии" aria-label="Информация про гарантию">Гарантия</a>
-				<a href="#" alt="ссылка на страницу с нашими контактами" aria-label="Наши контакты">Контакты</a>
+				<a href="#" title="ссылка на страницу с доставкой" aria-label="Информация о доставке">Доставка</a>
+				<a href="#" title="ссылка на страницу про гарантии" aria-label="Информация про гарантию">Гарантия</a>
+				<a href="#" title="ссылка на страницу с нашими контактами" aria-label="Наши контакты">Контакты</a>
 			</nav>
 		</header>	
 		<main>  		
-			<section class="description">
-				<img src="img/slider-1-png.png" alt="первый слайд, картинка селфи палок" aria-label="первый слайд - фото с разновидностью селфи палок">  			
-				<p class="like_a_stiller">Делай селфи, как Бен Стиллер</p>
+			<section class="slider-1">
+				<img src="img/slider-1-png.png" alt="первый слайд, картинка селфи палок">  			
+				<p class="like_a_stiller">Делай селфи,<br>
+					как Бен Стиллер</p>
 				<div class="">
 					<p>
 						Самая длинная палка для селфи доступна в нашем магазине.<br>
 						Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
 					</p> 			
-					<a href="#" alt="ссылка на страницу данного товара" aria-label="ссылка на страницу с описанным товаром">Подробнее</a>
+					<a href="#" title="ссылка на страницу данного товара" aria-label="на страницу с описанным товаром">Подробнее</a>
 					<input type="radio" name="little-info" checked>
 					<input type="radio" name="little-info">
 					<input type="radio" name="little-info"><br>
@@ -70,6 +50,44 @@
 					<p>Материал</p>
 				</div> 			
 			</section>
+			<section class="slider-2">
+				<img src="img/slider-2-png.png" alt="второй слайд - картинка умных часов">
+				<p class="clock">Худеем<br>
+					правильно!
+				</p>
+				<div class="">
+					<p>
+						Мотивирующие фитнес-браслеты помогут найти в себе силы<br> 
+						не пропускать занятия и соблюдать диету.
+					</p>
+					<a href="#" title="ссылка на страницу данного товара" aria-label="на страницу с описанным товаром">Подробнее</a>
+				</div>
+				<div>
+					<p>48 часов</p>
+					<p>Без подзарядки</p>
+				</div>
+			</section>
+			<section class="slider-3">
+				<img src="img/slider-3-png.png" alt="третий слайд - картинка квадрокоптера">
+				<p class="quadrocopter">Порхает как бабочка,<br>
+					жалит как пчела!
+				</p>
+				<div class="">
+					<p>
+						Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+						мощным лазером, замаскированным под стандартную камеру.
+					</p>
+					<a href="#" title="ссылка на страницу данного товара" aria-label="на страницу с описанным товаром">Подробнее</a>
+				</div>
+				<div>
+					<p>800 м</p>
+					<p>Дальность полета</p>
+				</div>
+				<div>
+					<p>50 м</p>
+					<p>Радиус поражения</p>
+				</div>
+			</section>
 			<section class="items">  		 
 				<ul>
 					<li><a href="#"><img src="img/popular-1.svg" alt="картинка очков"></a>Виртуальная реальность</li>
@@ -87,7 +105,7 @@
 					<button>Кредит</button>
 				</div>
 				<div>
-					<h2>Доставка</h2>  	  		
+					<h3 class="delivery">Доставка</h3>  	  		
 					<p>
 						Мы с удовольствием доставим ваш товар прямо к вашему<br>
 						подъезду совершенно бесплатно! Ведь мы неплохо<br>
@@ -95,16 +113,16 @@
 					</p>
 					<img src="img/delivery.png" alt="Картинка человека с почтой-доставкой">
 				</div>
-				<div class="visually-hidden">
-					<h2>Гарантия</h2>
+				<div class="warranty">
+					<h3>Гарантия</h3>
 					<p>
 						Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
 						Товар, не дом, конечно же.
 					</p>
 					<img src="img/warranty.png" alt="Картинка характеризующая гарантии">
 				</div>
-				<div class="visually-hidden">
-					<h2>Кредит</h2>
+				<div class="credit">
+					<h3>Кредит</h3>
 					<p>
 						Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
 						условия кредита. Выгодные для нашего банка, разумеется.
@@ -113,6 +131,7 @@
 				</div>
 			</section>  	  
 			<section class="brands">
+				<h2 class="visually-hidden">Представленные бренды</h2>
 				<ul>
 					<li><img src="img/logo-1-jpg.jpg" alt="логотип представленного бренда dji"></li>
 					<li><img src="img/logo-2-jpg.jpg" alt="логотип представленного бренда spgadgets"></li>
@@ -135,7 +154,7 @@
 					<li>Автотрейдинг</li>
 					<li>ЖелДорЭкспедиция</li>
 				</ul>
-				<a href="#" aria-label="ссылка на страницу с информацией о нас">Подробнее о нас</a>
+				<a href="#" aria-label="на страницу с информацией о нас">Подробнее о нас</a>
 			</section>
 			<section class="contacts">  		
 				<h2>Контакты</h2>
@@ -144,56 +163,92 @@
 				</p>
 				<!-- улучшить до кнопки с помощью ява скрипта -->
 				<a href="https://www.google.ru/maps/place/%D1%83%D0%BB.+%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9,+15,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+119311/@55.687034,37.5274293,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54cf65f5c8955:0x694710ccd55501e!8m2!3d55.687031!4d37.529618" aria-label="ссылка на наш офис на гугл-картах">
-					<img src="img/map-jpg.jpg" alt="Наш офис находится по адресу: город Москва, улица Строителей, дом 15, заходите, мы вам поможем!">
+					<img src="img/map-jpg.jpg" alt="Наш офис находится по адресу: город Москва, улица Строителей, дом 15">
 				</a>	
-				<button>
-					<a href="#" aria-label="ссылка с формой сообщения нам">Напишите нам</a>	
+				<button type="submit">
+					Напишите нам	
 				</button>
 			</section>
 		</main>
 		<!-- Доставка, гарантия и контакты в футере скорей всего тоже "ссылки-якоря", так как футер на всех страницах одинаовый, то можно сделать надпись "девайс" ссылкой на главную страницу -->
 		<footer>
 			<div>
-				<a href="index.html" aria-label="ссылка на главную страницу"><img src="img/device.svg" alt="логотип device"></a>
+				<a href="index.html" aria-label="на главную страницу"><img src="img/device.svg" alt="логотип device"></a>
 				<address aria-label="наш адрес">г. Москва, ул. Строителей, 15</address>
 			</div>
 			<div>
-				<a href="#" alt="ссылка на страницу с информацией по доставке" arial-label="Информация о доставке">Доставка</a>
-				<a href="#" alt="ссылка на страницу про гарантии" aria-label="Информация про гарантию">Гарантия</a>
-				<a href="#" alt="ссылка на страницу с нашими контактами" aria-label="Наши контакты">Контакты</a>
+				<a href="#" title="ссылка на страницу с информацией по доставке" arial-label="Информация о доставке">Доставка</a>
+				<a href="#" title="ссылка на страницу про гарантии" aria-label="Информация про гарантию">Гарантия</a>
+				<a href="#" title="ссылка на страницу с нашими контактами" aria-label="Наши контакты">Контакты</a>
 			</div>	
 			<div>	
-				<a href="#"><img src="img/facebook.svg" alt="ссылка на device в facebook"></a>
-				<a href="#"><img src="img/inst.svg" alt="ссылка на device в instagram"></a>
-				<a href="#"><img src="img/twitter.svg" alt="ссылка на device в twitter"></a>
+				<a href="#"><img src="img/facebook.svg" alt="на device в facebook"></a>
+				<a href="#"><img src="img/inst.svg" alt="на device в instagram"></a>
+				<a href="#"><img src="img/twitter.svg" alt="на device в twitter"></a>
 			</div>
 			<!-- как и в шапке, не забыть картинку привязать к кнопке -->
 			<div>
 				<!--с помощью ява скрипта, улучшить ссылку до попапа-->
 				<a href="login.html">Войти</a>
-				<a href="#" alt="ссылка на страницу сравнения таваров" aria-label="ссылка на страницу сравнения таваров">Сравнить</a>
-				<a href="#" alt="ссылка на страницу корзины, с выбранными товарами" aria-label="ссылка на страницу корзины, с выбранными товарами">Корзина</a>
-				<a href="tel:+74954959595" alt="наш телефон" aria-label="наш телефон для связи">Тел.: +7 (495) 495-95-95</a>  			
-				<a href="https://htmlacademy.ru/intensive/htmlcss" alt="ссылка на htmlacademy" aria-label="ссылка на сайт htmlacademy с интесивами"><img src="img/logo-htmlacademy.svg" alt="иконка html academy" aria-label="иконка htmlacademy"></a>
-			</div>
-			<div class="visually-hidden">
-				Форма сообщения нам
-				<form class="message_us" method="post" action="">
-					<p>
-						<label for="yourname">Ваше имя:</label>
-						<input id="yourname" type="text" name="name" placeholder="Имя Фамилия">
-					</p>
-					<p>
-						<label for="yourmail">Ваш e-mail:</label>
-						<input id="yourmail" type="text" name="e-mail" placeholder="email@example.com">
-					</p>
-					<p>
-						<label for="text">Текст письма:</label>
-						<input id="text" type="text" name="text" placeholder="В свободной форме">
-					</p>
-					<button type="submit">Отправить</button>
-				</form>
+				<a href="#" title="ссылка на страницу сравнения таваров" aria-label="на страницу сравнения таваров">Сравнить</a>
+				<a href="#" title="ссылка на страницу корзины, с выбранными товарами" aria-label="на страницу корзины, с выбранными товарами">Корзина</a>
+				<a href="tel:+74954959595" title="наш телефон" aria-label="наш телефон для связи">Тел.: +7 (495) 495-95-95</a>  			
+				<a href="https://htmlacademy.ru/intensive/htmlcss" title="ссылка на htmlacademy" aria-label="на сайт htmlacademy с интесивами"><img src="img/logo-htmlacademy.svg" alt="иконка html academy" aria-label="иконка htmlacademy"></a>
 			</div>
 		</footer>
+		<!-- относится к "напишите нам"-->
+		<div class="form-message-us">
+			Форма сообщения нам
+			<form class="message_us" method="post" action="">
+				<p>
+					<label for="yourname">Ваше имя:</label>
+					<input id="yourname" type="text" name="name" placeholder="Имя Фамилия">
+				</p>
+				<p>
+					<label for="yourmail">Ваш e-mail:</label>
+					<input id="yourmail" type="text" name="e-mail" placeholder="email@example.com">
+				</p>
+				<p>
+					<label for="text">Текст письма:</label>					
+					<textarea id="text" name="text" rows="5" placeholder="В свободной форме"></textarea>
+				</p>
+				<button type="submit">Отправить</button>
+			</form>
+			<button type="button"><img src="img/modal-close.svg"></button>
+		</div>
+		<!--вход в личный кабинет-->
+		<div class="login">
+				<h3>Личный кабинет</h3>
+				<p>Введите свой логин и пароль</p>
+				<form class="lk" method="post" action="">
+					<p>
+						<input type="text" name="login" placeholder="email@example.com" id="user-login">
+						<label for="user-login">Логин</label>
+					</p>
+					<p>
+						<input type="password" name="password" placeholder="•••••••••" id="user-password">
+						<label for="user-password">Пароль</label>
+					</p>
+					<p>
+						<input type="checkbox" name="rememberme" id="remember">
+						<label for="remember">Запомните меня</label>
+						<a href="#">Восстановить доступ</a>
+					<button type="submit">Войти</button>
+				</form>
+				<button type="button"><img src="img/modal-close.svg"></button>
+			</div>
+			<!--По идеи, эту часть так же можно оформить через таблицу, но.. как я понял, таблицы нужны там где они ЯРКО выражены, по этому, тут можно стиализацию сделать через несколько списков, согласна, Лиль?-->
+			<div class="catalog-menu">
+				<ul>
+					<li><a href="#" aria-label="страница с очками виртуальной реалности">Виртуальная реальность</a></li>
+					<li><a href="#" aria-label="страница с моноподами для селфи">Моноподы для селфи</a></li>
+					<li><a href="#" aria-label="страница с экшн-камерами">Экшн-камеры</a></li>
+				</ul>
+				<ul>
+					<li><a href="#" aria-label="страница с фитнес-браслетами">Фитнес-браслеты</a></li>
+					<li><a href="#" aria-label="страница с умными часами">Умные часы</a></li>
+				</ul>
+				<a href="#" aria-label="страница с квадрокоптерами">Квадрокоптеры</a>				
+			</div>
 	</body>
 </html>	

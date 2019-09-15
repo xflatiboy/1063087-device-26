@@ -6,28 +6,28 @@
   </head>
   <body>
     <header>
-      <a href="index.html" aria-label="ссылка на главную страницу"><img src="img/device.svg" alt="логотип device"></a>
+      <a href="index.html" aria-label="на главную страницу"><img src="img/device.svg" alt="логотип device"></a>
       <img src="img/search.svg"><input type="search" name="search" placeholder="Поиск по сайту"><!--Точно ли с помощью валью создается "заднее" поиск по сайту? -->
       <!-- При добавлении иконок не забыть их привязать к самим кнопкам -->
-      <a href="#" alt="ссылка на ваш профиль" aria-label="ссылка на страницу вашего профиля на сайте device">Валентин Петухов</a>
+      <a href="#" title="ссылка на ваш профиль" aria-label="на страницу вашего профиля на сайте device">Валентин Петухов</a>
       <button aria-label="кнопка чтобы выйти из вашего профиля на сайте device">Выйти</button>
-      <a href="#" alt="ссылка на страницу сравнения таваров" aria-label="ссылка на страницу сравнения таваров">Сравнить</a>
-      <a href="#" alt="ссылка на страницу корзины, с выбранными товарами" aria-label="ссылка на страницу корзины, с выбранными товарами">Корзина</a>
-      <button type="menu">Каталог товаров</button>
+      <a href="#" title="ссылка на страницу сравнения таваров" aria-label="на страницу сравнения таваров">Сравнить</a>
+      <a href="#" title="ссылка на страницу корзины, с выбранными товарами" aria-label="на страницу корзины, с выбранными товарами">Корзина</a>
+      <a href="catalog.html" title="ссылка на каталог товаров" aria-label="Каталог товаров">Каталог товаров</a>
       <!-- Скорей всего, "доставка" и "контакты" будут ссылкой-якорем, но это не точно -->
-      <a href="#" alt="ссылка на страницу с доставкой" aria-label="Информация о доставке">Доставка</a>
-      <a href="#" alt="ссылка на страницу про гарантии" aria-label="Информация про гарантию">Гарантия</a>
-      <a href="#" alt="ссылка на страницу с нашими контактами" aria-label="Наши контакты">Контакты</a>
+      <a href="#" title="ссылка на страницу с доставкой" aria-label="Информация о доставке">Доставка</a>
+      <a href="#" title="ссылка на страницу про гарантии" aria-label="Информация про гарантию">Гарантия</a>
+      <a href="#" title="ссылка на страницу с нашими контактами" aria-label="Наши контакты">Контакты</a>
     </header>	
     <h1>Моноподы для селфи</h1>
     <nav>
-      <a href="index.html" alt="ссылка на главную страницу DEVICE" aria-label="ссылка на главную страницу device">Главная</a>      
-      <a href="catalog.html" alt="ссылка на каталог с товарами" aria-label="ссылка на каталог с товарами">Каталог товаров</a>      
-      <a href="#" alt="ссылка на страницу с моноподами для селфи" aria-label="ссылка на страницу с моноподами для селфи">Моноподы для селфи</a>
+      <a href="index.html" title="ссылка на главную страницу DEVICE" aria-label="главную страницу device">Главная</a>      
+      <a href="catalog.html" title="ссылка на каталог с товарами" aria-label="каталог с товарами">Каталог товаров</a>      
+      <a href="#" title="ссылка на страницу с моноподами для селфи" aria-label="страницу с моноподами для селфи">Моноподы для селфи</a>
     </nav>
   <main>      
     <form class="filter" method="get" action="">
-      <p>Фильтр:</p>
+      <h3>Фильтр:</h3>
       <div class="price">
         <p>Стоимость</p>
         <input type="range">
@@ -73,20 +73,20 @@
         <legend>Bluetooth</legend>
         <ul>
           <li>
-            <input type="checkbox" name="Bluetoothhave" id="havebluetooth" checked>
+            <input type="radio" name="Bluetooth" id="havebluetooth" checked>
             <label for="havebluetooth">
               Есть
             </label>
           </li>
           <li>
-            <input type="checkbox" name="Bluetoothdont" id="nobluetooth">
+            <input type="radio" name="Bluetooth" id="nobluetooth">
             <label for="nobluetooth">
               Нет
             </label>
           </li>
         </ul>
       </fieldset>          
-      <button type="submite">Показать</button>
+      <button type="submit">Показать</button>
     </form>      
       <section class="products">
         <div>
@@ -130,27 +130,27 @@
     </main>
     <footer>
       <div>
-        <a href="index.html" aria-label="ссылка на главную страницу"><img src="img/device.svg" alt="логотип device"></a>
+        <a href="index.html" aria-label="на главную страницу"><img src="img/device.svg" alt="логотип device"></a>
         <address aria-label="наш адрес">г. Москва, ул. Строителей, 15</address>
       </div>
       <div>
-        <a href="#" alt="ссылка на страницу с доставкой" aria-label="Информация о доставке">Доставка</a>
-        <a href="#" alt="ссылка на страницу про гарантии" aria-label="Информация про гарантию">Гарантия</a>
-        <a href="#" alt="ссылка на страницу с нашими контактами" aria-label="Наши контакты">Контакты</a>
+        <a href="#" title="ссылка на страницу с доставкой" aria-label="Информация о доставке">Доставка</a>
+        <a href="#" title="ссылка на страницу про гарантии" aria-label="Информация про гарантию">Гарантия</a>
+        <a href="#" title="ссылка на страницу с нашими контактами" aria-label="Наши контакты">Контакты</a>
       </div>
       <div>
-        <a href="#"><img src="img/facebook.svg" alt="ссылка на device в facebook"></a>
-        <a href="#"><img src="img/inst.svg" alt="ссылка на device в instagram"></a>
-        <a href="#"><img src="img/twitter.svg" alt="ссылка на device в twitter"></a>
+        <a href="#"><img src="img/facebook.svg" alt="device в facebook"></a>
+        <a href="#"><img src="img/inst.svg" alt="device в instagram"></a>
+        <a href="#"><img src="img/twitter.svg" alt="device в twitter"></a>
       </div>
       <!-- как и в шапке, не забыть картинку привязать к кнопке -->
       <div>
-        <a href="#" alt="ссылка на ваш профиль" aria-label="ссылка на страницу вашего профиля на сайте device">Валентин Петухов</a>
-        <button aria-label="кнопка чтобы выйти из вашего профиля на сайте device">Выйти</button>
-        <a href="#" alt="ссылка на страницу сравнения таваров" aria-label="ссылка на страницу сравнения таваров">Сравнить</a>
-        <a href="#" alt="ссылка на страницу корзины, с выбранными товарами" aria-label="ссылка на страницу корзины, с выбранными товарами">Корзина</a>
-        <a href="tel:+74954959595" alt="наш телефон" aria-label="наш телефон для связи">Тел.: +7 (495) 495-95-95</a>        
-        <a href="https://htmlacademy.ru/intensive/htmlcss" alt="ссылка на htmlacademy" aria-label="ссылка на сайт htmlacademy с интесивами"><img src="img/logo-htmlacademy.svg" alt="иконка html academy" aria-label="иконка htmlacademy"></a>
+        <a href="#" title="ссылка на ваш профиль" aria-label="на страницу вашего профиля на сайте device">Валентин Петухов</a>
+        <button aria-label="выйти из вашего профиля на сайте device">Выйти</button>
+        <a href="#" title="ссылка на страницу сравнения таваров" aria-label="страница сравнения таваров">Сравнить</a>
+        <a href="#" title="ссылка на страницу корзины, с выбранными товарами" aria-label="страница корзины, с выбранными товарами">Корзина</a>
+        <a href="tel:+74954959595" title="наш телефон" aria-label="наш телефон для связи">Тел.: +7 (495) 495-95-95</a>        
+        <a href="https://htmlacademy.ru/intensive/htmlcss" title="ссылка на htmlacademy" aria-label="сайт htmlacademy с интесивами"><img src="img/logo-htmlacademy.svg" alt="иконка html academy" aria-label="иконка htmlacademy"></a>
       </div>
     </footer>
   </body>
