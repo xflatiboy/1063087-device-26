@@ -7,10 +7,12 @@
   <body>
     <header>
       <a href="index.html" aria-label="на главную страницу"><img src="img/device.svg" alt="логотип device"></a>
-      <img src="img/search.svg"><input type="search" name="search" placeholder="Поиск по сайту"><!--Точно ли с помощью валью создается "заднее" поиск по сайту? -->
-      <!-- При добавлении иконок не забыть их привязать к самим кнопкам -->
+      <img src="img/search.svg">
+      <form action="" method="get">
+        <input name="search" placeholder="Поиск по сайту" type="search">        
+      </form>
       <a href="#" title="ссылка на ваш профиль" aria-label="на страницу вашего профиля на сайте device">Валентин Петухов</a>
-      <button aria-label="кнопка чтобы выйти из вашего профиля на сайте device">Выйти</button>
+      <button type="submit" aria-label="кнопка чтобы выйти из вашего профиля на сайте device">Выйти</button>
       <a href="#" title="ссылка на страницу сравнения таваров" aria-label="на страницу сравнения таваров">Сравнить</a>
       <a href="#" title="ссылка на страницу корзины, с выбранными товарами" aria-label="на страницу корзины, с выбранными товарами">Корзина</a>
       <a href="catalog.html" title="ссылка на каталог товаров" aria-label="Каталог товаров">Каталог товаров</a>
@@ -91,32 +93,48 @@
       <section class="products">
         <div>
           <p>СОРТИРОВКА:</p>
-          <button>По цене</button>
-          <button>По типу</button>
-          <button>По популярности</button>
-          <button aria-label="кнопка пролистать каталог выше"><img src="img/icon-up-dir.svg" alt="стрелка вверх"></button>
-          <button aria-label="кнопка пролистать каталог ниже"><img src="img/icon-down-dir.svg" alt="стрелка вниз"></button>
+          <button type="button">По цене</button>
+          <button type="button">По типу</button>
+          <button type="button">По популярности</button>
+          <button type="button" aria-label="по возрастанию"><img src="img/icon-up-dir.svg" alt="стрелка вверх"></button>
+          <button type="button" aria-label="по убыванию"><img src="img/icon-down-dir.svg" alt="стрелка вниз"></button>
         </div>    
         <div>
           <div>
             <img src="img/item-1-jpg.png" alt="Фото любительской селфи-палки">
             <p class="nameitem">Любительская селфи-палка</p>
             <p class="price">500 руб.</p>
+            <div class="item-hover">
+              <p>В корзину</p>
+              <p>Добавить к сравнению</p>
+            </div>
           </div>
           <div>
            <img src="img/item-2-jpg.png" alt="Фото профессиональной любительской селфи палки">
            <p class="nameitem">Профессиональная селфи-палка</p>
             <p class="price">1 500 руб.</p>
+            <div class="item-hover">
+              <p>В корзину</p>
+              <p>Добавить к сравнению</p>
+            </div>
           </div>
           <div>
            <img src="img/item-3-jpg.png" alt="Фото непотопляемой селфи-палки">
             <p class="nameitem">Непотопляемая селфи-палка</p>
             <p class="price">2 500 руб.</p>
+            <div class="item-hover">
+              <p>В корзину</p>
+              <p>Добавить к сравнению</p>
+            </div>
           </div>
           <div>
             <img src="img/item-4-jpg.png" alt="Фото селфи-палки «Следуй за мной»">
             <p class="nameitem">Селфи-палка «Следуй за мной»</p>
             <p class="price">4 900 руб.</p>
+            <div class="item-hover">
+              <p>В корзину</p>
+              <p>Добавить к сравнению</p>
+            </div>
           </div>
           <div>
             <button type="button">Назад</button>
@@ -146,7 +164,7 @@
       <!-- как и в шапке, не забыть картинку привязать к кнопке -->
       <div>
         <a href="#" title="ссылка на ваш профиль" aria-label="на страницу вашего профиля на сайте device">Валентин Петухов</a>
-        <button aria-label="выйти из вашего профиля на сайте device">Выйти</button>
+        <button type="submit" aria-label="выйти из вашего профиля на сайте device">Выйти</button>
         <a href="#" title="ссылка на страницу сравнения таваров" aria-label="страница сравнения таваров">Сравнить</a>
         <a href="#" title="ссылка на страницу корзины, с выбранными товарами" aria-label="страница корзины, с выбранными товарами">Корзина</a>
         <a href="tel:+74954959595" title="наш телефон" aria-label="наш телефон для связи">Тел.: +7 (495) 495-95-95</a>        

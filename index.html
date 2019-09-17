@@ -7,18 +7,40 @@
 	<body>
 		<header>
 			<a href="index.html" aria-label="на главную страницу"><img src="img/device.svg" alt="логотип device"></a>
-			<img src="img/search.svg"><input type="search" name="search" placeholder="Поиск по сайту"><!--Точно ли с помощью валью создается "заднее" поиск по сайту? -->
+			<img src="img/search.svg">
+			<form action="" method="get">
+				<input name="search" placeholder="Поиск по сайту" type="search">  			
+			</form>
 			<a href="login.html">Войти</a>			
 			<!-- ссылки -->
 			<a href="#" title="ссылка на страницу сравнения таваров" aria-label="на страницу сравнения таваров">Сравнить</a>
 			<a href="#" title="ссылка на страницу корзины, с выбранными товарами" aria-label="на страницу корзины, с выбранными товарами">Корзина</a>
 			<nav>
 				<!--тут у нас будет всплывающая менюшка-->
-				<a href="catalog.html" title="ссылка на каталог товаров" aria-label="Каталог товаров">Каталог товаров</a>				
-				<!-- Скорей всего, "доставка" и "контакты" будут ссылкой-якорем, но это не точно -->
-				<a href="#" title="ссылка на страницу с доставкой" aria-label="Информация о доставке">Доставка</a>
-				<a href="#" title="ссылка на страницу про гарантии" aria-label="Информация про гарантию">Гарантия</a>
-				<a href="#" title="ссылка на страницу с нашими контактами" aria-label="Наши контакты">Контакты</a>
+				<ul>
+					<li>
+						<a href="catalog.html" title="ссылка на каталог товаров" aria-label="Каталог товаров">Каталог товаров</a>
+						<ul>
+							<li><a href="#" aria-label="страница с очками виртуальной реалности">Виртуальная реальность</a></li>
+							<li><a href="#" aria-label="страница с моноподами для селфи">Моноподы для селфи</a></li>
+							<li><a href="#" aria-label="страница с экшн-камерами">Экшн-камеры</a></li>
+						</ul>
+						<ul>
+							<li><a href="#" aria-label="страница с фитнес-браслетами">Фитнес-браслеты</a></li>
+							<li><a href="#" aria-label="страница с умными часами">Умные часы</a></li>
+						</ul>
+						<a href="#" aria-label="страница с квадрокоптерами">Квадрокоптеры</a>
+					</li>								
+					<li>
+						<a href="#" title="ссылка на страницу с доставкой" aria-label="Информация о доставке">Доставка</a>
+					</li>
+					<li>	
+						<a href="#" title="ссылка на страницу про гарантии" aria-label="Информация про гарантию">Гарантия</a>
+					</li>
+					<li>	
+						<a href="#" title="ссылка на страницу с нашими контактами" aria-label="Наши контакты">Контакты</a>
+					</li>			
+				</ul>
 			</nav>
 		</header>	
 		<main>  		
@@ -100,9 +122,9 @@
 			</section>
 			<section class="services">
 				<div>
-					<button>Доставка</button>
-					<button>Гарантия</button>
-					<button>Кредит</button>
+					<button type="button">Доставка</button>
+					<button type="button">Гарантия</button>
+					<button type="button">Кредит</button>
 				</div>
 				<div>
 					<h3 class="delivery">Доставка</h3>  	  		
@@ -236,19 +258,6 @@
 					<button type="submit">Войти</button>
 				</form>
 				<button type="button"><img src="img/modal-close.svg"></button>
-			</div>
-			<!--По идеи, эту часть так же можно оформить через таблицу, но.. как я понял, таблицы нужны там где они ЯРКО выражены, по этому, тут можно стиализацию сделать через несколько списков, согласна, Лиль?-->
-			<div class="catalog-menu">
-				<ul>
-					<li><a href="#" aria-label="страница с очками виртуальной реалности">Виртуальная реальность</a></li>
-					<li><a href="#" aria-label="страница с моноподами для селфи">Моноподы для селфи</a></li>
-					<li><a href="#" aria-label="страница с экшн-камерами">Экшн-камеры</a></li>
-				</ul>
-				<ul>
-					<li><a href="#" aria-label="страница с фитнес-браслетами">Фитнес-браслеты</a></li>
-					<li><a href="#" aria-label="страница с умными часами">Умные часы</a></li>
-				</ul>
-				<a href="#" aria-label="страница с квадрокоптерами">Квадрокоптеры</a>				
 			</div>
 	</body>
 </html>	
