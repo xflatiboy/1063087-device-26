@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-  <meta charset="utf-8">
-  <title>Каталог товаров</title>
+    <meta charset="utf-8">
+    <title>Каталог товаров</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
       <a href="index.html" aria-label="на главную страницу"><img src="img/device.svg" alt="логотип device"></a>
-      <img src="img/search.svg">
       <form action="" method="get">
-        <input name="search" placeholder="Поиск по сайту" type="search">        
+        <input name="search" placeholder="Поиск по сайту" type="search">
+        <button type="submit"><img src="img/search.svg"></button>        
       </form>
       <a href="#" title="ссылка на ваш профиль" aria-label="на страницу вашего профиля на сайте device">Валентин Петухов</a>
       <button type="submit" aria-label="кнопка чтобы выйти из вашего профиля на сайте device">Выйти</button>
       <a href="#" title="ссылка на страницу сравнения таваров" aria-label="на страницу сравнения таваров">Сравнить</a>
       <a href="#" title="ссылка на страницу корзины, с выбранными товарами" aria-label="на страницу корзины, с выбранными товарами">Корзина</a>
-      <a href="catalog.html" title="ссылка на каталог товаров" aria-label="Каталог товаров">Каталог товаров</a>
-      <!-- Скорей всего, "доставка" и "контакты" будут ссылкой-якорем, но это не точно -->
-      <a href="#" title="ссылка на страницу с доставкой" aria-label="Информация о доставке">Доставка</a>
-      <a href="#" title="ссылка на страницу про гарантии" aria-label="Информация про гарантию">Гарантия</a>
-      <a href="#" title="ссылка на страницу с нашими контактами" aria-label="Наши контакты">Контакты</a>
+      <div class="main-navigation">
+        <a href="catalog.html" title="ссылка на каталог товаров" aria-label="Каталог товаров">Каталог товаров</a>
+        <!-- Скорей всего, "доставка" и "контакты" будут ссылкой-якорем, но это не точно -->
+        <a href="#" title="ссылка на страницу с доставкой" aria-label="Информация о доставке">Доставка</a>
+        <a href="#" title="ссылка на страницу про гарантии" aria-label="Информация про гарантию">Гарантия</a>
+        <a href="#" title="ссылка на страницу с нашими контактами" aria-label="Наши контакты">Контакты</a>
+      </div class="main-navigation">
     </header>	
     <h1>Моноподы для селфи</h1>
     <nav>
@@ -27,71 +30,71 @@
       <a href="catalog.html" title="ссылка на каталог с товарами" aria-label="каталог с товарами">Каталог товаров</a>      
       <a href="#" title="ссылка на страницу с моноподами для селфи" aria-label="страницу с моноподами для селфи">Моноподы для селфи</a>
     </nav>
-  <main>      
-    <form class="filter" method="get" action="">
-      <h3>Фильтр:</h3>
-      <div class="price">
-        <p>Стоимость</p>
-        <input type="range">
-        <p>От 0</p>
-        <p>До 5000</p>
-      </div>                                
-      <fieldset>
-        <legend>Цвет</legend>
-        <ul>
-          <li>
-            <input type="checkbox" name="black" id="color-black" checked>
-            <label for="color-black">
-              Черный
-            </label>
-          </li>
-          <li>
-            <input type="checkbox" name="white" id="color-white">
-            <label for="color-white">
-              Белый
-            </label>
-          </li>
-          <li>
-            <input type="checkbox" checked name="blue" id="color-blue">
-            <label for="color-blue">
-              Синий
-            </label>
-          </li>
-          <li>
-            <input type="checkbox" checked name="red" id="color-red">
-            <label for="color-red">
-              Красный
-            </label>
-          </li>
-          <li>
-            <input type="checkbox" name="pink" id="color-pink">
-            <label for="color-pink">
-              Розовый
-            </label>
-          </li>
-        </ul>
-      </fieldset>                    
-      <fieldset>
-        <legend>Bluetooth</legend>
-        <ul>
-          <li>
-            <input type="radio" name="Bluetooth" id="havebluetooth" checked>
-            <label for="havebluetooth">
-              Есть
-            </label>
-          </li>
-          <li>
-            <input type="radio" name="Bluetooth" id="nobluetooth">
-            <label for="nobluetooth">
-              Нет
-            </label>
-          </li>
-        </ul>
-      </fieldset>          
-      <button type="submit">Показать</button>
-    </form>      
+    <main>      
+      <form class="filter" method="get" action="">
+        <h2>Фильтр:</h2>
+        <div class="price">
+          <p>Стоимость</p>
+          <input type="range">
+          <p class="range">От 0</p>
+          <p class="ranged">До 5000</p>
+        </div>                                
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="black" id="color-black" checked>
+              <label for="color-black">
+                Черный
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="white" id="color-white">
+              <label for="color-white">
+                Белый
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" checked name="blue" id="color-blue">
+              <label for="color-blue">
+                Синий
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" checked name="red" id="color-red">
+              <label for="color-red">
+                Красный
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="pink" id="color-pink">
+              <label for="color-pink">
+                Розовый
+              </label>
+            </li>
+          </ul>
+        </fieldset>                    
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <ul>
+            <li>
+              <input type="radio" name="Bluetooth" id="havebluetooth" checked>
+              <label for="havebluetooth">
+                Есть
+              </label>
+            </li>
+            <li>
+              <input type="radio" name="Bluetooth" id="nobluetooth">
+              <label for="nobluetooth">
+                Нет
+              </label>
+            </li>
+          </ul>
+        </fieldset>          
+        <button type="submit">Показать</button>
+      </form>      
       <section class="products">
-        <div>
+        <div class="sorting">
           <p>СОРТИРОВКА:</p>
           <button type="button">По цене</button>
           <button type="button">По типу</button>
@@ -103,40 +106,40 @@
           <div>
             <img src="img/item-1-jpg.png" alt="Фото любительской селфи-палки">
             <p class="nameitem">Любительская селфи-палка</p>
-            <p class="price">500 руб.</p>
+            <p class="prices">500 руб.</p>
             <div class="item-hover">
-              <p>В корзину</p>
-              <p>Добавить к сравнению</p>
+              <button type="button">В корзину</button>
+              <button type="button" class="second-times">Добавить к сравнению</button>
             </div>
           </div>
           <div>
-           <img src="img/item-2-jpg.png" alt="Фото профессиональной любительской селфи палки">
-           <p class="nameitem">Профессиональная селфи-палка</p>
-            <p class="price">1 500 руб.</p>
+            <img src="img/item-2-jpg.png" alt="Фото профессиональной любительской селфи палки">
+            <p class="nameitem">Профессиональная селфи-палка</p>
+            <p class="prices">1 500 руб.</p>
             <div class="item-hover">
-              <p>В корзину</p>
-              <p>Добавить к сравнению</p>
+              <button type="button">В корзину</button>
+              <button type="button" class="second-times">Добавить к сравнению</button>              
             </div>
           </div>
           <div>
-           <img src="img/item-3-jpg.png" alt="Фото непотопляемой селфи-палки">
+            <img src="img/item-3-jpg.png" alt="Фото непотопляемой селфи-палки">
             <p class="nameitem">Непотопляемая селфи-палка</p>
-            <p class="price">2 500 руб.</p>
+            <p class="prices">2 500 руб.</p>
             <div class="item-hover">
-              <p>В корзину</p>
-              <p>Добавить к сравнению</p>
+              <button type="button">В корзину</button>
+              <button type="button" class="second-times">Добавить к сравнению</button>
             </div>
           </div>
           <div>
             <img src="img/item-4-jpg.png" alt="Фото селфи-палки «Следуй за мной»">
             <p class="nameitem">Селфи-палка «Следуй за мной»</p>
-            <p class="price">4 900 руб.</p>
+            <p class="prices">4 900 руб.</p>
             <div class="item-hover">
-              <p>В корзину</p>
-              <p>Добавить к сравнению</p>
+              <button type="button">В корзину</button>
+              <button type="button" class="second-times">Добавить к сравнению</button>
             </div>
           </div>
-          <div>
+          <div class="pages">
             <button type="button">Назад</button>
             <button type="button">1</button>
             <button type="button">2</button>
@@ -147,22 +150,22 @@
       </section>
     </main>
     <footer>
-      <div>
+      <div class="left-footer">
         <a href="index.html" aria-label="на главную страницу"><img src="img/device.svg" alt="логотип device"></a>
         <address aria-label="наш адрес">г. Москва, ул. Строителей, 15</address>
       </div>
-      <div>
+      <div class="center-footer">
         <a href="#" title="ссылка на страницу с доставкой" aria-label="Информация о доставке">Доставка</a>
         <a href="#" title="ссылка на страницу про гарантии" aria-label="Информация про гарантию">Гарантия</a>
         <a href="#" title="ссылка на страницу с нашими контактами" aria-label="Наши контакты">Контакты</a>
       </div>
-      <div>
+      <div class="social-footer">
         <a href="#"><img src="img/facebook.svg" alt="device в facebook"></a>
         <a href="#"><img src="img/inst.svg" alt="device в instagram"></a>
         <a href="#"><img src="img/twitter.svg" alt="device в twitter"></a>
       </div>
       <!-- как и в шапке, не забыть картинку привязать к кнопке -->
-      <div>
+      <div class="right-footer">
         <a href="#" title="ссылка на ваш профиль" aria-label="на страницу вашего профиля на сайте device">Валентин Петухов</a>
         <button type="submit" aria-label="выйти из вашего профиля на сайте device">Выйти</button>
         <a href="#" title="ссылка на страницу сравнения таваров" aria-label="страница сравнения таваров">Сравнить</a>

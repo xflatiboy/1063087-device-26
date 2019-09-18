@@ -1,0 +1,309 @@
+header {
+	background-color: #f0c52e;
+	font-size:15px;
+}
+
+header input {
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 15px;
+}
+
+header a {
+	color: #000000;
+	font-size: 15px;
+}
+
+
+header button {
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 15px;
+}
+
+h1 {
+	font-size: 47px;
+	color: #000000;
+}
+
+.index-navigation a {
+	font-size: 18px;
+	color: #000000;
+	font-weight: 800;
+}
+
+.menu a {
+	font-size: 15px;
+	color: #000000;
+	font-weight: 300;
+}
+
+.main-navigation a {
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.menu li {
+	font-size:15px;
+}
+
+.menu {
+	font-size:15px;
+}
+
+.index-navigation ul {
+	list-style: none;
+	font-size: 18px;
+}
+
+.like_a_stiller, .clock, .quadrocopter, {
+	font-size: 47px;
+	color: #000000;
+}
+
+.description-slider {
+	font-size: 15px;
+	color: #464646;
+}
+
+.description-slider a {
+	font-size: 18px;
+	color: #000000;
+	background-color: #f0c52e;
+}
+
+.column {
+	font-size: 36px;
+	color: #000000;
+}
+
+.second-line {
+	font-size: 13px;
+	color: #464646;
+}
+
+.container {
+	background-color: #f0c52e;
+	font-size: 18px;
+}
+
+.items ul {
+	list-style: none;
+}
+
+.services {
+	background-color: #e5e5e5;
+}
+
+.services button {
+	background-color: #000000;
+	color: #f0c52e;
+}
+
+.delivery, .credit, .warranty, {
+	font-size: 47px;
+	color: #000000;
+}
+
+.service-description {
+	font-size: 15px;
+	color: #464646;
+}
+
+.about_us h2 {
+	font-size: 47px;
+	color: #000000;
+}
+
+.about_us p {
+	font-style: 15px;
+	color: #464646;
+}
+
+.about_us ul {
+	list-style: none;
+	font-size: 16px;
+	color: #000000;
+	font-weight: 800;
+}
+
+.about_us a {
+	font-size: 18px;
+	color: #000000;
+	background-color: #f0c52e;
+}
+
+.contacts h2 {
+	font-size: 47px;
+	color: #000000;
+}
+
+.contacts p {
+	font-style: 15px;
+	color: #464646;
+}
+
+.contacts button {
+	font-size: 18px;
+	color: #000000;
+	background-color: #f0c52e;
+}
+
+footer {
+	background-color: #464646;
+}
+
+/*
+Хоть убей, не понимаю, как изменить цвет надписи. Пробовал и бекграунд колов и просто колор, гуглил, есть варианты через фильтры, но.. неуверен
+
+.left-footer img {
+	color: #ffc600;
+}
+*/
+
+footer address {
+	color: #ffffff;
+	font-size: 15px;
+}
+
+.center-footer a {
+	font-size: 18px;
+	color: #ffffff;
+	font-weight: 800;
+}
+
+.right-footer a {
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 15px;
+}
+
+.right-footer .telephone {
+	color: #ffffff;
+}
+
+.right-footer button {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.message_us p {
+	color: #000000;
+	font-size: 18px;
+}
+
+.message_us input {
+	color: rgba(70, 70, 70, 0.4);
+	font-size: 14px;
+}
+
+.message_us button {
+	font-size: 18px;
+	color: #000000;
+	background-color: #f0c52e;
+}
+
+.brands ul {
+	list-style: none;
+}
+
+nav a {
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 14px;
+}
+
+main h2 {
+	background-color: #d9d9d9;
+	font-size: 16px;
+	color: #000000;
+	font-weight: 800;
+}
+
+main form {
+	background-color: #ebebeb;
+}
+
+.sorting p {
+	font-size: 16px;
+	color: #000000;
+	font-weight: 800;
+}
+
+.sorting button {
+	font-size: 14px;
+	color: #000000;
+}
+
+.price p {
+	color: #000000;
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.price .range, .price .ranged {
+	color: rgba(0, 0, 0, 0.2);
+	font-size: 14px;
+	font-weight: 400;
+}
+
+main legend {
+	color: #000000;
+	font-size: 18px;
+	font-weight: 800;
+}
+
+fieldset ul {
+font-size: 14px;
+list-style: none;
+}
+
+main button {
+	font-size: 18px;
+	color: #000000;
+	background-color: #f0c52e;
+}
+
+div .nameitem {
+	font-weight: 800;
+	font-size: 18px;
+	color: #000000;
+}
+
+div .prices {
+	font-size: 16px;
+	color: #464646;
+}
+
+.pages {
+	background-color: #ebebeb;
+}
+
+.pages button {
+	color: #000000;
+	font-size: 16px;
+	font-weight: 800;
+	background-color: #ebebeb;
+}
+
+.item-hover button {
+	color: #000000;
+	background-color: #f0c52e;
+	font-size: 18px;
+}
+
+.item-hover .second-times {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 13px;
+	background-color: #eeeeee;
+}
+
+body {
+
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
