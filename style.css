@@ -1,22 +1,21 @@
-header {
+.header {
 	background-color: #f0c52e;
-	font-size:15px;
 }
 
-header input {
+.header input {
 	color: rgba(0, 0, 0, 0.3);
-	font-size: 15px;
 }
 
-header a {
+.header a {
 	color: #000000;
-	font-size: 15px;
 }
 
+.header input:hover {
+	opacity: 0.6;
+}
 
-header button {
+.header button {
 	color: rgba(0, 0, 0, 0.3);
-	font-size: 15px;
 }
 
 h1 {
@@ -31,7 +30,6 @@ h1 {
 }
 
 .menu a {
-	font-size: 15px;
 	color: #000000;
 	font-weight: 300;
 }
@@ -41,33 +39,48 @@ h1 {
 	font-weight: 800;
 }
 
-.menu li {
-	font-size:15px;
-}
-
-.menu {
-	font-size:15px;
-}
-
 .index-navigation ul {
 	list-style: none;
 	font-size: 18px;
 }
 
-.like_a_stiller, .clock, .quadrocopter, {
-	font-size: 47px;
-	color: #000000;
+.index-navigation a:hover, .header a:hover {
+	opacity: 0.6;
 }
 
+.index-navigation a:active .header a:active {
+	opacity: 0.3;
+}
+
+main .name-slide {
+	font-size: 47px;
+	color: #000000;
+	font-weight: 800;
+}
+
+
 .description-slider {
-	font-size: 15px;
+
 	color: #464646;
 }
 
 .description-slider a {
+	width: 220px;
+	height: 8px;
 	font-size: 18px;
 	color: #000000;
 	background-color: #f0c52e;
+}
+
+.description-slider a:hover {
+	width: 220px;
+	height: 40px;
+}
+
+.description-slider a:active {
+	color: rgba(0, 0, 0, 0.3);
+	width: 220px;
+	height: 40px;
 }
 
 .column {
@@ -94,17 +107,30 @@ h1 {
 }
 
 .services button {
-	background-color: #000000;
-	color: #f0c52e;
+  width: 160px;
+  height: 8px;
+  background-color: #f0c52e;
+  color: #000000;
 }
 
-.delivery, .credit, .warranty, {
+.services button:hover {
+	width: 160px;
+	height: 40px;
+}
+
+.services button:active {
+	width: 278px;
+	height: 40px;
+	background-color: #000000;
+	color: #f7e184;
+}
+
+.service {
 	font-size: 47px;
 	color: #000000;
 }
 
 .service-description {
-	font-size: 15px;
 	color: #464646;
 }
 
@@ -114,7 +140,7 @@ h1 {
 }
 
 .about_us p {
-	font-style: 15px;
+
 	color: #464646;
 }
 
@@ -137,7 +163,7 @@ h1 {
 }
 
 .contacts p {
-	font-style: 15px;
+
 	color: #464646;
 }
 
@@ -147,7 +173,7 @@ h1 {
 	background-color: #f0c52e;
 }
 
-footer {
+.footer {
 	background-color: #464646;
 }
 
@@ -159,9 +185,9 @@ footer {
 }
 */
 
-footer address {
+.left-footer .address {
 	color: #ffffff;
-	font-size: 15px;
+
 }
 
 .center-footer a {
@@ -172,10 +198,10 @@ footer address {
 
 .right-footer a {
 	color: rgba(255, 255, 255, 0.7);
-	font-size: 15px;
+
 }
 
-.right-footer .telephone {
+.right-footer .phone {
 	color: #ffffff;
 }
 
@@ -203,19 +229,27 @@ footer address {
 	list-style: none;
 }
 
-nav a {
+.links a {
 	color: rgba(0, 0, 0, 0.3);
 	font-size: 14px;
 }
 
-main h2 {
+.links a:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.links a:active {
+	color: rgba(0, 0, 0, 0.1);
+}
+
+h2 {
 	background-color: #d9d9d9;
 	font-size: 16px;
 	color: #000000;
 	font-weight: 800;
 }
 
-main form {
+.filter {
 	background-color: #ebebeb;
 }
 
@@ -223,11 +257,32 @@ main form {
 	font-size: 16px;
 	color: #000000;
 	font-weight: 800;
+	text-transform: uppercase;
 }
 
 .sorting button {
 	font-size: 14px;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting button:active {
 	color: #000000;
+}
+
+.sorting button:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.down, .up {
+	fill: rgba(0, 0, 0, 0.3);
+}
+
+.down button:hover, .up button:hover {
+	fill: rgba(0, 0, 0, 0.6);
+}
+
+.down button:active, .up button:active {
+	fill: #000000;
 }
 
 .price p {
@@ -236,36 +291,36 @@ main form {
 	font-weight: 800;
 }
 
-.price .range, .price .ranged {
+.range p {
 	color: rgba(0, 0, 0, 0.2);
 	font-size: 14px;
 	font-weight: 400;
 }
 
-main legend {
+.filter legend {
 	color: #000000;
 	font-size: 18px;
 	font-weight: 800;
 }
 
-fieldset ul {
+.filter ul {
 font-size: 14px;
 list-style: none;
 }
 
-main button {
+.filter button {
 	font-size: 18px;
 	color: #000000;
 	background-color: #f0c52e;
 }
 
-div .nameitem {
+.nameitem {
 	font-weight: 800;
 	font-size: 18px;
 	color: #000000;
 }
 
-div .prices {
+.prices {
 	font-size: 16px;
 	color: #464646;
 }
@@ -275,10 +330,27 @@ div .prices {
 }
 
 .pages button {
-	color: #000000;
+	color: rgba(0, 0, 0, 0.3);
 	font-size: 16px;
 	font-weight: 800;
 	background-color: #ebebeb;
+}
+
+.pages button:active {
+	color: #000000;
+}
+
+.pages button:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.back button:active, .forward button:active {
+	color:rgba(0, 0, 0, 0.3);
+	background-color: #d9d9d9;
+}
+
+.back button:hover, .forward button:hover {
+	background-color: #d9d9d9;
 }
 
 .item-hover button {
@@ -287,14 +359,67 @@ div .prices {
 	font-size: 18px;
 }
 
-.item-hover .second-times {
+.item-hover button:hover {
+	width: 200px;
+	height: 40px;
+}
+
+.item-hover button:active {
+	color: rgba(0, 0, 0, 0.3);
+	width: 200px;
+	height: 40px;
+}
+
+.item-hover  .second-times {
 	color: rgba(0, 0, 0, 0.5);
 	font-size: 13px;
 	background-color: #eeeeee;
+	width: 144px;
+	height: 13px;
+}
+
+.item-hover .second-times:hover {
+	color: #000000;
+	width: 144px;
+	height: 13px;
+}
+
+.item-hover .second-times:active {
+	color: rgba(0, 0, 0, 0.2);
+	width: 144px;
+	height: 13px;
+}
+
+.social-footer a {
+	opacity: 0.3;
+}
+
+.logo-footer {
+	fill: #ffc600;
+}
+
+.logo-footer:hover, .center-footer a:hover, .htmlacademy:hover, .social-footer a:hover {
+	opacity: 0.6;
+}
+
+.logo-footer:active, .center-footer a:active, .htmlacademy:active, .right-footer a:active {
+	opacity: 0.3;
+}
+
+.right-footer a:hover {
+	color: #ffffff;
+}
+
+.social-footer a:active {
+	opacity: 0.1;
+}
+
+.htmlacademy {
+	fill: #ffc600;;
 }
 
 body {
-
+ font-size: 15px;
 }
 
 .visually-hidden {
