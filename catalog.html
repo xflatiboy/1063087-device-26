@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог товаров</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body>   
     <header class="header">
       <a href="index.html" aria-label="на главную страницу"><img src="img/device.svg" alt="логотип device"></a>
       <form action="" method="get">
@@ -16,15 +17,35 @@
       <button type="submit" aria-label="кнопка чтобы выйти из вашего профиля на сайте device">Выйти</button>
       <a href="#" title="ссылка на страницу сравнения товаров" aria-label="на страницу сравнения товаров">Сравнить</a>
       <a href="#" title="ссылка на страницу корзины, с выбранными товарами" aria-label="на страницу корзины, с выбранными товарами">Корзина</a>
-      <div class="main-navigation">
-        <a href="catalog.html" title="ссылка на каталог товаров" aria-label="Каталог товаров">Каталог товаров</a>
-        <!-- Скорей всего, "доставка" и "контакты" будут ссылкой-якорем, но это не точно -->
-        <a href="#" title="ссылка на страницу с доставкой" aria-label="Информация о доставке">Доставка</a>
-        <a href="#" title="ссылка на страницу про гарантии" aria-label="Информация про гарантию">Гарантия</a>
-        <a href="#" title="ссылка на страницу с нашими контактами" aria-label="Наши контакты">Контакты</a>
-      </div class="main-navigation">
+      <nav class="index-navigation">
+        <!--тут у нас будет всплывающая менюшка-->
+        <ul>
+          <li>
+            <a href="catalog.html" title="ссылка на каталог товаров" aria-label="Каталог товаров">Каталог товаров</a>
+            <ul class="menu">
+              <li><a href="#" aria-label="страница с очками виртуальной реалности">Виртуальная реальность</a></li>
+              <li><a href="#" aria-label="страница с моноподами для селфи">Моноподы для селфи</a></li>
+              <li><a href="#" aria-label="страница с экшн-камерами">Экшн-камеры</a></li>
+            </ul>
+            <ul class="menu">
+              <li><a href="#" aria-label="страница с фитнес-браслетами">Фитнес-браслеты</a></li>
+              <li><a href="#" aria-label="страница с умными часами">Умные часы</a></li>
+            </ul>
+            <p class="menu"><a href="#" aria-label="страница с квадрокоптерами">Квадрокоптеры</a></p>
+          </li>               
+          <li>
+            <a href="#" title="ссылка на страницу с доставкой" aria-label="Информация о доставке">Доставка</a>
+          </li>
+          <li>  
+            <a href="#" title="ссылка на страницу про гарантии" aria-label="Информация про гарантию">Гарантия</a>
+          </li>
+          <li>  
+            <a href="#" title="ссылка на страницу с нашими контактами" aria-label="Наши контакты">Контакты</a>
+          </li>     
+        </ul>
+      </nav>
     </header>	
-    <h1>Моноподы для селфи</h1>
+    <h1 class="h1">Моноподы для селфи</h1>
     <nav class="links">
       <a href="index.html" title="ссылка на главную страницу DEVICE" aria-label="главную страницу device">Главная</a>      
       <a href="catalog.html" title="ссылка на каталог с товарами" aria-label="каталог с товарами">Каталог товаров</a>      
@@ -32,7 +53,7 @@
     </nav>
     <main>      
       <form class="filter" method="get" action="">
-        <h2>Фильтр:</h2>
+        <h2 class="h2">Фильтр:</h2>
         <div class="price">
           <p>Стоимость</p>
           <input type="range">
@@ -93,11 +114,11 @@
             </li>
           </ul>
         </fieldset>          
-        <button type="submit">Показать</button>
+        <button class="button" type="submit">Показать</button>
       </form>      
       <section class="products">
         <div class="sorting">
-          <p>Сортировка:</p>
+          <p class="h2">Сортировка:</p>
           <button type="button">По цене</button>
           <button type="button">По типу</button>
           <button type="button">По популярности</button>
@@ -122,7 +143,7 @@
             <p class="nameitem">Любительская селфи-палка</p>
             <p class="prices">500 руб.</p>
             <div class="item-hover">
-              <button type="button">В корзину</button>
+              <button class="button" type="button">В корзину</button>
               <button type="button" class="second-times">Добавить к сравнению</button>
             </div>
           </div>
@@ -131,7 +152,7 @@
             <p class="nameitem">Профессиональная селфи-палка</p>
             <p class="prices">1 500 руб.</p>
             <div class="item-hover">
-              <button type="button">В корзину</button>
+              <button class="button" type="button">В корзину</button>
               <button type="button" class="second-times">Добавить к сравнению</button>              
             </div>
           </div>
@@ -140,7 +161,7 @@
             <p class="nameitem">Непотопляемая селфи-палка</p>
             <p class="prices">2 500 руб.</p>
             <div class="item-hover">
-              <button type="button">В корзину</button>
+              <button class="button" type="button">В корзину</button>
               <button type="button" class="second-times">Добавить к сравнению</button>
             </div>
           </div>
@@ -149,7 +170,7 @@
             <p class="nameitem">Селфи-палка «Следуй за мной»</p>
             <p class="prices">4 900 руб.</p>
             <div class="item-hover">
-              <button type="button">В корзину</button>
+              <button class="button" type="button">В корзину</button>
               <button type="button" class="second-times">Добавить к сравнению</button>
             </div>
           </div>

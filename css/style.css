@@ -1,3 +1,47 @@
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../web/opensans.woff') format('woff'),
+		url('../web/opensans.woff2') format('woff2');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../web/opensanslight.woff') format('woff'),
+		url('../web/opensanslight.woff2') format('woff2');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../web/gilroyextrabold.woff') format('woff'),
+		url('../web/gilroyextrabold.woff2') format('woff2');
+	font-weight: 800;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../web/gilroylight.woff') format('woff'),
+		url('../web/gilroylight.woff2') format('woff2');
+	font-weight: 300;
+}
+
+body {
+	font-size: 15px;
+	line-height: 2;
+	font-family: 'OpenSans', Arial, sans-serif;
+	margin: 0;
+	padding: 0; 
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	
+}
+
 .header {
 	background-color: #f0c52e;
 }
@@ -8,35 +52,58 @@
 
 .header a {
 	color: #000000;
+	
+}
+
+.header .search {
+	display: none;
+}
+
+.header input:focus ~ .search {
+	display: block;
+	color: #000000;
 }
 
 .header input:hover {
 	opacity: 0.6;
 }
 
+.header input:focus {
+	
+}
+
 .header button {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-h1 {
+.h1 {
 	font-size: 47px;
 	color: #000000;
+	font-weight: 800;
+	line-height: 1.02;
+	font-family: 'Gilroy';
 }
 
 .index-navigation a {
 	font-size: 18px;
 	color: #000000;
 	font-weight: 800;
+	text-transform: uppercase;
+	line-height: 1.33;
+	font-family: 'Gilroy';
 }
 
 .menu a {
 	color: #000000;
 	font-weight: 300;
+	text-transform: none;
+	font-family: 'OpenSans';
 }
 
 .main-navigation a {
 	font-size: 18px;
 	font-weight: 800;
+	
 }
 
 .index-navigation ul {
@@ -44,11 +111,13 @@ h1 {
 	font-size: 18px;
 }
 
-.index-navigation a:hover, .header a:hover {
+.index-navigation a:hover,
+.header a:hover {
 	opacity: 0.6;
 }
 
-.index-navigation a:active .header a:active {
+.index-navigation a:active,
+.header a:active {
 	opacity: 0.3;
 }
 
@@ -56,20 +125,22 @@ main .name-slide {
 	font-size: 47px;
 	color: #000000;
 	font-weight: 800;
+	line-height: 1.19;
+	font-family: 'Gilroy';
 }
 
 
 .description-slider {
-
 	color: #464646;
 }
 
-.description-slider a {
-	width: 220px;
-	height: 8px;
+.button {
 	font-size: 18px;
 	color: #000000;
 	background-color: #f0c52e;
+	text-transform: uppercase;
+	line-height: 1.33;
+	font-family: 'Gilroy';
 }
 
 .description-slider a:hover {
@@ -86,16 +157,27 @@ main .name-slide {
 .column {
 	font-size: 36px;
 	color: #000000;
+	line-height: 1.33;
+	font-family: 'Gilroy';
 }
 
 .second-line {
 	font-size: 13px;
 	color: #464646;
+	line-height: 1.54;
+	font-family: 'OpenSans';
 }
 
 .container {
 	background-color: #f0c52e;
 	font-size: 18px;
+	opacity: 0.5;
+	line-height: 1.33;
+	font-family: 'Gilroy';
+}
+
+.container a {
+	
 }
 
 .items ul {
@@ -111,11 +193,15 @@ main .name-slide {
   height: 8px;
   background-color: #f0c52e;
   color: #000000;
+  font-size: 18px;
+  line-height: 1.33;
+  font-family: 'Gilroy';
 }
 
 .services button:hover {
 	width: 160px;
 	height: 40px;
+	line-height: normal;
 }
 
 .services button:active {
@@ -123,43 +209,47 @@ main .name-slide {
 	height: 40px;
 	background-color: #000000;
 	color: #f7e184;
+	line-height: normal;
 }
 
 .service {
 	font-size: 47px;
 	color: #000000;
+	line-height: 1.02;
+	font-family: 'Gilroy';
 }
 
 .service-description {
 	color: #464646;
 }
 
-.about_us h2 {
+.title-2 {
 	font-size: 47px;
 	color: #000000;
+	line-height: 1.02;
+	font-family: 'Gilroy';
 }
 
-.about_us p {
+.about-us p {
 
 	color: #464646;
 }
 
-.about_us ul {
+.about-us ul {
 	list-style: none;
 	font-size: 16px;
 	color: #000000;
 	font-weight: 800;
+	line-height: 2.5;
+	font-family: 'Gilroy';
 }
 
-.about_us a {
+.about-us a {
 	font-size: 18px;
 	color: #000000;
 	background-color: #f0c52e;
-}
-
-.contacts h2 {
-	font-size: 47px;
-	color: #000000;
+	
+	line-height: 1.33;
 }
 
 .contacts p {
@@ -167,23 +257,10 @@ main .name-slide {
 	color: #464646;
 }
 
-.contacts button {
-	font-size: 18px;
-	color: #000000;
-	background-color: #f0c52e;
-}
-
 .footer {
 	background-color: #464646;
 }
 
-/*
-Хоть убей, не понимаю, как изменить цвет надписи. Пробовал и бекграунд колов и просто колор, гуглил, есть варианты через фильтры, но.. неуверен
-
-.left-footer img {
-	color: #ffc600;
-}
-*/
 
 .left-footer .address {
 	color: #ffffff;
@@ -194,35 +271,35 @@ main .name-slide {
 	font-size: 18px;
 	color: #ffffff;
 	font-weight: 800;
+	text-transform: uppercase;
+	line-height: 1.33;
+	font-family: 'Gilroy';
 }
 
 .right-footer a {
 	color: rgba(255, 255, 255, 0.7);
-
+	
+	line-height: 2.4;
 }
 
 .right-footer .phone {
 	color: #ffffff;
+	line-height: 2;
 }
 
 .right-footer button {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-.message_us p {
+.message-us p {
 	color: #000000;
 	font-size: 18px;
+	font-family: 'Gilroy';
 }
 
-.message_us input {
+.message-us input {
 	color: rgba(70, 70, 70, 0.4);
 	font-size: 14px;
-}
-
-.message_us button {
-	font-size: 18px;
-	color: #000000;
-	background-color: #f0c52e;
 }
 
 .brands ul {
@@ -232,6 +309,7 @@ main .name-slide {
 .links a {
 	color: rgba(0, 0, 0, 0.3);
 	font-size: 14px;
+	line-hegit: 1.71;	
 }
 
 .links a:hover {
@@ -242,11 +320,14 @@ main .name-slide {
 	color: rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+.h2 {
 	background-color: #d9d9d9;
 	font-size: 16px;
 	color: #000000;
 	font-weight: 800;
+	line-height: 1.5;	
+	text-transform: uppercase;
+	font-family: 'Gilroy';
 }
 
 .filter {
@@ -254,15 +335,13 @@ h2 {
 }
 
 .sorting p {
-	font-size: 16px;
-	color: #000000;
-	font-weight: 800;
-	text-transform: uppercase;
+	background-color: #ebebeb;
 }
 
 .sorting button {
 	font-size: 14px;
 	color: rgba(0, 0, 0, 0.3);
+	line-height: 1.29;
 }
 
 .sorting button:active {
@@ -289,23 +368,28 @@ h2 {
 	color: #000000;
 	font-size: 18px;
 	font-weight: 800;
+	line-height: 1.33;
 }
 
 .range p {
 	color: rgba(0, 0, 0, 0.2);
 	font-size: 14px;
 	font-weight: 400;
+	line-height: 1.71;
 }
 
 .filter legend {
 	color: #000000;
 	font-size: 18px;
 	font-weight: 800;
+	line-height: 1.33;
+	font-family: 'Gilroy';
 }
 
-.filter ul {
-font-size: 14px;
-list-style: none;
+.filter li {
+	font-size: 14px;
+	list-style: none;
+	line-height: 2.86;
 }
 
 .filter button {
@@ -318,11 +402,14 @@ list-style: none;
 	font-weight: 800;
 	font-size: 18px;
 	color: #000000;
+	line-height: 1.33;
+	font-family: 'Gilroy';
 }
 
 .prices {
 	font-size: 16px;
 	color: #464646;
+	line-height: 1.5;
 }
 
 .pages {
@@ -334,6 +421,8 @@ list-style: none;
 	font-size: 16px;
 	font-weight: 800;
 	background-color: #ebebeb;
+	line-height: 1.5;
+	font-family: 'Gilroy';
 }
 
 .pages button:active {
@@ -360,14 +449,12 @@ list-style: none;
 }
 
 .item-hover button:hover {
-	width: 200px;
-	height: 40px;
+
 }
 
 .item-hover button:active {
 	color: rgba(0, 0, 0, 0.3);
-	width: 200px;
-	height: 40px;
+
 }
 
 .item-hover  .second-times {
@@ -376,6 +463,7 @@ list-style: none;
 	background-color: #eeeeee;
 	width: 144px;
 	height: 13px;
+	line-height: 2.77;
 }
 
 .item-hover .second-times:hover {
@@ -392,6 +480,7 @@ list-style: none;
 
 .social-footer a {
 	opacity: 0.3;
+	
 }
 
 .logo-footer {
@@ -414,13 +503,10 @@ list-style: none;
 	opacity: 0.1;
 }
 
-.htmlacademy {
+.htmlacademy svg {
 	fill: #ffc600;;
 }
 
-body {
- font-size: 15px;
-}
 
 .visually-hidden {
 	position: absolute;
