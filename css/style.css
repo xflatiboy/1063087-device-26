@@ -48,11 +48,13 @@ img {
 
 .header input {
 	color: rgba(0, 0, 0, 0.3);
+	font-weight: 300;
 }
 
 .header a {
 	color: #000000;
-	
+	font-weight: 300;
+	letter-spacing: 0.15px;
 }
 
 .header .search {
@@ -62,6 +64,8 @@ img {
 .header input:focus ~ .search {
 	display: block;
 	color: #000000;
+	font-weight: 300;
+	letter-spacing: 0.15px;
 }
 
 .header input:hover {
@@ -76,12 +80,13 @@ img {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.h1 {
+.title-1 {
 	font-size: 47px;
 	color: #000000;
 	font-weight: 800;
 	line-height: 1.02;
-	font-family: 'Gilroy';
+	font-family: 'Gilroy', Arial, sans-serif;
+	letter-spacing: 0.47px;
 }
 
 .index-navigation a {
@@ -90,14 +95,16 @@ img {
 	font-weight: 800;
 	text-transform: uppercase;
 	line-height: 1.33;
-	font-family: 'Gilroy';
+	font-family: 'Gilroy', Arial, sans-serif;
+	letter-spacing: 3.6px;
 }
 
 .menu a {
 	color: #000000;
 	font-weight: 300;
 	text-transform: none;
-	font-family: 'OpenSans';
+	font-family: unset;
+	letter-spacing: 0.15px;
 }
 
 .main-navigation a {
@@ -126,12 +133,15 @@ main .name-slide {
 	color: #000000;
 	font-weight: 800;
 	line-height: 1.19;
-	font-family: 'Gilroy';
+	font-family: 'Gilroy', Arial, sans-serif;
+	letter-spacing: 0.47px;
 }
 
 
 .description-slider {
 	color: #464646;
+	font-weight: 300;
+	letter-spacing: 0.15px;
 }
 
 .button {
@@ -140,32 +150,35 @@ main .name-slide {
 	background-color: #f0c52e;
 	text-transform: uppercase;
 	line-height: 1.33;
-	font-family: 'Gilroy';
+	font-family: 'Gilroy', Arial, sans-serif;
+	font-weight: 800;
+	letter-spacing: 3.6px;
 }
 
 .description-slider a:hover {
-	width: 220px;
-	height: 40px;
+
 }
 
 .description-slider a:active {
 	color: rgba(0, 0, 0, 0.3);
-	width: 220px;
-	height: 40px;
+
 }
 
 .column {
 	font-size: 36px;
 	color: #000000;
 	line-height: 1.33;
-	font-family: 'Gilroy';
+	font-family: 'Gilroy', Arial, sans-serif;
+	font-weight: 300;
+	letter-spacing: 0.36px;
 }
 
 .second-line {
 	font-size: 13px;
 	color: #464646;
 	line-height: 1.54;
-	font-family: 'OpenSans';
+	font-family: unset;
+	letter-spacing: 0.13px;
 }
 
 .container {
@@ -173,11 +186,9 @@ main .name-slide {
 	font-size: 18px;
 	opacity: 0.5;
 	line-height: 1.33;
-	font-family: 'Gilroy';
-}
-
-.container a {
-	
+	font-family: 'Gilroy', Arial, sans-serif;
+	font-weight: 800;
+	letter-spacing: 0.18px;
 }
 
 .items ul {
@@ -195,7 +206,9 @@ main .name-slide {
   color: #000000;
   font-size: 18px;
   line-height: 1.33;
-  font-family: 'Gilroy';
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-weight: 800;
+  letter-spacing: 3.6px;
 }
 
 .services button:hover {
@@ -216,22 +229,28 @@ main .name-slide {
 	font-size: 47px;
 	color: #000000;
 	line-height: 1.02;
-	font-family: 'Gilroy';
+	font-family: 'Gilroy', Arial, sans-serif;
+	font-weight: 800;
+	letter-spacing: 0.47px;
 }
 
 .service-description {
 	color: #464646;
+	font-weight: 300;
+	letter-spacing: 0.15px;
 }
 
 .title-2 {
 	font-size: 47px;
 	color: #000000;
 	line-height: 1.02;
-	font-family: 'Gilroy';
+	font-family: 'Gilroy', Arial, sans-serif;
+	font-weight: 800;
+	letter-spacing: 0.47px;
 }
 
 .about-us p {
-
+	font-weight: 300;
 	color: #464646;
 }
 
@@ -241,7 +260,7 @@ main .name-slide {
 	color: #000000;
 	font-weight: 800;
 	line-height: 2.5;
-	font-family: 'Gilroy';
+	font-family: 'Gilroy', Arial, sans-serif;
 }
 
 .about-us a {
@@ -253,7 +272,7 @@ main .name-slide {
 }
 
 .contacts p {
-
+	font-weight: 300;
 	color: #464646;
 }
 
@@ -264,6 +283,7 @@ main .name-slide {
 
 .left-footer .address {
 	color: #ffffff;
+	font-weight: 300;
 
 }
 
@@ -273,18 +293,22 @@ main .name-slide {
 	font-weight: 800;
 	text-transform: uppercase;
 	line-height: 1.33;
-	font-family: 'Gilroy';
+	font-family: 'Gilroy', Arial, sans-serif;
+	letter-spacing: 3.6px;
 }
 
 .right-footer a {
 	color: rgba(255, 255, 255, 0.7);
-	
+	font-weight: 300;
 	line-height: 2.4;
+	letter-spacing: 0.15px;
 }
 
 .right-footer .phone {
 	color: #ffffff;
 	line-height: 2;
+	font-weight: 300;
+	letter-spacing: unset;
 }
 
 .right-footer button {
@@ -294,12 +318,14 @@ main .name-slide {
 .message-us p {
 	color: #000000;
 	font-size: 18px;
-	font-family: 'Gilroy';
+	font-family: 'Gilroy', Arial, sans-serif;
+	font-weight: 800;
 }
 
 .message-us input {
 	color: rgba(70, 70, 70, 0.4);
 	font-size: 14px;
+	font-weight: 400;
 }
 
 .brands ul {
@@ -309,7 +335,9 @@ main .name-slide {
 .links a {
 	color: rgba(0, 0, 0, 0.3);
 	font-size: 14px;
-	line-hegit: 1.71;	
+	line-hegit: 1.71;
+	font-weight: 300;
+	letter-spacing: 0.14px;
 }
 
 .links a:hover {
@@ -327,7 +355,8 @@ main .name-slide {
 	font-weight: 800;
 	line-height: 1.5;	
 	text-transform: uppercase;
-	font-family: 'Gilroy';
+	font-family: 'Gilroy', Arial, sans-serif;
+	letter-spacing: 3.2px;
 }
 
 .filter {
@@ -342,6 +371,7 @@ main .name-slide {
 	font-size: 14px;
 	color: rgba(0, 0, 0, 0.3);
 	line-height: 1.29;
+	font-weight: 400;
 }
 
 .sorting button:active {
@@ -356,11 +386,13 @@ main .name-slide {
 	fill: rgba(0, 0, 0, 0.3);
 }
 
-.down button:hover, .up button:hover {
+.down button:hover,
+.up button:hover {
 	fill: rgba(0, 0, 0, 0.6);
 }
 
-.down button:active, .up button:active {
+.down button:active,
+.up button:active {
 	fill: #000000;
 }
 
@@ -369,13 +401,15 @@ main .name-slide {
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 1.33;
+	letter-spacing: 0.18px;
 }
 
 .range p {
 	color: rgba(0, 0, 0, 0.2);
 	font-size: 14px;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 1.71;
+	letter-spacing: unset;
 }
 
 .filter legend {
@@ -383,13 +417,16 @@ main .name-slide {
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 1.33;
-	font-family: 'Gilroy';
+	font-family: 'Gilroy', Arial, sans-serif;
+	letter-spacing: 0.18px;
 }
 
 .filter li {
 	font-size: 14px;
 	list-style: none;
 	line-height: 2.86;
+	font-weight: 300;
+	letter-spacing: 0.14px;
 }
 
 .filter button {
@@ -403,13 +440,16 @@ main .name-slide {
 	font-size: 18px;
 	color: #000000;
 	line-height: 1.33;
-	font-family: 'Gilroy';
+	font-family: 'Gilroy', Arial, sans-serif;
+	letter-spacing: 0.18px;
 }
 
 .prices {
 	font-size: 16px;
 	color: #464646;
 	line-height: 1.5;
+	font-weight: 300;
+	letter-spacing: 0.16px;
 }
 
 .pages {
@@ -422,7 +462,8 @@ main .name-slide {
 	font-weight: 800;
 	background-color: #ebebeb;
 	line-height: 1.5;
-	font-family: 'Gilroy';
+	font-family: 'Gilroy', Arial, sans-serif;
+	letter-spacing: 3.2px;
 }
 
 .pages button:active {
@@ -433,12 +474,14 @@ main .name-slide {
 	color: rgba(0, 0, 0, 0.6);
 }
 
-.back button:active, .forward button:active {
+.back button:active,
+.forward button:active {
 	color:rgba(0, 0, 0, 0.3);
 	background-color: #d9d9d9;
 }
 
-.back button:hover, .forward button:hover {
+.back button:hover,
+.forward button:hover {
 	background-color: #d9d9d9;
 }
 
@@ -464,6 +507,8 @@ main .name-slide {
 	width: 144px;
 	height: 13px;
 	line-height: 2.77;
+	font-weight: 300;
+	letter-spacing: 0.13px;
 }
 
 .item-hover .second-times:hover {
@@ -487,11 +532,17 @@ main .name-slide {
 	fill: #ffc600;
 }
 
-.logo-footer:hover, .center-footer a:hover, .htmlacademy:hover, .social-footer a:hover {
+.logo-footer:hover,
+.center-footer a:hover,
+.htmlacademy:hover,
+.social-footer a:hover {
 	opacity: 0.6;
 }
 
-.logo-footer:active, .center-footer a:active, .htmlacademy:active, .right-footer a:active {
+.logo-footer:active,
+.center-footer a:active,
+.htmlacademy:active,
+.right-footer a:active {
 	opacity: 0.3;
 }
 
