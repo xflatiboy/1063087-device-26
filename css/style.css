@@ -32,6 +32,7 @@ body {
 	font-family: 'OpenSans', Arial, sans-serif;
 	margin: 0;
 	padding: 0; 
+	width: 1440px;
 }
 
 a {
@@ -44,6 +45,18 @@ img {
 
 .header {
 	background-color: #f0c52e;
+	width: 1160px;
+	height: 299px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+.logo {
+	padding-left: 59px;	
+	width: 163px;
+	height: 35px;
 }
 
 .header input {
@@ -89,6 +102,11 @@ img {
 	letter-spacing: 0.47px;
 }
 
+.index-navigation {
+	display: flex;
+	flex-direction: column;
+}
+
 .index-navigation a {
 	font-size: 18px;
 	color: #000000;
@@ -105,6 +123,7 @@ img {
 	text-transform: none;
 	font-family: unset;
 	letter-spacing: 0.15px;
+	display: block;
 }
 
 .main-navigation a {
@@ -135,13 +154,50 @@ main .name-slide {
 	line-height: 1.19;
 	font-family: 'Gilroy', Arial, sans-serif;
 	letter-spacing: 0.47px;
+
 }
 
+.slide {
+	display: flex;
+}
+
+.test3 {
+	display: flex;
+	flex-direction: column;
+}
+
+.slide img {
+	width: 384px;
+	height: 486px;
+}
+
+.test {
+	display: flex;
+	flex-direction: column;
+	margin-left: 125px;
+	margin-top: -80px;
+	margin-bottom: 71px;
+}
+
+.description-slider p {
+	margin: 0;
+	margin-bottom: 64px;
+}
+
+.test .name-slide {
+	margin-bottom: 31px;
+}
 
 .description-slider {
 	color: #464646;
 	font-weight: 300;
 	letter-spacing: 0.15px;
+}
+
+.test2 {
+	display: flex;
+	margin-left: 126px;
+	justify-content: space-between;
 }
 
 .button {
@@ -173,6 +229,14 @@ main .name-slide {
 	letter-spacing: 0.36px;
 }
 
+.items {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	justify-content: space-between;
+	width: 1160px;
+}
+
 .second-line {
 	font-size: 13px;
 	color: #464646;
@@ -189,14 +253,38 @@ main .name-slide {
 	font-family: 'Gilroy', Arial, sans-serif;
 	font-weight: 800;
 	letter-spacing: 0.18px;
+	width: 160px;
+	height: 160px;
 }
+
+
 
 .items ul {
 	list-style: none;
 }
 
+.services-flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.service-flex {
+	display: flex;
+	flex-direction: column;
+	margin-left: 123px;
+}
+
 .services {
+	width: 1440px;
+	height: 288px;
 	background-color: #e5e5e5;
+	display: flex;
+}
+
+.services img {
+	width: 136px;
+	height: 164px;
+	margin-left: 123px;
 }
 
 .services button {
@@ -209,6 +297,7 @@ main .name-slide {
   font-family: 'Gilroy', Arial, sans-serif;
   font-weight: 800;
   letter-spacing: 3.6px;
+  margin-bottom: 49px;
 }
 
 .services button:hover {
@@ -232,6 +321,7 @@ main .name-slide {
 	font-family: 'Gilroy', Arial, sans-serif;
 	font-weight: 800;
 	letter-spacing: 0.47px;
+	margin-bottom: 43px;
 }
 
 .service-description {
@@ -247,6 +337,22 @@ main .name-slide {
 	font-family: 'Gilroy', Arial, sans-serif;
 	font-weight: 800;
 	letter-spacing: 0.47px;
+}
+
+.information {
+	display: flex;
+	margin-left: 139px;
+}
+
+.contacts1 {
+	display: flex;
+	flex-direction: column;
+	margin-left: 138px;
+}
+
+.about-us1 {
+	display: flex;
+	flex-direction: column;
 }
 
 .about-us p {
@@ -278,13 +384,65 @@ main .name-slide {
 
 .footer {
 	background-color: #464646;
+	width: 1440px;
+	height: 323px;
+	margin-top: 93px;
 }
 
+.hiddendiv {
+	width: 1160px;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+}
+
+.left-footer {
+	display: flex;
+	flex-direction: column;
+	padding-top: 65px;
+	margin-bottom: 168px;
+	margin-right: 166px;
+}
+
+.center-footer {
+	display: flex;	
+	margin-top: 142px;
+	justify-content: space-between;
+}
+
+.right-footer {
+	display: flex;
+	flex-direction: column;
+	margin-left: 45px;
+	margin-top: 73px;
+}
+
+.helper {
+	display: flex;
+}
+
+.uniteddiv {
+	display: flex;
+	flex-direction: column;
+}
+
+.social-footer {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 70px;
+	justify-content: space-between;
+}
+
+.htmlacademy {
+	margin-top: auto;
+	margin-left: auto;
+}
 
 .left-footer .address {
 	color: #ffffff;
 	font-weight: 300;
-
+	margin-top: 40px;
 }
 
 .center-footer a {
@@ -295,6 +453,7 @@ main .name-slide {
 	line-height: 1.33;
 	font-family: 'Gilroy', Arial, sans-serif;
 	letter-spacing: 3.6px;
+	margin-left: 38px;
 }
 
 .right-footer a {
@@ -302,6 +461,7 @@ main .name-slide {
 	font-weight: 300;
 	line-height: 2.4;
 	letter-spacing: 0.15px;
+	padding-right: 41px;
 }
 
 .right-footer .phone {
@@ -309,6 +469,8 @@ main .name-slide {
 	line-height: 2;
 	font-weight: 300;
 	letter-spacing: unset;
+	margin-top: 52px;
+	margin-left: auto;
 }
 
 .right-footer button {
@@ -326,6 +488,11 @@ main .name-slide {
 	color: rgba(70, 70, 70, 0.4);
 	font-size: 14px;
 	font-weight: 400;
+}
+
+.brands-flex {
+	display: flex;
+	flex-direction: row; 
 }
 
 .brands ul {
