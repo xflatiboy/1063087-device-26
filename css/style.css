@@ -35,13 +35,15 @@ body {
 	width: 1440px;
 }
 
+
 a {
 	text-decoration: none;
 }
 
 img {
-	
+	width: 100%;
 }
+
 
 .header {
 	background-color: #f0c52e;
@@ -55,8 +57,16 @@ img {
 
 .logo {
 	padding-left: 59px;	
+}
+
+.logo img {
 	width: 163px;
 	height: 35px;
+}
+
+.svg {
+	width: 16px;
+	height: 16px;
 }
 
 .header input {
@@ -102,9 +112,22 @@ img {
 	letter-spacing: 0.47px;
 }
 
-.index-navigation {
+.flex-navigation {
 	display: flex;
-	flex-direction: column;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-left: 60px;
+}
+
+.flex-navigation li:nth-child(2) {
+	margin-left: 500px;
+}
+
+
+.flex-menu {
+	display: none;
+
 }
 
 .index-navigation a {
@@ -115,6 +138,10 @@ img {
 	line-height: 1.33;
 	font-family: 'Gilroy', Arial, sans-serif;
 	letter-spacing: 3.6px;
+}
+
+.catalog-menu:hover .flex-menu {
+	display: block;
 }
 
 .menu a {
@@ -159,9 +186,11 @@ main .name-slide {
 
 .slide {
 	display: flex;
+	margin-left: 230px;
+	height: 486px;
 }
 
-.test3 {
+.flex-slide {
 	display: flex;
 	flex-direction: column;
 }
@@ -171,7 +200,7 @@ main .name-slide {
 	height: 486px;
 }
 
-.test {
+.flex-description {
 	display: flex;
 	flex-direction: column;
 	margin-left: 125px;
@@ -179,25 +208,27 @@ main .name-slide {
 	margin-bottom: 71px;
 }
 
-.description-slider p {
-	margin: 0;
-	margin-bottom: 64px;
-}
-
-.test .name-slide {
-	margin-bottom: 31px;
-}
-
 .description-slider {
+	margin: 0;
+	margin-bottom: 62px;
 	color: #464646;
 	font-weight: 300;
 	letter-spacing: 0.15px;
 }
 
-.test2 {
+.flex-description .name-slide {
+	margin-bottom: 31px;
+}
+
+
+.flex-items {
 	display: flex;
 	margin-left: 126px;
 	justify-content: space-between;
+}
+
+.flex-description .button {
+	margin-bottom: 71px;
 }
 
 .button {
@@ -211,11 +242,11 @@ main .name-slide {
 	letter-spacing: 3.6px;
 }
 
-.description-slider a:hover {
+.flex-description a:hover {
 
 }
 
-.description-slider a:active {
+.flex-description a:active {
 	color: rgba(0, 0, 0, 0.3);
 
 }
@@ -227,13 +258,21 @@ main .name-slide {
 	font-family: 'Gilroy', Arial, sans-serif;
 	font-weight: 300;
 	letter-spacing: 0.36px;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
 .items {
 	display: flex;
-	margin: 0;
-	padding: 0;
 	justify-content: space-between;
+	list-style: none;
+	padding: 0;
+}
+
+.section-items {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 106px;
 	width: 1160px;
 }
 
@@ -246,39 +285,58 @@ main .name-slide {
 }
 
 .container {
-	background-color: #f0c52e;
-	font-size: 18px;
-	opacity: 0.5;
-	line-height: 1.33;
-	font-family: 'Gilroy', Arial, sans-serif;
-	font-weight: 800;
-	letter-spacing: 0.18px;
+	display: flex;
+	background-color: rgb(240, 197, 46, 0.5);
 	width: 160px;
 	height: 160px;
 }
 
+.items a:hover .container,
+.items a:focus .container {
+	background-color: rgb(240, 197, 46);
+}
 
+.items a:active .container img {	
+	opacity: 0.5;
+}
 
-.items ul {
-	list-style: none;
+.items li {
+	width: 160px;
+	font-family: 'Gilroy', Arial, sans-serif;
+	font-size: 18px;	
+	line-height: 1.33;
+	font-weight: 800;
+	letter-spacing: 0.18px;
+}
+
+.container img {
+	margin-top: 43px;
+}
+
+.text-items {
+	margin-top: 39px;
+	color: #000000;
 }
 
 .services-flex {
 	display: flex;
 	flex-direction: column;
+	margin-left: 140px;
 }
 
-.service-flex {
-	display: flex;
-	flex-direction: column;
-	margin-left: 123px;
-}
+
 
 .services {
 	width: 1440px;
 	height: 288px;
 	background-color: #e5e5e5;
 	display: flex;
+}
+
+.service-flex {
+	display: flex;
+	flex-direction: column;
+	margin-left: 123px;
 }
 
 .services img {
@@ -344,13 +402,13 @@ main .name-slide {
 	margin-left: 139px;
 }
 
-.contacts1 {
+.contacts {
 	display: flex;
 	flex-direction: column;
 	margin-left: 138px;
 }
 
-.about-us1 {
+.about-us {
 	display: flex;
 	flex-direction: column;
 }
@@ -387,6 +445,7 @@ main .name-slide {
 	width: 1440px;
 	height: 323px;
 	margin-top: 93px;
+	margin-left: 0;
 }
 
 .hiddendiv {
@@ -432,10 +491,11 @@ main .name-slide {
 	margin-right: auto;
 	margin-top: 70px;
 	justify-content: space-between;
+	width: 141px;
 }
 
 .htmlacademy {
-	margin-top: auto;
+	margin-top: 69px;
 	margin-left: auto;
 }
 
@@ -490,9 +550,19 @@ main .name-slide {
 	font-weight: 400;
 }
 
+.brands {
+	width: 1160px;
+	margin-left: 140px;
+	margin-top: 94px;
+	margin-bottom: 151px;
+}
+
 .brands-flex {
 	display: flex;
-	flex-direction: row; 
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 0;
 }
 
 .brands ul {

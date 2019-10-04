@@ -6,10 +6,10 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body>
+	<body>		
 		<header class="header">
 			<a class="logo" href="index.html" aria-label="на главную страницу"><img src="img/device.svg" alt="логотип device"></a>
-			<img src="img/search.svg">
+			<img class="svg" src="img/search.svg">
 			<form action="" method="get">
 				<input name="search" placeholder="Поиск по сайту" type="search">
 				<button class="search" type="submit">Найти</button>			
@@ -19,20 +19,21 @@
 			<a href="#" title="ссылка на страницу сравнения товаров" aria-label="на страницу сравнения товаров">Сравнить</a>
 			<a href="#" title="ссылка на страницу корзины, с выбранными товарами" aria-label="на страницу корзины, с выбранными товарами">Корзина</a>
 			<nav class="index-navigation">
-				<!--тут у нас будет всплывающая менюшка-->
-				<ul>
+				<ul class="flex-navigation">
 					<li>
-						<a href="catalog.html" title="ссылка на каталог товаров" aria-label="Каталог товаров">Каталог товаров</a>
-						<ul class="menu">
-							<li><a href="#" aria-label="страница с очками виртуальной реалности">Виртуальная реальность</a></li>
-							<li><a href="#" aria-label="страница с моноподами для селфи">Моноподы для селфи</a></li>
-							<li><a href="#" aria-label="страница с экшн-камерами">Экшн-камеры</a></li>
-						</ul>
-						<ul class="menu">
-							<li><a href="#" aria-label="страница с фитнес-браслетами">Фитнес-браслеты</a></li>
-							<li><a href="#" aria-label="страница с умными часами">Умные часы</a></li>
-						</ul>
-						<p class="menu"><a href="#" aria-label="страница с квадрокоптерами">Квадрокоптеры</a></p>
+						<a class="catalog-menu" href="catalog.html" title="ссылка на каталог товаров" aria-label="Каталог товаров">Каталог товаров</a>
+						<div class="flex-menu">
+							<ul class="menu">
+								<li><a href="#" aria-label="страница с очками виртуальной реалности">Виртуальная реальность</a></li>
+								<li><a href="#" aria-label="страница с моноподами для селфи">Моноподы для селфи</a></li>
+								<li><a href="#" aria-label="страница с экшн-камерами">Экшн-камеры</a></li>
+							</ul>
+							<ul class="menu">
+								<li><a href="#" aria-label="страница с фитнес-браслетами">Фитнес-браслеты</a></li>
+								<li><a href="#" aria-label="страница с умными часами">Умные часы</a></li>
+							</ul>
+							<p class="menu"><a href="#" aria-label="страница с квадрокоптерами">Квадрокоптеры</a></p>
+						</div>
 					</li>								
 					<li>
 						<a href="#" title="ссылка на страницу с доставкой" aria-label="Информация о доставке">Доставка</a>
@@ -52,19 +53,19 @@
 				<div class="slide">
 					<h3 class="visually-hidden">Селфи палки</h3>
 					<img src="img/slider-1-png.png" alt="первый слайд, картинка селфи палок">
-					<div class="test3">
-						<div class="test">			
+					<div class="flex-slide">
+						<div class="flex-description">			
 							<p class="name-slide">Делай селфи,<br>
 								как Бен Стиллер</p>
-							<div  class="description-slider">
-								<p>
+							<p  class="description-slider">
 									Самая длинная палка для селфи доступна в нашем магазине.<br>
 									Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-								</p> 			
+							</p>
+							<div> 			
 								<a class="button" href="#" title="ссылка на страницу данного товара" aria-label="на страницу с описанным товаром">Подробнее</a>
 							</div>
 						</div>
-						<div class="test2">		
+						<div class="flex-items">		
 							<div class="column">
 								<p>8,5м</p>
 								<p class="second-line">Длина палки</p>
@@ -80,11 +81,12 @@
 						</div>
 					</div>
 				</div>
+				<!--			
 				<div class="slide">
 					<h3 class="visually-hidden">Умные часы</h3>
 					<img src="img/slider-2-png.png" alt="второй слайд - картинка умных часов">
-					<div class="test3">
-						<div class="test">
+					<div class="flex-slide">
+						<div class="flex-description">
 							<p class="name-slide">Худеем<br>
 								правильно!
 							</p>
@@ -96,7 +98,7 @@
 								<a class="button" href="#" title="ссылка на страницу данного товара" aria-label="на страницу с описанным товаром">Подробнее</a>
 							</div>
 						</div>
-						<div class="test2">
+						<div class="flex-items">
 							<div class="column">
 								<p>48 часов</p>
 								<p class="second-line">Без подзарядки</p>
@@ -107,8 +109,8 @@
 				<div class="slide">
 					<h3 class="visually-hidden">Квадракоптер</h3>
 					<img src="img/slider-3-png.png" alt="третий слайд - картинка квадрокоптера">
-					<div class="test3">
-						<div class="test">
+					<div class="flex-slide">
+						<div class="flex-description">
 							<p class="name-slide">Порхает как бабочка,<br>
 								жалит как пчела!
 							</p>
@@ -120,7 +122,7 @@
 								<a class="button" href="#" title="ссылка на страницу данного товара" aria-label="на страницу с описанным товаром">Подробнее</a>
 							</div>
 						</div>
-						<div class="test2">
+						<div class="flex-items">
 							<div class="column">
 								<p>800 м</p>
 								<p class="second-line">Дальность полета</p>
@@ -132,15 +134,46 @@
 						</div>
 					</div>
 				</div>
+			-->
 			</section>
-			<section class="items">  		 
-				<ul>
-					<li class="container"><a href="#"><img src="img/popular-1.svg" alt="картинка очков">Виртуальная реальность</a></li>
-					<li class="container"><a href="#"><img src="img/popular-2.svg" alt="картинка моноподов">Моноподы для селфи</a></li>
-					<li class="container"><a href="#"><img src="img/popular-3.svg" alt="картинка экшн-камер">Экшн-камеры</a></li>
-					<li class="container"><a href="#"><img src="img/popular-4.svg" alt="картинка фитнес браслетов">Фитнес-браслеты</a></li>
-					<li class="container"><a href="#"><img src="img/popular-5.svg" alt="картинка умных часов">Умные часы</a></li>
-					<li class="container"><a href="#"><img src="img/popular-6.svg" alt="картинка квадрокоптеров">Квадрокоптеры</a></li>
+			<section class="section-items">  		 
+				<ul class="items">
+					<li>
+						<a href="#">
+							<span class="container"><img src="img/popular-1.svg" alt="картинка очков" width="97px" height="55px"></span>
+							<p class="text-items">Виртуальная реальность</p>
+						</a>						
+					</li>					
+					<li>
+						<a href="#">
+							<div class="container"><img src="img/popular-2.svg" alt="картинка моноподов" width="86px" height="117px"></div>
+							<p class="text-items">Моноподы для селфи</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="container"><img src="img/popular-3.svg" alt="картинка экшн-камер" width="71px" height="87px"></div>
+							<p class="text-items">Экшн-камеры</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="container"><img src="img/popular-4.svg" alt="картинка фитнес браслетов" width="107px" height="65px"></div>
+							<p class="text-items">Фитнес-браслеты</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="container"><img src="img/popular-5.svg" alt="картинка умных часов" width="56px" height="98px"></div>
+							<p class="text-items">Умные часы</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="container"><img src="img/popular-6.svg" alt="картинка квадрокоптеров" width="132px" height="69px"></div>
+							<p class="text-items">Квадрокоптеры</p>
+						</a>
+					</li>
 				</ul>
 			</section>
 			<section class="services">
@@ -180,15 +213,13 @@
 			</section>  	  
 			<section class="brands">
 				<h2 class="visually-hidden">Представленные бренды</h2>
-				<div class="brands-flex">
-					<ul>
-						<li><img src="img/logo-1-jpg.jpg" alt="логотип представленного бренда dji"></li>
-						<li><img src="img/logo-2-jpg.jpg" alt="логотип представленного бренда spgadgets"></li>
-						<li><img src="img/logo-3-jpg.jpg" alt="логотип представленного бренда gopro"></li>
-						<li><img src="img/logo-4-jpg.jpg" alt="логотип представленного бренда vive"></li>
-					</ul>
-				</div>
-			</section>
+				<ul class="brands-flex">
+					<li><a href="#"><img src="img/logo-1-jpg.jpg" alt="логотип представленного бренда dji"></a></li>
+					<li><a href="#"><img src="img/logo-2-jpg.jpg" alt="логотип представленного бренда spgadgets"></a></li>
+					<li><a href="#"><img src="img/logo-3-jpg.jpg" alt="логотип представленного бренда gopro"></a></li>
+					<li><a href="#"><img src="img/logo-4-jpg.jpg" alt="логотип представленного бренда vive"></a></li>
+				</ul>
+				</section>
 			<section class="information">
 				<div class="about-us">
 					<h2 class="title-2">О нас</h2>
@@ -205,7 +236,9 @@
 						<li>Автотрейдинг</li>
 						<li>ЖелДорЭкспедиция</li>
 					</ul>
-					<a class="button" href="#" aria-label="на страницу с информацией о нас">Подробнее о нас</a>
+					<div>
+						<a class="button" href="#" aria-label="на страницу с информацией о нас">Подробнее о нас</a>
+					</div>
 				</div>
 				<div class="contacts">  		
 					<h2 class="title-2">Контакты</h2>
@@ -215,10 +248,12 @@
 					<!-- улучшить до кнопки с помощью ява скрипта -->
 					<a href="https://www.google.ru/maps/place/%D1%83%D0%BB.+%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9,+15,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+119311/@55.687034,37.5274293,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54cf65f5c8955:0x694710ccd55501e!8m2!3d55.687031!4d37.529618" aria-label="ссылка на наш офис на гугл-картах">
 						<img src="img/map-jpg.jpg" alt="Наш офис находится по адресу: город Москва, улица Строителей, дом 15">
-					</a>	
-					<button class="button" type="submit">
-						Напишите нам	
-					</button>
+					</a>
+					<div>
+						<button class="button" type="submit">
+							Напишите нам	
+						</button>
+					</div>
 				</div>
 			</section>
 		</main>
@@ -307,6 +342,6 @@
 					<button type="submit">Войти</button>
 				</form>
 				<button type="button"><img src="img/modal-close.svg"></button>
-			</div>
+			</div>		
 	</body>
 </html>	
