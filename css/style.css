@@ -43,11 +43,11 @@ img {
 	width: 100%;
 }
 
-
-.header {
-	background-color: rgb(240, 197, 46, 0.5);
-	width: 1160px;
-	height: 299px;
+/*
+background-color: rgb(240, 197, 46, 0.5);
+*/
+.header {	
+	width: 1160px;	
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 20px;
@@ -55,10 +55,28 @@ img {
 	flex-direction: column;
 }
 
-.header-catalog {
+.header::after {
+	content: '';
 	background-color: rgb(240, 197, 46, 0.5);
 	width: 1160px;
-	height: 186px;
+	height: 299px;
+	position: absolute;
+	top: 50px;
+	z-index: -1;
+}
+
+.header-catalog::after {
+	content: '';
+	backgroudn-color: rgb(240, 197, 46, 0.5);
+	width: 1160px;
+	height: ;
+	position: absolute;
+	top: 50px;
+	z-index: -1;
+}
+
+.header-catalog {
+	width: 1160px;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 20px;
@@ -155,6 +173,7 @@ img {
 	margin-right: auto;
 	margin-left: auto;
 	width: 1160px;
+	justify-content: space-between;
 }
 
 .title-1 {
@@ -171,16 +190,15 @@ img {
 	display: flex;
 	margin-left: 60px;
 }
-
+/*
 .flex-navigation {
 	display: flex;
 	padding: 0;
 	justify-content: space-between;
 }
-
+*/
 .flex-menu {
 	display: none;
-
 }
 
 .index-navigation {
@@ -199,16 +217,25 @@ img {
 	letter-spacing: 3.6px;
 }
 
-.hidden-menu:hover .flex-menu {
+.flex-navigation:hover .flex-menu {
 	display: flex;
+	flex-direction: column;
+	position: absolution;
 }
 
 .services-menu {
 	display: flex;
-	margin: 0;
+	margin-right: 0;
+	position: relative;
+	padding-left: 0;
 }
 
 .services-menu li:nth-child(2) {
+	margin-left: 0;
+	margin-right: 100px;
+}
+
+.services-menu li:last-child {
 	margin-left: 38px;
 	margin-right: 114px;
 }
@@ -387,6 +414,7 @@ main .name-slide {
 	background-color: rgb(240, 197, 46, 0.5);
 	width: 160px;
 	height: 160px;
+	pointer-events: none;
 }
 
 .items a:hover .container,
@@ -600,7 +628,6 @@ main .name-slide {
 
 .htmlacademy {
 	margin-top: 69px;
-	margin-left: auto;
 }
 
 .address {
