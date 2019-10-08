@@ -190,13 +190,8 @@ background-color: rgb(240, 197, 46, 0.5);
 	display: flex;
 	margin-left: 60px;
 }
-/*
-.flex-navigation {
-	display: flex;
-	padding: 0;
-	justify-content: space-between;
-}
-*/
+
+
 .flex-menu {
 	display: none;
 }
@@ -217,10 +212,23 @@ background-color: rgb(240, 197, 46, 0.5);
 	letter-spacing: 3.6px;
 }
 
-.flex-navigation:hover .flex-menu {
+.flex-navigation li:hover .flex-menu {
 	display: flex;
-	flex-direction: column;
-	position: absolution;
+	position: absolute;
+	width: 1160px;
+	height: 129px;
+	background-color: rgb(240, 197, 46, 0.5);
+	left: -60px;
+	top: 65px;
+}
+
+.menu {
+	display: flex;
+	position: absolute;
+	width: 551px;
+	height: 129px;	
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .services-menu {
