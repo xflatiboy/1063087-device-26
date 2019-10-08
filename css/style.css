@@ -61,7 +61,7 @@ background-color: rgb(240, 197, 46, 0.5);
 	width: 1160px;
 	height: 299px;
 	position: absolute;
-	top: 50px;
+	top: 40px;
 	z-index: -1;
 }
 
@@ -86,7 +86,7 @@ background-color: rgb(240, 197, 46, 0.5);
 
 .header-top {
 	display: flex;
-	margin: 54px auto;
+	margin: 18px auto 15px;
 	padding: 0;
 	width: 1040px;
 	justify-content: space-between;
@@ -231,13 +231,13 @@ background-color: rgb(240, 197, 46, 0.5);
 }
 
 .services-menu li:nth-child(2) {
-	margin-left: 0;
-	margin-right: 100px;
+	margin-left: 320px;
+	margin-right: 35px;
 }
 
 .services-menu li:last-child {
-	margin-left: 38px;
-	margin-right: 114px;
+	margin-left: 110px;
+	margin-right: 0;
 }
 
 .menu a {
