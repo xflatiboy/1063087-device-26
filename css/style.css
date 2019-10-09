@@ -57,7 +57,7 @@ background-color: rgb(240, 197, 46, 0.5);
 
 .header::after {
 	content: '';
-	background-color: rgb(240, 197, 46, 0.5);
+	background-color: #F7E397;
 	width: 1160px;
 	height: 299px;
 	position: absolute;
@@ -67,7 +67,7 @@ background-color: rgb(240, 197, 46, 0.5);
 
 .header-catalog::after {
 	content: '';
-	backgroudn-color: rgb(240, 197, 46, 0.5);
+	backgroudn-color: #F7E397;
 	width: 1160px;
 	height: ;
 	position: absolute;
@@ -194,6 +194,8 @@ background-color: rgb(240, 197, 46, 0.5);
 
 .flex-menu {
 	display: none;
+	padding-left: 0;
+	position: absolute;
 }
 
 .index-navigation {
@@ -217,18 +219,21 @@ background-color: rgb(240, 197, 46, 0.5);
 	position: absolute;
 	width: 1160px;
 	height: 129px;
-	background-color: rgb(240, 197, 46, 0.5);
-	left: -60px;
-	top: 65px;
+	background-color: #F7E397;
 }
 
 .menu {
-	display: flex;
-	position: absolute;
-	width: 551px;
-	height: 129px;	
-	flex-wrap: wrap;
-	justify-content: space-between;
+	margin-top: 40px;
+	margin-right: 59px;
+	padding: 0;
+}
+
+.menu li {
+	padding-bottom: 16px;
+}
+
+.menu:last-child {
+	margin-left: 16px;
 }
 
 .services-menu {
@@ -238,12 +243,12 @@ background-color: rgb(240, 197, 46, 0.5);
 	padding-left: 0;
 }
 
-.services-menu li:nth-child(2) {
+.services-menu > li:nth-child(2) {
 	margin-left: 320px;
 	margin-right: 35px;
 }
 
-.services-menu li:last-child {
+.services-menu > li:last-child {
 	margin-left: 110px;
 	margin-right: 0;
 }
@@ -255,12 +260,12 @@ background-color: rgb(240, 197, 46, 0.5);
 	font-family: unset;
 	letter-spacing: 0.15px;
 	display: block;
+	font-size: 15px;
 }
 
 .main-navigation a {
 	font-size: 18px;
-	font-weight: 800;
-	
+	font-weight: 800;	
 }
 
 .index-navigation ul {
@@ -419,7 +424,7 @@ main .name-slide {
 
 .container {
 	display: flex;
-	background-color: rgb(240, 197, 46, 0.5);
+	background-color: #F7E397;
 	width: 160px;
 	height: 160px;
 	pointer-events: none;
