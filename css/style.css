@@ -220,11 +220,13 @@ background-color: rgb(240, 197, 46, 0.5);
 	width: 1160px;
 	height: 129px;
 	background-color: #F7E397;
+	left: -60px;
 }
 
 .menu {
 	margin-top: 40px;
 	margin-right: 59px;
+	margin-left: 65px;
 	padding: 0;
 }
 
