@@ -231,7 +231,11 @@ background-color: rgb(240, 197, 46, 0.5);
 }
 
 .menu li {
-	padding-bottom: 16px;
+	padding-bottom: 17px;
+}
+
+.menu:nth-child(2) {
+	margin-left: 0;
 }
 
 .menu:last-child {
