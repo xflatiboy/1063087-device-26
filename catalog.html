@@ -28,21 +28,24 @@
       </div>
       <nav class="index-navigation">
         <div class="flex-navigation">
-          <div class="hidden-menu">
-            <a class="catalog-menu" href="catalog.html" title="ссылка на каталог товаров" aria-label="Каталог товаров">Каталог товаров</a>
-            <div class="flex-menu">
-              <ul class="menu">
-                <li><a href="#" aria-label="страница с очками виртуальной реалности">Виртуальная реальность</a></li>
-                <li><a href="#" aria-label="страница с моноподами для селфи">Моноподы для селфи</a></li>                  <li><a href="#" aria-label="страница с экшн-камерами">Экшн-камеры</a></li>
-              </ul>
-              <ul class="menu">
-                <li><a href="#" aria-label="страница с фитнес-браслетами">Фитнес-браслеты</a></li>
-                <li><a href="#" aria-label="страница с умными часами">Умные часы</a></li>
-              </ul>
-              <p class="menu"><a href="#" aria-label="страница с квадрокоптерами">Квадрокоптеры</a></p>
-            </div>
-          </div>
-          <ul class="services-menu">                        
+          <ul class="services-menu">        
+            <li>
+              <a href="catalog.html" title="ссылка на каталог товаров" aria-label="Каталог товаров">Каталог&nbsp;товаров</a>
+              <div class="flex-menu">
+                <ul class="menu">
+                  <li><a href="#" aria-label="страница с очками виртуальной реалности">Виртуальная реальность</a></li>
+                  <li><a href="#" aria-label="страница с моноподами для селфи">Моноподы для селфи</a></li>                  
+                  <li><a href="#" aria-label="страница с экшн-камерами">Экшн-камеры</a></li>
+                </ul>
+                <ul class="menu">
+                  <li><a href="#" aria-label="страница с фитнес-браслетами">Фитнес-браслеты</a></li>
+                  <li><a href="#" aria-label="страница с умными часами">Умные часы</a></li>
+                </ul>
+                <ul class="menu">
+                  <li><a href="#" aria-label="страница с квадрокоптерами">Квадрокоптеры</a></p></li>
+                </ul>
+              </div>
+            </li>                                 
             <li>
               <a href="#" title="ссылка на страницу с доставкой" aria-label="Информация о доставке">Доставка</a>
             </li>
@@ -68,7 +71,7 @@
       <div class="main">
         <div class="filter-flex">
           <form class="filter" method="get" action="">
-            <h2 class="h2">Фильтр:</h2>
+            <h2 class="h2 filter-before">Фильтр:</h2>
             <div class="price">
               <p>Стоимость</p>
               <input type="range">
@@ -135,9 +138,9 @@
         <section class="products">
           <div class="sorting">
             <p class="h2">Сортировка:</p>
-            <button type="button">По цене</button>
-            <button type="button">По типу</button>
-            <button type="button">По популярности</button>
+            <button class="grey-button" type="button">По цене</button>
+            <button class="grey-button" type="button">По типу</button>
+            <button class="grey-button" type="button">По популярности</button>
             <div class="up">
               <button type="button" aria-label="по возрастанию">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
