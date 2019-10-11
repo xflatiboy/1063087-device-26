@@ -35,7 +35,8 @@ body {
 }
 
 main {
-	overflow-x: hidden;
+	overflow: hidden;
+	min-width: 1160px;
 }
 
 a {
@@ -103,6 +104,7 @@ background-color: rgb(240, 197, 46, 0.5);
 
 .search-flex {
 	display: flex;
+	width: 415px;
 }
 
 .search-flex img {
@@ -121,6 +123,10 @@ background-color: rgb(240, 197, 46, 0.5);
 .svg {
 	width: 16px;
 	height: 16px;
+}
+
+.flex-form {
+	display: flex;
 }
 
 .header input,
@@ -143,12 +149,37 @@ background-color: rgb(240, 197, 46, 0.5);
 	display: none;
 }
 
+.search-flex {
+	height: 20px;
+	margin-top: 10px;
+}
+
 .header input:focus ~ .search,
 .header-catalog input:focus ~ .search {
 	display: block;
 	color: #000000;
 	font-weight: 300;
 	letter-spacing: 0.15px;
+	background-color: #F7E397;
+	border: solid 2px black;
+	width: 85px;
+	height: 49px;
+}
+
+.search {
+	margin-left: 50px;
+}
+
+.header input:focus ~ .search:hover,
+.header-catalog input:focus ~ .search:hover {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.header input:focus ~ .search:active,
+.header-catalog input:focus ~ .search:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #000000;
 }
 
 .header input:hover,
@@ -156,9 +187,9 @@ background-color: rgb(240, 197, 46, 0.5);
 	opacity: 0.6;
 }
 
-.header input:focus,
-.header-catalog input:focus, {
-	
+.header input:focus ~ .search-flex,
+.header-catalog input:focus {
+	border-bottom: solid 2px black;
 }
 
 .header button,
@@ -198,15 +229,19 @@ background-color: rgb(240, 197, 46, 0.5);
 	position: relative;
 }
 
+.filter-flex fieldset {
+	border: 0;
+}
 
 .flex-menu {
 	display: none;
-	padding-left: 0;
 	position: absolute;		
 	width: 1101px;
 	background-color: #F7E397;
 	left: -60px;
 	padding-left: 59px;
+	padding-right: 0;
+	padding-bottom: 0;
 }
 
 .index-navigation {
@@ -596,7 +631,7 @@ main .name-slide {
 .footer {
 	background-color: #464646;
 	height: 323px;
-	margin-top: 93px;
+	margin-top: 0;
 	margin-left: 0;
 }
 
@@ -768,6 +803,8 @@ main .name-slide {
 	z-index: -1;
 }
 
+
+
 .filter {
 	background-color: #ebebeb;
 	position: relative;
@@ -777,14 +814,14 @@ main .name-slide {
 	content: '';
 	background-color: #ebebeb;
 	position: absolute;
-	height: 1000px;
+	bottom: 0;
 	right: 0;
 	width: 30000px;
 	top: 71px;
 	z-index: -1;
 }
 
-.products {
+.menu-items {
 	position: relative;
 	width: 759px;
 }
@@ -913,12 +950,40 @@ main .name-slide {
 	letter-spacing: 0.16px;
 }
 
+.products {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.products-items {
+	width: 360px;
+	position: relative;
+}
+
+.products-text {
+	display: flex;
+	justify-content: space-between;
+}
+
+.item-hover {
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	position: absolute;
+	top: 150px;
+	left: 50px;
+	text-align: center;
+}
+
 .pages {
 	background-color: #ebebeb;
 	display: flex;
 	width: 759px;
 	justify-content: space-between;
 	margin-right: 0px;
+	height: 71px;
+	margin-bottom: 77px;
 }
 
 .pages button {
@@ -937,6 +1002,11 @@ main .name-slide {
 
 .pages button:hover {
 	color: rgba(0, 0, 0, 0.6);
+}
+
+.button-grey {
+	border: 0;
+	margin-top: 20px;
 }
 
 .back button:active,
@@ -968,18 +1038,17 @@ main .name-slide {
 .item-hover  .second-times {
 	color: rgba(0, 0, 0, 0.5);
 	font-size: 13px;
-	background-color: #eeeeee;
-	width: 144px;
-	height: 13px;
+	width: 200px;
+	height: 30px;
 	line-height: 2.77;
 	font-weight: 300;
 	letter-spacing: 0.13px;
+	border: 0;
+	background-color: Transparent;
 }
 
 .item-hover .second-times:hover {
 	color: #000000;
-	width: 144px;
-	height: 13px;
 }
 
 .item-hover .second-times:active {
