@@ -10,13 +10,23 @@
     <header class="header-catalog">
       <a class="logo" href="index.html" aria-label="на главную страницу"><img src="img/device.svg" alt="логотип device"></a>
       <div class="header-top">
-        <div class="search-flex">
-          <img class="svg" src="img/search.svg">
-          <form action="" method="get">
+        <div class="search-flex">          
+          <form class="flex-form" action="" method="get">
             <input name="search" placeholder="Поиск по сайту" type="search">
             <button class="search" type="submit">Найти</button>     
           </form>
         </div>
+        <div class="user-menu">
+          <ul class="header-nav">
+            <li>
+              <a href="#" title="ссылка на ваш профиль" aria-label="на страницу вашего профиля на сайте device">Валентин Петухов</a>
+              <button type="submit" aria-label="кнопка чтобы выйти из вашего профиля на сайте device">Выйти</button>
+            </li>
+            <li><a href="#" title="ссылка на страницу сравнения товаров" aria-label="на страницу сравнения товаров">Сравнить</a></li>
+            <li><a href="#" title="ссылка на страницу корзины, с выбранными товарами" aria-label="на страницу корзины, с выбранными товарами">Корзина</a></li>
+          </ul>
+        </div>
+        <!--
         <div class="username">
           <a href="#" title="ссылка на ваш профиль" aria-label="на страницу вашего профиля на сайте device">Валентин Петухов</a>
           <button type="submit" aria-label="кнопка чтобы выйти из вашего профиля на сайте device">Выйти</button>
@@ -25,6 +35,7 @@
           <a href="#" title="ссылка на страницу сравнения товаров" aria-label="на страницу сравнения товаров">Сравнить</a>
           <a href="#" title="ссылка на страницу корзины, с выбранными товарами" aria-label="на страницу корзины, с выбранными товарами">Корзина</a>
         </div>
+      -->
       </div>
       <nav class="index-navigation">
         <div class="flex-navigation">
@@ -171,7 +182,7 @@
             <div class="products-items">
               <img src="img/item-2-jpg.png" alt="Фото профессиональной любительской селфи палки">
               <div class="products-text">
-                <p class="nameitem">Профессиональная селфи-палка</p>
+                <p class="nameitem">Профессиональная<br>селфи-палка</p>
                 <p class="prices">1 500 руб.</p>
               </div>
               <div class="item-hover">                

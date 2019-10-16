@@ -10,19 +10,26 @@
 		<header class="header">
 			<a class="logo" href="index.html" aria-label="на главную страницу"><img src="img/device.svg" alt="логотип device"></a>
 			<div class="header-top">
-				<div class="search-flex">
-					<img class="svg" src="img/search.svg">
+				<div class="search-flex">					
 					<form class="flex-form" action="" method="get">
 						<input name="search" placeholder="Поиск по сайту" type="search">
 						<button class="search" type="submit">Найти</button>			
 					</form>
 				</div>
+				<div class="user-menu">
+					<ul class="header-nav">
+						<li><a href="login.html">Войти</a></li>
+						<li><a href="#" title="ссылка на страницу сравнения товаров" aria-label="на страницу сравнения товаров">Сравнить</a></li>
+						<li><a href="#" title="ссылка на страницу корзины, с выбранными товарами" aria-label="на страницу корзины, с выбранными товарами">Корзина</a></li>
+					</ul>
+				</div>
+				<!--
 				<a href="login.html">Войти</a>			
-				<!-- ссылки -->
 				<div class="header-links">
 					<a href="#" title="ссылка на страницу сравнения товаров" aria-label="на страницу сравнения товаров">Сравнить</a>
 					<a href="#" title="ссылка на страницу корзины, с выбранными товарами" aria-label="на страницу корзины, с выбранными товарами">Корзина</a>
 				</div>
+			-->
 			</div>
 			<nav class="index-navigation">
 				<div class="flex-navigation">
@@ -76,19 +83,18 @@
 							</div>
 						<div class="flex-items">
 							<div class="column">
-								<p>8,5м</p>
+								<p>8,5 м</p>
 								<p class="second-line">Длина палки</p>
 							</div>
-								<div class="column">
-							<p>5кг</p>  			
+							<div class="column">
+								<p>5 кг</p>  			
 								<p class="second-line">Вес палки</p>
 							</div>
 							<div class="column">
 								<p>Карбон</p>  			
 							<p class="second-line">Материал</p>
 							</div> 			
-						</div>
-						</div>
+						</div>						
 					</div>
 				</div>
 				<!--			
@@ -259,7 +265,7 @@
 					</p>
 					<!-- улучшить до кнопки с помощью ява скрипта -->
 					<a href="https://www.google.ru/maps/place/%D1%83%D0%BB.+%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9,+15,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+119311/@55.687034,37.5274293,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54cf65f5c8955:0x694710ccd55501e!8m2!3d55.687031!4d37.529618" aria-label="ссылка на наш офис на гугл-картах">
-						<img src="img/map-jpg.jpg" alt="Наш офис находится по адресу: город Москва, улица Строителей, дом 15">
+						<img src="img/map-jpg.jpg" width="560" height="222" alt="Наш офис находится по адресу: город Москва, улица Строителей, дом 15">
 					</a>
 					<div>
 						<button class="button" type="submit">
@@ -329,15 +335,15 @@
 		<div class="form-message-us">
 			<p class="visually-hidden">Форма сообщения нам</p>
 			<form class="message-us" method="post" action="">
-				<p>
+				<p class="your-name">
 					<label for="yourname">Ваше имя:</label>
 					<input id="yourname" type="text" name="name" placeholder="Имя Фамилия">
 				</p>
-				<p>
+				<p class="your-mail">
 					<label for="yourmail">Ваш e-mail:</label>
 					<input id="yourmail" type="text" name="e-mail" placeholder="email@example.com">
 				</p>
-				<p>
+				<p class="your-text">
 					<label for="text">Текст письма:</label>					
 					<textarea id="text" name="text" rows="5" placeholder="В свободной форме"></textarea>
 				</p>

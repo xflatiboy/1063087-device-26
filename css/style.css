@@ -90,10 +90,35 @@ background-color: rgb(240, 197, 46, 0.5);
 
 .header-top {
 	display: flex;
-	margin: 18px auto 13px;
+	margin: 16px auto 0;
 	padding: 0;
 	width: 1040px;
 	justify-content: space-between;
+}
+
+.header-nav {
+	display: flex;
+	list-style: none;
+	margin-top: 1px;
+	padding-left: 19px;
+	flex-wrap: nowrap
+}
+
+.header-nav li:first-child {
+	background: url('../img/user.svg') no-repeat 0;
+	padding-left: 26px;
+}
+
+.header-nav li:nth-child(2) {
+	background: url('../img/compare.svg') no-repeat 0;
+	margin-left: 218px;
+	padding-left: 20px;
+}
+
+.header-nav li:last-child {
+	background: url('../img/cart.svg') no-repeat 0;
+	margin-left: 41px;
+	padding-left: 22px;
 }
 
 .header-links {
@@ -127,14 +152,14 @@ background-color: rgb(240, 197, 46, 0.5);
 
 .flex-form {
 	display: flex;
+	align-items: flex-end;
 }
 
-.header input,
 .header-top input {
-	color: rgba(0, 0, 0, 0.3);
 	font-weight: 300;
-	background-color: #F7E397;
+	background: url("../img/search.svg") no-repeat;
 	border: 0;
+	padding-left: 36px;
 }
 
 .header a,
@@ -151,7 +176,8 @@ background-color: rgb(240, 197, 46, 0.5);
 
 .search-flex {
 	height: 20px;
-	margin-top: 10px;
+	margin-top: 6px;
+	margin-left: 1px;
 }
 
 .header input:focus ~ .search,
@@ -201,8 +227,7 @@ background-color: rgb(240, 197, 46, 0.5);
 	display: flex;
 	flex-direction: column;
 	width: 1160px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 65px auto 43px auto;
 }
 
 .main {
@@ -220,7 +245,7 @@ background-color: rgb(240, 197, 46, 0.5);
 	line-height: 1.02;
 	font-family: 'Gilroy', Arial, sans-serif;
 	letter-spacing: 0.47px;
-	margin-left: 61px;
+	margin: 0 auto 0 59px;
 }
 
 .filter-flex {
@@ -246,8 +271,7 @@ background-color: rgb(240, 197, 46, 0.5);
 
 .index-navigation {
 	width: 1040px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto ;
 }
 
 .index-navigation a {
@@ -387,6 +411,7 @@ main .name-slide {
 .flex-items {
 	display: flex;
 	justify-content: space-between;
+	margin-top: 6px;
 }
 
 .flex-description .button {
@@ -422,6 +447,11 @@ main .name-slide {
 	letter-spacing: 0.36px;
 	margin-bottom: 0;
 	padding-bottom: 0;
+	margin-right: 51px;
+}
+
+.column p {
+	margin-bottom: 7px;
 }
 
 .items {
@@ -468,6 +498,7 @@ main .name-slide {
 	line-height: 1.54;
 	font-family: unset;
 	letter-spacing: 0.13px;
+	margin-top: 0;
 }
 
 .container {
@@ -581,6 +612,7 @@ main .name-slide {
 	font-family: 'Gilroy', Arial, sans-serif;
 	font-weight: 800;
 	letter-spacing: 0.47px;
+	margin-bottom: 28px;
 }
 
 .information {
@@ -588,12 +620,13 @@ main .name-slide {
 	margin-left: auto;
 	margin-right: auto;
 	width: 1160px;
+	justify-content: space-between;
 }
 
 .contacts {
 	display: flex;
 	flex-direction: column;
-	margin-left: 138px;
+	width: 560px;
 }
 
 .about-us {
@@ -613,6 +646,8 @@ main .name-slide {
 	font-weight: 800;
 	line-height: 2.5;
 	font-family: 'Gilroy', Arial, sans-serif;
+	padding-left: 37px;
+	margin-top: 51px;
 }
 
 .about-us a {
@@ -626,6 +661,7 @@ main .name-slide {
 .contacts p {
 	font-weight: 300;
 	color: #464646;
+	margin-bottom: 39px;
 }
 
 .footer {
@@ -644,24 +680,36 @@ main .name-slide {
 .top-footer {
 	display: flex;
 	justify-content: space-between;
+	padding-top: 60px;
+
+}
+
+.user-menu {
+	width: 50%;
 }
 
 .flex-user {
 	display: flex;
 	list-style: none;
 	color: rgba(255, 255, 255, 0.7);
+	margin: 0;
+	padding-left: 282px;
 }
 
 .flex-user li:nth-child(2) {
-	margin-left: 6px;
-	margiht-right: 6px;
+	margin: 0 62px;
 	text-align: right;	
 }
 
 .center-footer {
 	display: flex;	
-	margin-top: 52px;
+	margin-top: 9px;
 	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-footer {
+	margin-top: 4px;
 }
 
 .nav-flex {
@@ -676,12 +724,14 @@ main .name-slide {
 .bot-footer {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 10px;
+	margin-top: 30px;
+	align-items: center;
 }
 
 .flex-social {
 	display: flex;
 	list-style: none;
+	padding-left: 26px;
 }
 
 .flex-social li:nth-child(2) {
@@ -689,13 +739,11 @@ main .name-slide {
 }
 
 .htmlacademy {
-	margin-top: 69px;
 }
 
 .address {
 	color: #ffffff;
 	font-weight: 300;
-	margin-top: 40px;
 }
 
 .nav-flex a {
@@ -724,6 +772,28 @@ main .name-slide {
 	letter-spacing: unset;
 }
 
+.form-message-us {
+	width: 960px;
+	height: 553px;
+}
+
+.message-us {
+	display: flex;
+}
+
+.your-name input,
+.your-mail input {
+	width: 360px;
+	height: 50px;
+	background-color: #f2f2f2;
+}
+
+
+.your-text textarea {
+	width: 760px;
+	background-color: #f2f2f2;
+}
+
 .message-us p {
 	color: #000000;
 	font-size: 18px;
@@ -741,8 +811,8 @@ main .name-slide {
 	width: 1160px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 94px;
-	margin-bottom: 151px;
+	margin-top: 197px;
+	margin-bottom: 99px;
 }
 
 .brands-flex {
@@ -758,7 +828,7 @@ main .name-slide {
 }
 
 .links {
-	margin-left: 61px;
+	margin: 21px 0 0 59px;
 }
 
 .links a {
@@ -823,15 +893,18 @@ main .name-slide {
 
 .menu-items {
 	position: relative;
-	width: 759px;
+	width: 762px;
 }
 
 .sorting {
 	display: flex;
+	margin-bottom: 68px;
 }
 
 .sorting p {
 	background-color: #ebebeb;
+	width: 110px;
+	margin-right: 85px;
 }
 
 .sorting button {
@@ -844,6 +917,7 @@ main .name-slide {
 .grey-button {
 	background-color: #ebebeb;
 	border: 0;
+	margin-right: 17px;
 }
 
 .sorting::before {
@@ -949,7 +1023,7 @@ main .name-slide {
 	font-weight: 300;
 	letter-spacing: 0.16px;
 }
-
+/* Высоту не стоит задавать?*/
 .products {
 	display: flex;
 	justify-content: space-between;
@@ -961,9 +1035,16 @@ main .name-slide {
 	position: relative;
 }
 
+.products-items:first-child,
+.products-items:nth-child(2) {
+	margin-bottom: 22px;
+}
+
 .products-text {
 	display: flex;
 	justify-content: space-between;
+	margin-top: 7px;
+	margin-bottom: 5px;
 }
 
 .item-hover {
@@ -984,6 +1065,8 @@ main .name-slide {
 	margin-right: 0px;
 	height: 71px;
 	margin-bottom: 77px;
+	margin-top: 12px;
+	align-items: center;
 }
 
 .pages button {
@@ -994,6 +1077,7 @@ main .name-slide {
 	line-height: 1.5;
 	font-family: 'Gilroy', Arial, sans-serif;
 	letter-spacing: 3.2px;
+	text-transform: uppercase;
 }
 
 .pages button:active {
@@ -1006,7 +1090,18 @@ main .name-slide {
 
 .button-grey {
 	border: 0;
-	margin-top: 20px;
+	padding: 0;
+	margin: 0 12px;
+}
+
+.back {
+	margin-left: 20px;
+	width: 90px;
+}
+
+.forward {
+	margin-right: 26px;
+	width: 90px;
 }
 
 .back button:active,
