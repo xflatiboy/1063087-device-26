@@ -101,7 +101,6 @@ background-color: rgb(240, 197, 46, 0.5);
 	list-style: none;
 	margin-top: 1px;
 	padding-left: 19px;
-	flex-wrap: nowrap
 }
 
 .header-nav li:first-child {
@@ -288,6 +287,13 @@ background-color: rgb(240, 197, 46, 0.5);
 	display: flex;
 }
 
+.services-menu img {
+	position: absolute;
+	opacity: 0.3;
+	left: -281px;
+	top: 10px;
+}
+
 .menu {
 	margin-top: 40px;
 	margin-right: 58px;
@@ -379,6 +385,25 @@ main .name-slide {
 	display: flex;
 	flex-direction: column;
 	margin-left: 125px;
+}
+
+.slider-line {
+	position: absolute;
+	background-color: #FFFFFF;
+	width: 100px;
+	height: 7px;
+	top: 265px;
+}
+
+.number-slide {
+	position: absolute;
+	color: #FFFFFF;
+	font-size: 179px;
+	font-weight: 800;
+	letter-spacing: 1.79px;
+	font-family: 'Gilroy', Arial, sans-serif;
+	top: -59px;
+	right: 96px;
 }
 
 .slide img {
@@ -821,6 +846,16 @@ main .name-slide {
 	justify-content: space-between;
 	margin: 0 auto;
 	padding: 0;
+}
+
+.brands-flex img {
+	filter: grayscale(100);
+	opacity: 0.2;
+}
+
+.brands-flex li:hover img {
+	filter: grayscale(0);
+	opacity: 1;
 }
 
 .brands ul {
