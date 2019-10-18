@@ -68,21 +68,29 @@
 		<main>  		
 			<section class="slider">
 				<h2 class="visually-hidden">Слайдер</h2>
-				<div class="slide">
+				<input class="visually-hidden" type="radio" id="slide-1" name="toggle" checked>
+				<input class="visually-hidden" type="radio" id="slide-2" name="toggle">
+				<input class="visually-hidden" type="radio" id="slide-3" name="toggle">
+				<div class="inputs">							
+					<label for="slide-1">Первый</label>							
+					<label for="slide-2">Второй</label>							
+					<label for="slide-3">Третий</label>						
+				</div>
+				<div class="slide" id="slide1">
 					<h3 class="visually-hidden">Селфи палки</h3>
-					<img src="img/slider-1-png.png" alt="первый слайд, картинка селфи палок">
+					<img src="img/slider-1-png.png" alt="первый слайд, картинка селфи палок" width="384px" height="486px">
 					<div class="flex-slide">
-							<div class="slider-line"></div>
-							<div class="number-slide"><p>01</p></div>
-							<p class="name-slide">Делай селфи,<br>
-								как Бен Стиллер!</p>
-							<p  class="description-slider">
-									Самая длинная палка для селфи доступна в нашем магазине.<br>
-									Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-							</p>
-							<div> 			
-								<a class="button" href="#" title="ссылка на страницу данного товара" aria-label="на страницу с описанным товаром">Подробнее</a>
-							</div>
+						<div class="slider-line"></div>
+						<div class="number-slide"><p>01</p></div>
+						<p class="name-slide">Делай селфи,<br>
+							как Бен Стиллер!</p>
+						<p  class="description-slider">
+								Самая длинная палка для селфи доступна в нашем магазине.<br>
+								Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+						</p>
+						<div> 			
+							<a class="button" href="#" title="ссылка на страницу данного товара" aria-label="на страницу с описанным товаром">Подробнее</a>
+						</div>
 						<div class="flex-items">
 							<div class="column">
 								<p>8,5 м</p>
@@ -94,30 +102,27 @@
 							</div>
 							<div class="column">
 								<p>Карбон</p>  			
-							<p class="second-line">Материал</p>
+								<p class="second-line">Материал</p>
 							</div> 			
 						</div>						
 					</div>
-				</div>
-				<!--			
-				<div class="slide">
+				</div>							
+				<div class="slide" id="slide2">
 					<h3 class="visually-hidden">Умные часы</h3>
-					<img src="img/slider-2-png.png" alt="второй слайд - картинка умных часов">
+					<img src="img/slider-2-png.png" alt="второй слайд - картинка умных часов" width="345" height="485">
 					<div class="flex-slide">
 						<div class="slider-line"></div>
 						<div class="number-slide"><p>02</p></div>
-						<div class="flex-description">
-							<p class="name-slide">Худеем<br>
-								правильно!
-							</p>
-							<div class="description-slider">
-								<p>
-									Мотивирующие фитнес-браслеты помогут найти в себе силы<br> 
-									не пропускать занятия и соблюдать диету.
-								</p>
-								<a class="button" href="#" title="ссылка на страницу данного товара" aria-label="на страницу с описанным товаром">Подробнее</a>
-							</div>
-						</div>
+						<p class="name-slide">Худеем<br>
+							правильно!
+						</p>
+						<p class="description-slider">
+							Мотивирующие фитнес-браслеты помогут найти в себе силы<br> 
+							не пропускать занятия и соблюдать диету.
+						</p>
+						<div>
+							<a class="button" href="#" title="ссылка на страницу данного товара" aria-label="на страницу с описанным товаром">Подробнее</a>
+						</div>						
 						<div class="flex-items">
 							<div class="column">
 								<p>48 часов</p>
@@ -126,23 +131,21 @@
 						</div>
 					</div>
 				</div>
-				<div class="slide">
+				<div class="slide" id="slide3">
 					<h3 class="visually-hidden">Квадракоптер</h3>
-					<img src="img/slider-3-png.png" alt="третий слайд - картинка квадрокоптера">
-					<div class="slider-line"></div>
-					<div class="number-slide"><p>03</p></div>
+					<img src="img/slider-3-png.png" alt="третий слайд - картинка квадрокоптера" width="526" height="334">
 					<div class="flex-slide">
-						<div class="flex-description">
-							<p class="name-slide">Порхает как бабочка,<br>
-								жалит как пчела!
-							</p>
-							<div class="description-slider">
-								<p>
-									Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
-									мощным лазером, замаскированным под стандартную камеру.
-								</p>						
-								<a class="button" href="#" title="ссылка на страницу данного товара" aria-label="на страницу с описанным товаром">Подробнее</a>
-							</div>
+						<div class="slider-line"></div>
+						<div class="number-slide"><p>03</p></div>						
+						<p class="name-slide">Порхает как бабочка,<br>
+							жалит как пчела!
+						</p>
+						<p class="description-slider">
+							Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+							мощным лазером, замаскированным под стандартную камеру.
+						</p>
+						<div>						
+							<a class="button" href="#" title="ссылка на страницу данного товара" aria-label="на страницу с описанным товаром">Подробнее</a>
 						</div>
 						<div class="flex-items">
 							<div class="column">
@@ -156,7 +159,7 @@
 						</div>
 					</div>
 				</div>
-			-->
+			
 			</section>
 			<section class="section-items">  		 
 				<ul class="items">
@@ -246,6 +249,7 @@
 				</section>
 			<section class="information">
 				<div class="about-us">
+					<div class="black-line"></div>
 					<h2 class="title-2">О нас</h2>
 					<p>
 						Огромный выбор гаджетов не оставит равнодушным гика,<br>
@@ -264,7 +268,8 @@
 						<a class="button" href="#" aria-label="на страницу с информацией о нас">Подробнее о нас</a>
 					</div>
 				</div>
-				<div class="contacts">  		
+				<div class="contacts">
+					<div class="black-line"></div>	
 					<h2 class="title-2">Контакты</h2>
 					<p>
 						Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
@@ -285,7 +290,7 @@
 		<footer class="footer">
 			<div class="hiddendiv">
 				<div class="top-footer">
-					<div>
+					<div class="logo-footer-position">
 						<a href="index.html" aria-label="на главную страницу">
 							<span class="logo-footer">
 								<svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35">
@@ -328,7 +333,7 @@
 					</div>
 					<div class="htmlacademy" aria-label="иконка htmlacademy">
 						<a href="https://htmlacademy.ru/intensive/htmlcss" title="ссылка на htmlacademy" aria-label="на сайт htmlacademy с интесивами">
-							<svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
+							<svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" viewBox="0 0 26.943 34.09">
 								<path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
 							</svg>
 						</a>
