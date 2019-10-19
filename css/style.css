@@ -1356,19 +1356,43 @@ main .name-slide {
 }
 
 .box:active .check-box {
-	background: url('../img/checkbox-on.svg') no-repeat;
+	background: url('../img/checkbox-on.svg');
 	opacity: 1;
 	width: 27px;
 }
 
 .box-input:checked + .check-box {
-	background: url('../img/checkbox-on.svg') no-repeat;
+	background: url('../img/checkbox-on.svg');
 	width: 27px;
+}
+
+.box-input:checked:active + .check-box {
+	background: url('../img/checkbox-off.svg') no-repeat;
 }
 
 .radio-input:focus + .radio-span,
 .box-input:focus + .check-box {
 	outline: auto;	
+}
+
+.box-input:checked:disabled + .check-box {
+	background: url('../img/checkbox-on.svg');
+	opacity: 0.25;
+}
+
+.box-input:disabled + .check-box {
+	background: url('../img/checkbox-off.svg');
+	opacity: 0.25;
+}
+
+.radio-input:checked:disabled + .radio-span {
+	background: url('../img/radio-on.svg');
+	opacity: 0.25;
+}
+
+.radio-input:disabled + .radio-span {
+	background: url('../img/radio-off.svg');
+	opacity: 0.25;
 }
 
 .fieldset {
@@ -1404,7 +1428,7 @@ main .name-slide {
 	position: absolute;
 	width: 25px;
 	height: 25px;
-	background: url('../img/radio-off.svg') no-repeat;
+	background: url('../img/radio-off.svg');
 	margin-left: -40px;
 	margin-top: 7px;
 }
@@ -1418,12 +1442,16 @@ main .name-slide {
 }
 
 .radio:active .radio-span {
-	background: url('../img/radio-on.svg') no-repeat;
+	background: url('../img/radio-on.svg');
 	opacity: 1;
 }
 
 .radio-input:checked + .radio-span {
 	background: url('../img/radio-on.svg');
+}
+
+.radio-input:checked:active + .radio-span {
+	background: url('../img/radio-off.svg');
 }
 
 .filter li {
