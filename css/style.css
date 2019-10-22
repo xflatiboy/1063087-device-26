@@ -193,6 +193,7 @@ img {
 .flex-form {
 	display: flex;
 	align-items: flex-end;
+	border: 2px solid transparent;
 }
 
 .header-top input,
@@ -397,13 +398,15 @@ img {
 }
 
 .index-navigation a:hover,
-.user-menu li:hover,
+.user-menu a:hover,
+.user-menu button:hover,
 .logo:hover {
 	opacity: 0.6;
 }
 
 .index-navigation a:active,
-.user-menu li:active,
+.user-menu a:active,
+.user-menu button:active,
 .logo:active {
 	opacity: 0.3;
 }
@@ -569,6 +572,7 @@ main .name-slide {
 	font-family: 'Gilroy', Arial, sans-serif;
 	font-weight: 800;
 	letter-spacing: 3.6px;
+	cursor: pointer;
 }
 
 .flex-description a:hover {
@@ -850,6 +854,7 @@ main .name-slide {
 	color: rgba(255, 255, 255, 0.7);
 	margin: 0;
 	padding-left: 282px;
+	position: relative;
 }
 
 .flex-user li:nth-child(2) {
@@ -863,6 +868,53 @@ main .name-slide {
 	color: rgba(255, 255, 255, 0.7);
 	margin: 0;
 	padding-left: 129px;
+	position: relative;
+}
+
+.user-svg {
+	position: absolute;
+	top: 12px;
+	left: 102px;
+}
+
+.compare-svg {
+	position: absolute;
+	top: 14px;
+	left: 368px;
+}
+
+.cart-svg {
+	fill: #ffc600;
+	position: absolute;
+	top: 12px;
+	left: 498px;
+}
+
+.user-svg-index {
+	position: absolute;
+	top: 12px;
+	left: 259px;
+}
+
+.compare-svg-index {
+	position: absolute;
+	top: 14px;
+	left: 372px;
+}
+
+.cart-svg-index {
+	fill: #ffc600;
+	position: absolute;
+	top: 12px;
+	left: 502px;
+}
+
+.user-menu-footer a:hover svg {
+	opacity: 0.6;
+}
+
+.user-menu-footer a:active svg {
+	opacity: 0.3;
 }
 
 .flex-user-catalog button {
@@ -973,11 +1025,12 @@ main .name-slide {
 	width: 960px;
 	height: 553px;
 	position: fixed;
-	top: 100px;
-	left: 100px;
+	top: 50%;
+	left: 50%;
 	background-color: #FFFFFF;
 	box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
 	z-index: 10;
+	transform: translate(-50%, -50%);
 }
 
 .close {
@@ -1185,6 +1238,7 @@ main .name-slide {
 	color: rgba(0, 0, 0, 0.3);
 	line-height: 1.29;
 	font-weight: 400;
+	cursor: pointer;
 }
 
 .grey-button {
@@ -1372,7 +1426,8 @@ main .name-slide {
 
 .radio-input:focus + .radio-span,
 .box-input:focus + .check-box {
-	outline: auto;	
+	outline: -webkit-focus-ring-color auto 1px;
+	outline-color: #4d90fe;
 }
 
 .box-input:checked:disabled + .check-box {
@@ -1385,6 +1440,18 @@ main .name-slide {
 	opacity: 0.25;
 }
 
+.box-input:active:checked:disabled + .check-box {
+	background: url('../img/checkbox-on.svg');
+	opacity: 0.25;
+	width: 27px;
+}
+
+.box-input:active:disabled + .check-box {
+	bacgkround: url('../img/checkbox-off.svg');
+	opacity: 0.25;
+	width: 23px;
+}
+
 .radio-input:checked:disabled + .radio-span {
 	background: url('../img/radio-on.svg');
 	opacity: 0.25;
@@ -1392,6 +1459,18 @@ main .name-slide {
 
 .radio-input:disabled + .radio-span {
 	background: url('../img/radio-off.svg');
+	opacity: 0.25;
+}
+
+.radio-input:active:disabled + .radio-span,
+.radio-input:hover:disabled + .radio-span {
+	background: url('../img/radio-off.svg');
+	opacity: 0.25;
+}
+
+.radio-input:active:checked:disabled + .radio-span,
+.radio-input:hover:checked:disabled + .radio-span {
+	background: url('../img/radio-on.svg');
 	opacity: 0.25;
 }
 
@@ -1556,14 +1635,17 @@ main .name-slide {
 	margin: 0;
 	width: 136px;
 	height: 70px;
+	cursor: pointer;
 }
 
 .buttons {
 	width: 102px;
+	cursor: pointer;
 }
 
 .button-number {
 	border: 0;
+	cursor: pointer;
 }
 
 .button-number:nth-child(2) {
