@@ -193,16 +193,15 @@ img {
 .flex-form {
 	display: flex;
 	align-items: flex-end;
-	border: 2px solid transparent;
 }
 
 .header-top input,
 .header-top-catalog input {
 	font-weight: 300;
 	background: url("../img/search.svg") no-repeat;
-	border: 0;
 	padding-left: 36px;
 	width: 330px;
+	border: 2px solid transparent;
 }
 
 .header a,
@@ -311,10 +310,7 @@ img {
 	width: 1101px;
 	background-color: #F7E397;
 	left: -60px;
-	padding-left: 59px;
-	padding-right: 0;
-	padding-bottom: 0;
-	padding-top: 11px;
+	padding: 25px 0 26px 60px;
 	z-index: 2;
 }
 
@@ -346,8 +342,7 @@ img {
 }
 
 .menu {
-	margin-top: 40px;
-	margin-right: 58px;
+	margin-right: 59px;
 	padding-left: 0;
 }
 
@@ -515,19 +510,19 @@ main .name-slide {
 	margin-left: 90px;
 }
 */
-.slider img:first-child {
+.slider .slide:first-child img {
 	width: 384px;
 	height: 486px;
 	margin-left: 90px;
 }
 
-.slider img:nth-child(2) {
+.slider .slide:nth-child(2) img {
 	width: 345px;
 	height: 458px;
 	margin-left: 129px;
 }
 
-.slider img:nth-child(3) {
+.slider .slide:nth-child(3) img {
 	width: 526px;
 	height: 334px;
 	margin-left: -52px;
@@ -556,7 +551,7 @@ main .name-slide {
 
 .flex-items {
 	display: flex;
-	margin-top: 6px;
+	margin-top: 34px;
 }
 
 .flex-description .button {
@@ -564,15 +559,55 @@ main .name-slide {
 }
 
 .button {
+	position: relative;
 	font-size: 18px;
 	color: #000000;
-	background-color: #f0c52e;
+	background: none;
+	border: none;
 	text-transform: uppercase;
 	line-height: 1.33;
 	font-family: 'Gilroy', Arial, sans-serif;
 	font-weight: 800;
 	letter-spacing: 3.6px;
+	padding: 0 20px;
 	cursor: pointer;
+	height: 40px;
+	z-index: 2;
+	transition: color 0.2s;
+	overflow: hidden;
+	align-items: center;
+}
+
+.div-button {
+	position: absolute;
+	top: 316px;
+	left: 25px;
+}
+
+.button::before {
+	content: '';
+	position: absolute;
+	width: 220px;
+	top: 50%;
+	left: -13%;
+	height: 8px;
+	background: #f0c52e;
+	z-index: -1;
+	transform-origin: 50%;
+	transform: translateY(-50%);
+	transition: transform 0.2s;
+}
+
+.button:active {
+	color: #b3b3b3;
+}
+
+.button:hover::before {
+	transform: translateY(-50%) scaleY(5);
+}
+
+.button::before:active {
+	
 }
 
 .flex-description a:hover {
@@ -593,11 +628,11 @@ main .name-slide {
 	letter-spacing: 0.36px;
 	margin-bottom: 0;
 	padding-bottom: 0;
-	margin-right: 79px;
+	margin-right: 77px;
 }
 
 .column p {
-	margin-bottom: 7px;
+	margin-bottom: 8px;
 }
 
 .items {
@@ -707,7 +742,7 @@ main .name-slide {
 	height: 164px;
 	margin-left: 123px;
 }
-
+/*
 .services button {
   width: 160px;
   height: 8px;
@@ -720,7 +755,7 @@ main .name-slide {
   letter-spacing: 3.6px;
   margin-bottom: 49px;
 }
-
+*/
 .services button:hover {
 	width: 160px;
 	height: 40px;
@@ -1018,7 +1053,7 @@ main .name-slide {
 .hidden-block {
 	width: 760px;
 	height: 400px;
-	margin-left: 20px;
+	margin: 68px 0 0 101px;
 }
 
 .form-message-us {
@@ -1035,8 +1070,8 @@ main .name-slide {
 
 .close {
 	position: absolute;
-	top: 5px;
-	right: 50px;
+	top: 22px;
+	right: 15px;
 	background-color: #FFFFFF;
 	border: 0;
 	opacity: 0.5;
@@ -1053,6 +1088,7 @@ main .name-slide {
 .your-text textarea:focus {
 	background-color: #FFFFFF;
 	outline: 3px solid #f0c52e;
+	color: #464646;
 }
 
 .your-name input:required:invalid,
@@ -1070,7 +1106,7 @@ main .name-slide {
 }
 
 .your-mail {
-	margin-left: 32px;
+	margin-left: 28px;
 }
 
 
@@ -1090,6 +1126,10 @@ main .name-slide {
 	background-color: #f2f2f2;
 	border: 0;
 	padding-left: 10px;
+}
+
+.your-text {
+	margin: 9px 0 78px;
 }
 
 .your-text textarea {
