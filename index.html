@@ -4,7 +4,7 @@
 		<meta charset='utf-8'>
 		<title>Главная</title>
 		<link rel='stylesheet' href='css/normalize.css'>
-		<link rel='stylesheet' href='css/style.css'>
+		<link rel='stylesheet' href='css/style.css'>		
 	</head>
 	<body>		
 		<header class='header'>
@@ -203,11 +203,11 @@
 			<section class='services'>
 				<div class='service-container'>
 					<div class='services-flex'>
-						<button class='button' type='button'>Доставка</button>
-						<button class='button' type='button'>Гарантия</button>
-						<button class='button' type='button'>Кредит</button>
+						<button class='button is-active' type='button' data-slide='services-1'>Доставка</button>
+						<button class='button' type='button' data-slide='services-2'>Гарантия</button>
+						<button class='button' type='button' data-slide='services-3'>Кредит</button>
 					</div>
-					<div class='service-flex'>
+					<div class='service-flex is-active' id='services-1'>
 						<h3 class='service'>Доставка</h3>  	  		
 						<p class='service-description'>
 							Мы с удовольствием доставим ваш товар прямо к вашему<br>
@@ -216,9 +216,7 @@
 						</p>
 					</div>
 					<img src='img/delivery.png' alt='Картинка человека с почтой-доставкой'>
-					
-					<!--
-					<div class='service-flex'>
+					<div class='service-flex' id='services-2'>
 						<h3 class='service'>Гарантия</h3>
 						<p class='service-description'>
 							Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
@@ -226,7 +224,7 @@
 						</p>
 						<img src='img/warranty.png' alt='Картинка характеризующая гарантии'>
 					</div>
-					<div class='service-flex'>
+					<div class='service-flex' id='services-3'>
 						<h3 class='service'>Кредит</h3>
 						<p class='service-description'>
 							Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
@@ -234,7 +232,6 @@
 						</p>
 						<img src='img/credit.png' alt='Картинка характеризующая кредит'>
 					</div>
-				-->
 				</div>
 			</section>  	  
 			<section class='brands'>
@@ -272,13 +269,13 @@
 						Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
 					</p>
 					<!-- улучшить до кнопки с помощью ява скрипта -->
-					<a href='https://www.google.ru/maps/place/%D1%83%D0%BB.+%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9,+15,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+119311/@55.687034,37.5274293,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54cf65f5c8955:0x694710ccd55501e!8m2!3d55.687031!4d37.529618' aria-label='ссылка на наш офис на гугл-картах'>
+					<a id="map-handler" href='https://www.google.ru/maps/place/%D1%83%D0%BB.+%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9,+15,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+119311/@55.687034,37.5274293,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54cf65f5c8955:0x694710ccd55501e!8m2!3d55.687031!4d37.529618' aria-label='ссылка на наш офис на гугл-картах'>
 						<img src='img/map-jpg.jpg' width='560' height='222' alt='Наш офис находится по адресу: город Москва, улица Строителей, дом 15'>
 					<!--<div style='width: 800px;position: relative;'><iframe width='800' height='440' src='https://maps.google.com/maps?width=800&amp;height=440&amp;hl=en&amp;q=%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%20%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9%2015+(%D0%90%D0%B4%D1%80%D0%B5%D1%81%20%D0%B4%D0%B5%D0%B2%D0%B0%D0%B9%D1%81%D0%BE%D0%B2)&amp;ie=UTF8&amp;t=&amp;z=17&amp;iwloc=B&amp;output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'></iframe><div style='position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;'><small style='line-height: 1.8;font-size: 2px;background: #fff;'>Powered by <a href='http://triptoamsterdam.org/ja/'>googlemapsgen (ja)</a> & <a href='http://eurodisneyaanbiedingen.nl/wat-kun-je-allemaal-doen-in-disneyland-parijs/'>http://eurodisneyaanbiedingen.nl/wat-kun-je-allemaal-doen-in-disneyland-parijs/</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><br />
 					-->
 					</a>
 					<div class='contact-with-us'>
-						<a href='#' class='button'>
+						<a href='#' class='button' id="message-us">
 							Напишите нам	
 						</a>
 					</div>
@@ -362,8 +359,8 @@
 		</footer>
 
 		<!-- относится к 'напишите нам'-->
-		<!--
-		<div class='form-message-us'>
+		<div class="overlay">
+		<div class='form-message-us popup'>
 			<p class='visually-hidden'>Форма сообщения нам</p>
 			<div class='hidden-block'>
 				<form class='message-us' method='post' action=''>
@@ -391,7 +388,11 @@
 			</div>
 			<button class='close' type='button'><img src='img/modal-close.svg'></button>
 		</div>
-		-->
+			<div class="map popup">
+				карта
+				<button class='close' type='button'><img src='img/modal-close.svg'></button>
+			</div>
+		</div>
 		<!--
 		
 		<div class='login'>
@@ -415,6 +416,7 @@
 				</form>
 				<button type='button'><img src='img/modal-close.svg'></button>
 			</div>	
-			-->	
+			-->
+		<script type="text/javascript" src="js/app.js"></script>	
 	</body>
 </html>	

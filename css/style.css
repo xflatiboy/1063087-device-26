@@ -586,12 +586,15 @@ main .name-slide {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.services-flex .button:active::before {
+.services-flex .button:active::before,
+.services-flex .button.is-active::before {
 	background-color: #000000;
 	width: 277px;
+	transform: translateY(-50%) scaleY(5);
 }
 
-.services-flex .button:active {
+.services-flex .button:active,
+.services-flex .button.is-active {
 	color: #f7e184;
 }
 
@@ -720,9 +723,13 @@ main .name-slide {
 }
 
 .service-flex {
-	display: flex;
+	display: none;
 	flex-direction: column;
 	margin-left: 242px;
+}
+
+.service-flex.is-active {
+	display: flex;
 }
 
 .service-flex::before {
@@ -1084,16 +1091,35 @@ main .name-slide {
 	margin: 68px 0 0 101px;
 }
 
-.form-message-us {
-	width: 960px;
-	height: 553px;
-	position: fixed;
+.popup {
+	display: none;
+	position: absolute;
 	top: 50%;
 	left: 50%;
 	background-color: #FFFFFF;
 	box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
-	z-index: 10;
+	z-index: 100;
 	transform: translate(-50%, -50%);
+}
+
+.form-message-us {
+	width: 960px;
+	height: 553px;
+}
+
+.overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 99;
+}
+
+.overlay.is-active,
+.popup.is-active {
+	display: block;
 }
 
 .close {
