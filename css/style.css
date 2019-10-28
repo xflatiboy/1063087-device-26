@@ -76,26 +76,9 @@ img {
 	z-index: -1;
 }
 
-.header-catalog {
-	width: 1160px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 20px;
-	display: flex;
-	flex-direction: column;
-}
-
 .header-top {
 	display: flex;
-	margin: 16px auto 0;
-	padding: 0;
-	width: 1040px;
-	justify-content: space-between;
-}
-
-.header-top-catalog {
-	display: flex;
-	margin: 14px auto 0;
+	margin: 27px auto 0;
 	padding: 0;
 	width: 1040px;
 	justify-content: space-between;
@@ -108,31 +91,28 @@ img {
 	padding-left: 19px;
 }
 
-.header-nav li:first-child {
+.header-nav li:first-child a {
 	background: url('../img/user.svg') no-repeat 0;
-	padding-left: 26px;
+	padding-left: 26px;	
 }
 
-.header-nav li:nth-child(2) {
+.header-nav li:first-child {
+	flex: 1 1 auto;
+}
+
+.header-nav li:nth-child(2) a {
 	background: url('../img/compare.svg') no-repeat 0;
-	margin-left: 218px;
 	padding-left: 20px;
 }
 
-.header-nav li:last-child {
+.header-nav li:last-child a {
 	background: url('../img/cart.svg') no-repeat 0;
 	margin-left: 41px;
 	padding-left: 22px;
 }
 
-.header-nav-catalog {
-	display: flex;
-	list-style: none;
-	margin-top: 1px;
-	padding-left: 19px;
-}
 
-.header-nav-catalog button,
+.header-nav button,
 .flex-user-catalog button {
 	padding-left: 15px;
 	background-color: #F7E397;
@@ -142,23 +122,6 @@ img {
 .flex-user-catalog button {
 	background-color: #464646;
 	color: rgba(255, 255, 255, 0.3);
-}
-
-.header-nav-catalog li:first-child a {
-	background: url('../img/user.svg') no-repeat 0;
-	padding-left: 27px;
-}
-
-.header-nav-catalog li:nth-child(2) a {
-	background: url('../img/compare.svg') no-repeat 0;
-	margin-left: 57px;
-	padding-left: 20px;
-}
-
-.header-nav-catalog li:last-child a {
-	background: url('../img/cart.svg') no-repeat 0;
-	margin-left: 41px;
-	padding-left: 22px;
 }
 
 .header-links {
@@ -177,12 +140,9 @@ img {
 }
 
 .logo {
-	padding: 0 59px;	
-}
-
-.logo img {
 	width: 163px;
 	height: 35px;
+	padding: 0 59px;	
 }
 
 .svg {
@@ -195,27 +155,33 @@ img {
 	align-items: flex-end;
 }
 
-.header-top input,
-.header-top-catalog input {
+.header-top input {
 	font-weight: 300;
-	background: url("../img/search.svg") no-repeat;
+	background: url('../img/search.svg') no-repeat;
 	padding: 0 0 14px 36px;
 	width: 355px;
 	border: 2px solid transparent;
 	color: #b3b3b3;;
 }
 
-.header a,
-.header-catalog a {
+.header a {
 	color: #000000;
 	font-weight: 300;
 	letter-spacing: 0.15px;
 	width: 163px;
 }
 
-.header .search,
-.header-catalog .search {
+.search {
 	display: none;
+	color: #000000;
+	font-weight: 300;
+	letter-spacing: 0.15px;
+	background-color: #F7E397;
+	border: solid 2px black;
+	width: 85px;
+	height: 49px;
+	margin-left: 50px;
+	cursor: pointer;
 }
 
 .search-flex button {
@@ -227,48 +193,34 @@ img {
 	margin: 19px 0 0 1px;
 }
 
-.header input:focus ~ .search,
-.header-catalog input:focus ~ .search {
+.header input:focus ~ .search {
 	display: block;
-	color: #000000;
-	font-weight: 300;
-	letter-spacing: 0.15px;
-	background-color: #F7E397;
-	border: solid 2px black;
-	width: 85px;
-	height: 49px;
 }
 
-.search {
-	margin-left: 50px;
-}
-
-.header input:focus ~ .search:hover,
-.header-catalog input:focus ~ .search:hover {
+.search:hover {
+	display: block;
 	background-color: #000000;
 	color: #ffffff;
 }
 
-.header input:focus ~ .search:active,
-.header-catalog input:focus ~ .search:active {
+.search:active {
+	display: block;
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #000000;
 }
 
-.flex-form input:hover,
-.header-catalog input:hover {
+.flex-form input:hover {
 	color: #666666;
 }
 
-.flex-form input:focus ,
-.header-catalog input:focus {
+.flex-form input:focus  {
 	border-bottom: 2px solid black;
 	color: #000000;
 }
 
-.header button,
-.header-catalog button {
+.header button {
 	color: rgba(0, 0, 0, 0.3);
+	cursor: pointer;
 }
 
 .title {
@@ -344,7 +296,7 @@ img {
 }
 
 .menu {
-	margin-right: 59px;
+	margin-right: 76px;
 	padding-left: 0;
 }
 
@@ -353,7 +305,7 @@ img {
 }
 
 .menu:nth-child(2) {
-	margin-right: 76px;
+	margin-right: 38px;
 	padding-left: 0;
 }
 
@@ -397,16 +349,14 @@ img {
 .index-navigation a:hover,
 .user-menu a:hover,
 .user-menu button:hover,
-.logo:hover,
-.header-nav li:hover {
+.header-catalog .logo:hover {
 	opacity: 0.6;
 }
 
 .index-navigation a:active,
 .user-menu a:active,
 .user-menu button:active,
-.logo:active,
-.header-nav li:active {
+.header-catalog .logo:active {
 	opacity: 0.3;
 }
 
@@ -427,11 +377,12 @@ main .name-slide {
 	position: relative;
 }
 
-.inputs {
+.inputs,
+.slider input.visually-hidden {
 	position: absolute;
 	top: 306px;
-	right: 118px;
 	z-index: 2;
+	left: 1051px;
 }
 
 .inputs label {
@@ -446,9 +397,9 @@ main .name-slide {
 	cursor: pointer;
 }
 
-#slide-1:checked ~ .inputs label[for="slide-1"]::before,
-#slide-2:checked ~ .inputs label[for="slide-2"]::before,
-#slide-3:checked ~ .inputs label[for="slide-3"]::before {
+#slide-1:checked ~ .inputs label[for='slide-1']::before,
+#slide-2:checked ~ .inputs label[for='slide-2']::before,
+#slide-3:checked ~ .inputs label[for='slide-3']::before {
 	content: '';
 	position: absolute;
 	border: 1px solid black;
@@ -487,12 +438,13 @@ main .name-slide {
 	position: relative;
 }
 
-.slider-line {
+.flex-slide::before {
+	content: '';
 	position: absolute;
 	background-color: #FFFFFF;
 	width: 100px;
 	height: 7px;
-	top: 36px;
+	top: 33px;
 }
 
 .number-slide {
@@ -547,8 +499,7 @@ main .name-slide {
 }
 
 .description-slider {
-	margin: 0;
-	margin-bottom: 62px;
+	margin: 0 0 47px 0;
 	color: #464646;
 	font-weight: 300;
 	letter-spacing: 0.15px;
@@ -561,7 +512,7 @@ main .name-slide {
 
 .flex-items {
 	display: flex;
-	margin-top: 37px;
+	margin-top: 20px;
 }
 
 .flex-description .button {
@@ -591,10 +542,6 @@ main .name-slide {
 	padding: 0 16px 0 20px;
 }
 
-.div-button {
-	position: absolute;
-	top: 317px;
-}
 
 .button::before {
 	content: '';
@@ -607,11 +554,12 @@ main .name-slide {
 	z-index: -1;
 	transform-origin: 50%;
 	transform: translateY(-50%);
-	transition: transform 0.2s;
+	transition: transform 0.2s, width 0.2s;
+	width: 100%;
 }
 
 .button:active {
-	color: #b3b3b3;
+	color: #bc9c23;
 }
 
 
@@ -828,9 +776,12 @@ main .name-slide {
 .about-us {
 	display: flex;
 	flex-direction: column;
+	width: 472px;
 }
 
-.black-line {
+.about-us::before,
+.contacts::before {
+	content: '';
 	position: absolute;
 	width: 80px;
 	height: 7px;
@@ -881,6 +832,9 @@ main .name-slide {
 
 .contacts .button {
 	padding: 0 37px 0 41px;
+}
+
+.contact-with-us {
 	margin-top: 60px;
 }
 
@@ -889,6 +843,7 @@ main .name-slide {
 	height: 323px;
 	margin-top: 0;
 	margin-left: 0;
+	min-width: 1160px;
 }
 
 .hiddendiv {
@@ -987,6 +942,15 @@ main .name-slide {
 	background-color: #464646;
 	border: 0;
 	color: rgba(255, 255, 255, 0.3);
+	cursor: pointer;
+}
+
+.flex-user-catalog button:hover {
+	color: #FFFFFF;
+}
+
+.flex-user-catalog button:active {
+	opacity: 0.3;
 }
 
 .flex-user-catalog li:nth-child(2) {
@@ -1026,11 +990,22 @@ main .name-slide {
 	display: flex;
 	list-style: none;
 	padding: 0;
-
+	position: relative;
 }
 
 .flex-social li:nth-child(2) {
 	margin: 0 23px;
+}
+
+.flex-social li:first-child a {
+	font-size: 0;
+	background: url('../img/facebook.svg') no-repeat;
+	background-size: unset;
+}
+
+.flex-social li:first-child {
+	width: 32px;
+	height: 32px;
 }
 
 .htmlacademy {
@@ -1069,7 +1044,9 @@ main .name-slide {
 	letter-spacing: unset;
 }
 
-.yellow-line {
+.bot-footer::before {
+	content: '';
+	position: absolute;
 	background-color: #ffc600;
 	width: 80px;
 	height: 7px;
@@ -1079,6 +1056,7 @@ main .name-slide {
 .social-footer {
 	margin-top: 31px;
 	width: 196px;
+	margin-left: 508px;
 }
 
 .hidden-block {
@@ -1106,24 +1084,22 @@ main .name-slide {
 	background-color: #FFFFFF;
 	border: 0;
 	opacity: 0.5;
+	cursor: pointer;
 }
 
-.your-name:hover input,
-.your-mail:hover input,
+.data:hover input,
 .your-text:hover textarea {
 	background-color: #eaeaea;
 }
 
-.your-name input:focus,
-.your-mail input:focus,
+.data input:focus,
 .your-text textarea:focus {
 	background-color: #FFFFFF;
 	outline: 3px solid #f0c52e;
 	color: #464646;
 }
 
-.your-name input:required:invalid,
-.your-mail input:required:invalid,
+.data input:required:invalid,
 .your-text textarea:required:invalid {
 	background-color: #f6dada;
 }
@@ -1150,26 +1126,25 @@ main .name-slide {
 	display: flex;
 }
 
-.your-name input,
-.your-mail input {
-	width: 360px;
+.data input {
+	width: 340px;
 	height: 50px;
 	background-color: #f2f2f2;
 	border: 0;
-	padding-left: 10px;
+	padding-left: 20px;
 }
 
 .your-text {
-	margin: 9px 0 78px;
-	resize: none;
+	margin: 9px 0 25px;
 }
 
 .your-text textarea {
 	width: 760px;
 	background-color: #f2f2f2;
 	border: 0;
-	padding-left: 10px;
-	padding-top: 10px;
+	padding: 16px 0 0 19px;
+	resize: none;
+	font-size: 14px;
 }
 
 .message-us p {
@@ -1177,12 +1152,17 @@ main .name-slide {
 	font-size: 18px;
 	font-family: 'Gilroy', Arial, sans-serif;
 	font-weight: 800;
+	margin-right: 39px;
 }
 
 .message-us input {
 	color: rgba(70, 70, 70, 0.4);
 	font-size: 14px;
 	font-weight: 400;
+}
+
+.form-button .button {
+	padding: 0 34px;
 }
 
 .brands {
@@ -1319,6 +1299,11 @@ main .name-slide {
 	margin-right: 17px;
 }
 
+.sorting .is-active,
+.buttons .is-active {
+	color: #000000;
+}
+
 .sorting::before {
 	content: '';
 	position: absolute;
@@ -1329,7 +1314,7 @@ main .name-slide {
 	height: 71px;
 }
 
-.sorting button:active {
+.sorting .grey-button:active {
 	color: #000000;
 }
 
@@ -1341,6 +1326,10 @@ main .name-slide {
 	fill: rgba(0, 0, 0, 0.3);
 	position: absolute;
 	top: 19px;
+}
+
+.is-active {
+	fill: #000000;
 }
 
 .down {
@@ -1519,7 +1508,7 @@ main .name-slide {
 }
 
 .box-input:active:disabled + .check-box {
-	bacgkround: url('../img/checkbox-off.svg');
+	background: url('../img/checkbox-off.svg');
 	opacity: 0.25;
 	width: 23px;
 }
@@ -1674,6 +1663,7 @@ main .name-slide {
 
 .item-hover .button {
 	padding: 0 38px 0 36px;
+	margin-top: 43px;
 }
 
 .products-items:hover .products-items {
@@ -1700,7 +1690,7 @@ main .name-slide {
 }
 
 .pages button {
-	color: rgba(0, 0, 0, 0.3);
+	color: #000000;
 	font-size: 16px;
 	font-weight: 800;
 	background-color: #ebebeb;
@@ -1710,7 +1700,11 @@ main .name-slide {
 	text-transform: uppercase;
 }
 
-.pages button:active {
+.buttons button {
+	color: #b3b3b3;
+}
+
+.buttons .button-number:active {
 	color: #000000;
 }
 
@@ -1769,7 +1763,6 @@ main .name-slide {
 	color: rgba(0, 0, 0, 0.5);
 	font-size: 13px;
 	width: 200px;
-	height: 30px;
 	line-height: 2.77;
 	font-weight: 300;
 	letter-spacing: 0.13px;
@@ -1786,7 +1779,6 @@ main .name-slide {
 
 .item-hover .second-times:active {
 	color: rgba(0, 0, 0, 0.2);
-	height: 13px;
 }
 
 .social-footer a {
@@ -1827,7 +1819,7 @@ main .name-slide {
 }
 
 .htmlacademy svg {
-	fill: #ffc600;;
+	fill: #ffc600;
 }
 
 
