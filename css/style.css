@@ -42,11 +42,7 @@ main {
 a {
 	text-decoration: none;
 }
-/*
-img {
-	width: 100%;
-}
-*/
+
 .header {	
 	width: 1160px;	
 	margin-right: auto;
@@ -196,7 +192,6 @@ img {
 	display: block;
 }
 
-
 .header-top input::placeholder {
 	color: #b3b3b3;
 }
@@ -204,16 +199,23 @@ img {
 .header-top input:hover::placeholder {
 	color: #666666;
 }
+/* IE 10-11 и EMobile 10-11 */
+.header-top input:-ms-input-placeholder {
+	color: #b3b3b3;
+}
 
-/*
-   input[type="search"]::-moz-placeholder {
-    color: #ffd595; 
-   }
-   input[type="search"]::-webkit-input-placeholder { color: #ffd595; }
-   input[type="search"]:-ms-input-placeholder { color: #ffd595; }
-   input[type="search"]::-ms-input-placeholder { color: #ffd595; }
-   input[type="search"]::placeholder { color: #ffd595; } 
-*/
+.header-top input:hover:-ms-input-placeholder {
+	color: #666666;
+}
+/* Edge */
+.header-top input::-ms-input-placeholder {
+	color: #b3b3b3;
+}
+
+.header-top input:hover::-ms-input-placeholder {
+	color: #666666;
+}
+
 .search:hover {
 	display: block;
 	background-color: #000000;
@@ -480,12 +482,7 @@ main .name-slide {
 .number-slide p {
 	margin: 0;
 }
-/*
-.slide img {
-	width: 33%;
-	margin-left: 90px;
-}
-*/
+
 .slide-img_1 {
 	position: absolute;
 	width: 384px;
@@ -527,7 +524,6 @@ main .name-slide {
 .flex-description .name-slide {
 	margin-bottom: 31px;
 }
-
 
 .flex-items {
 	display: flex;
@@ -586,18 +582,8 @@ main .name-slide {
 	color: #bc9c23;
 }
 
-
-
 .button:hover::before {
 	transform: translateY(-50%) scaleY(5);
-}
-
-.button::before:active {
-	
-}
-
-.flex-description a:hover {
-
 }
 
 .flex-description a:active {
@@ -1321,7 +1307,7 @@ main .name-slide {
 	width: 267px;
 }
 
-.filter-before:before {
+.filter-before::before {
 	content: '';
 	background-color: #d9d9d9;
 	position: absolute;
@@ -1332,14 +1318,12 @@ main .name-slide {
 	z-index: -1;
 }
 
-
-
 .filter {
 	background-color: #ebebeb;
 	position: relative;
 }
 
-.filter:before {
+.filter::before {
 	content: '';
 	background-color: #ebebeb;
 	position: absolute;
@@ -1708,7 +1692,7 @@ main .name-slide {
 	font-weight: 300;
 	letter-spacing: 0.16px;
 }
-/* Высоту не стоит задавать?*/
+
 .products {
 	display: flex;
 	justify-content: space-between;
@@ -1728,8 +1712,7 @@ main .name-slide {
 .products-text {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 7px;
-	margin-bottom: 5px;
+	margin: 7px 0 5px;
 }
 
 .item-hover {
@@ -1767,11 +1750,9 @@ main .name-slide {
 	display: flex;
 	width: 759px;
 	justify-content: space-between;
-	margin-right: 0px;
 	height: 71px;
-	margin-bottom: 77px;
-	margin-top: 12px;
 	align-items: center;
+	margin: 12px 0 77px;
 }
 
 .pages button {
@@ -1810,6 +1791,14 @@ main .name-slide {
 	width: 102px;
 	cursor: pointer;
 }
+/* Для мозилы, ширина дива со страницами*/
+@-moz-document url-prefix() {.buttons
+ {width: 110px;}
+}
+/* Для IE */
+_:-ms-fullscreen, :root .buttons { 
+	width: 110px;
+}
 
 .button-number {
 	border: 0;
@@ -1834,10 +1823,6 @@ main .name-slide {
 .back button:hover,
 .forward button:hover {
 	background-color: #d9d9d9;
-}
-
-.item-hover button:hover {
-
 }
 
 .item-hover button:active {
@@ -1867,8 +1852,7 @@ main .name-slide {
 }
 
 .social-footer a {
-	opacity: 0.3;
-	
+	opacity: 0.3;	
 }
 
 .logo-footer {
@@ -1906,9 +1890,6 @@ main .name-slide {
 .htmlacademy svg {
 	fill: #ffc600;
 }
-
-
-
 
 .visually-hidden {
 	position: absolute;
