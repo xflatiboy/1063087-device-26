@@ -290,6 +290,7 @@ a {
 .index-navigation {
 	width: 1040px;
 	margin: 0 auto ;
+	position: relative;
 }
 
 .index-navigation a {
@@ -304,14 +305,6 @@ a {
 
 .flex-navigation li:hover .flex-menu {
 	display: flex;
-}
-
-.services-menu img {
-	position: absolute;
-	opacity: 0.3;
-	left: 230px;
-	top: 11px;
-	width: 16px;
 }
 
 .menu {
@@ -333,6 +326,17 @@ a {
 	margin-right: 0;
 	position: relative;
 	padding-left: 0;
+}
+
+.services-menu::before {
+	content: '';
+	background: url('../img/Plus.svg') no-repeat;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 11px;
+	left: 230px;
+	opacity: 0.3;
 }
 
 .services-menu > li:nth-child(2) {
@@ -573,7 +577,15 @@ main .name-slide {
 	background: #f0c52e;
 	z-index: -1;
 	transform-origin: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);	
+	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
+
+	-webkit-transition: transform 0.2s, width 0.2s;
+	-moz-transition: transform 0.2s, width 0.2s;
+	-o-transition: transform 0.2s, width 0.2s;
 	transition: transform 0.2s, width 0.2s;
 	width: 100%;
 }
@@ -583,6 +595,10 @@ main .name-slide {
 }
 
 .button:hover::before {
+	-webkit-transform: translateY(-50%) scaleY(5);
+	-moz-transform: translateY(-50%) scaleY(5);
+	-o-transform: translateY(-50%) scaleY(5);	
+	-ms-transform: translateY(-50%) scaleY(5);
 	transform: translateY(-50%) scaleY(5);
 }
 
@@ -713,6 +729,7 @@ main .name-slide {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 90px;
+	position: relative;
 }
 
 .services::before {
@@ -741,14 +758,14 @@ main .name-slide {
 	display: flex;
 }
 
-.service-slide::before {
+.service-container::before {
 	content: '';
 	position: absolute;
 	width: 8px;
 	height: 319px;
-	top: -27px;
+	top: -26px;
 	background-color: #000000;
-	right: 927px;
+	right: 875px;
 }
 
 .service-container .service-slide:nth-child(2) img {
@@ -1138,6 +1155,18 @@ main .name-slide {
 	position: relative;
 }
 
+.map iframe {
+	position: absolute;
+	z-index: 10;
+	right: 0;
+}
+
+.map img {
+	position: absolute;
+	z-index: 9;
+	right: 0;
+}
+
 .overlay.is-active,
 .popup.is-active {
 	display: block;
@@ -1151,6 +1180,7 @@ main .name-slide {
 	border: 0;
 	opacity: 0.5;
 	cursor: pointer;
+	z-index: 11;
 }
 
 .data:hover input,
@@ -1249,6 +1279,9 @@ main .name-slide {
 }
 
 .brands-flex img {
+	filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: grayscale(100%); /* moz fix */
+    filter: gray;
 	filter: grayscale(100);
 	opacity: 0.2;
 }
@@ -1443,7 +1476,7 @@ main .name-slide {
 	z-index: 2;
 	top: 60px;
 	left: -6px;
-	cursor: pointer;
+	cursor: pointer;;
 }
 
 .position2 {

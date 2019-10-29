@@ -3,8 +3,8 @@
 	<head>
 		<meta charset='utf-8'>
 		<title>Главная</title>
-		<link rel='stylesheet' href='css/normalize.css'>
-		<link rel='stylesheet' href='css/min-css.css'>		
+		<link rel='stylesheet' href='css/normalize.min.css'>
+		<link rel='stylesheet' href='css/style.min.css'>		
 	</head>
 	<body>		
 		<header class='header'>
@@ -29,7 +29,6 @@
 					<ul class='services-menu'>				
 						<li>
 							<a href='catalog.html' title='ссылка на каталог товаров'>Каталог&nbsp;товаров</a>
-							<img src='img/Plus.svg' width='16' height='16'>
 							<div class='flex-menu'>
 								<ul class='menu'>
 									<li><a href='#'>Виртуальная&nbsp;реальность</a></li>
@@ -71,7 +70,7 @@
 				</div>				
 				<div class='slide' id='slide1'>
 					<h3 class='visually-hidden'>Селфи палки</h3>
-					<img class='slide-img_1' src='img/slider-1-png.png' alt='первый слайд, картинка селфи палок' width='384' height='486'>
+					<img class='slide-img_1' src='img/slider-1-png.png' alt='первый слайд — картинка селфи палок' width='384' height='486'>
 					<div class='flex-slide'>
 						<div class='slider-line'></div>
 						<div class='number-slide'><p>01</p></div>
@@ -102,8 +101,8 @@
 				</div>							
 				<div class='slide' id='slide2'>
 					<h3 class='visually-hidden'>Умные часы</h3>
-					<img class='slide-img_2' src='img/slider-2-png.png' alt='второй слайд - картинка умных часов' width='345' height='485'>
-					<div class='flex-slide'>						
+					<img class='slide-img_2' src='img/slider-2-png.png' alt='второй слайд — картинка умных часов' width='345' height='485'>
+					<div class='flex-slide'>
 						<div class='number-slide'><p>02</p></div>
 						<p class='name-slide'>Худеем<br>
 							правильно!
@@ -125,7 +124,7 @@
 				</div>
 				<div class='slide' id='slide3'>
 					<h3 class='visually-hidden'>Квадракоптер</h3>
-					<img class='slide-img_3' src='img/slider-3-png.png' alt='третий слайд - картинка квадрокоптера' width='526' height='334'>
+					<img class='slide-img_3' src='img/slider-3-png.png' alt='третий слайд — картинка квадрокоптера' width='526' height='334'>
 					<div class='flex-slide'>
 						<div class='slider-line'></div>
 						<div class='number-slide'><p>03</p></div>						
@@ -208,7 +207,7 @@
 								заработаем, поднимая его на ваш этаж.
 							</p>	
 						</div>
-						<img src='img/delivery.png' alt='Картинка человека с почтой-доставкой' width='136' height='164'>					
+						<img src='img/delivery.png' alt='картинка человека с почтой-доставкой' width='136' height='164'>					
 					</div>				
 					<div class='service-slide' id='services-2'>
 						<div class='service-flex'>
@@ -218,7 +217,7 @@
 								Товар, не дом, конечно же.
 							</p>
 						</div>
-						<img src='img/warranty.png' alt='Картинка характеризующая гарантии' width='171' height='194'>
+						<img src='img/warranty.png' alt='картинка характеризующая гарантии' width='171' height='194'>
 					</div>
 					<div class='service-slide' id='services-3'>
 						<div class='service-flex'>
@@ -228,7 +227,7 @@
 								условия кредита. Выгодные для нашего банка, разумеется.
 							</p>
 						</div>
-						<img src='img/credit.png' alt='Картинка характеризующая кредит' width='156' height='186'>
+						<img src='img/credit.png' alt='картинка характеризующая кредит' width='156' height='186'>
 					</div>
 				</div>
 			</section>  	  
@@ -267,7 +266,7 @@
 						Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
 					</p>					
 					<a id='map-handler' href='https://goo.gl/maps/Q3N7APpNAK6V2XhM9'>
-						<img src='img/map-jpg.jpg' width='560' height='222' alt='Наш офис находится по адресу: город Москва, улица Строителей, дом 15' aria-label='Мы находимся по адресу г. Москва ул. Строителей д. 15'>
+						<img src='img/map-jpg.jpg' width='560' height='222' alt='наш офис находится по адресу: город Москва, улица Строителей, дом 15' aria-label='Мы находимся по адресу г. Москва ул. Строителей д. 15'>
 					</a>
 					<div class='contact-with-us'>
 						<a href='#' class='button' id='message-us'>
@@ -379,36 +378,14 @@
 						</span>
 					</form>
 				</div>
-				<button class='close' type='button' alt='Закрыть' aria-label='Закрыть окно с формой сообщения'><img src='img/modal-close.svg'></button>
+				<button class='close' type='button' aria-label='Закрыть окно с формой сообщения'><img src='img/modal-close.svg' alt='закрыть'></button>
 			</div>
 			<div class='map popup'>		
-				<iframe width='960' height='559' src='https://maps.google.com/maps?width=800&amp;height=440&amp;hl=en&amp;q=%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%20%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9%2015+(%D0%90%D0%B4%D1%80%D0%B5%D1%81%20%D0%B4%D0%B5%D0%B2%D0%B0%D0%B9%D1%81%D0%BE%D0%B2)&amp;ie=UTF8&amp;t=&amp;z=17&amp;iwloc=B&amp;output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'></iframe>				
-			<button class='close' type='button' alt='Закрыть' aria-label='Закрыть окно с картой'><img src='img/modal-close.svg'></button>
+				<iframe width='960' height='559' src='https://maps.google.com/maps?width=800&amp;height=440&amp;hl=en&amp;q=%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%20%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9%2015+(%D0%90%D0%B4%D1%80%D0%B5%D1%81%20%D0%B4%D0%B5%D0%B2%D0%B0%D0%B9%D1%81%D0%BE%D0%B2)&amp;ie=UTF8&amp;t=&amp;z=17&amp;iwloc=B&amp;output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'></iframe>
+				<img width='960' height='559' src="img/map-big-jpg.png" alt="карта" aria-label="Карта с адресом город Москва, улица строителей, строение 15"> -->
+			<button class='close' type='button' aria-label='Закрыть окно с картой'><img src='img/modal-close.svg' alt='закрыть'></button>
 			</div>
 		</div>
-		<!--		
-		<div class='login'>
-				<h3>Личный кабинет</h3>
-				<p>Введите свой логин и пароль</p>
-				<form class='lk' method='post' action='#'>
-					<p>
-						<input type='text' name='login' placeholder='email@example.com' id='user-login'>
-						<label for='user-login'>Логин</label>
-					</p>
-					<p>
-						<input type='password' name='password' placeholder='•••••••••' id='user-password'>
-						<label for='user-password'>Пароль</label>
-					</p>
-					<p>
-						<input type='checkbox' name='rememberme' id='remember'>
-						<label for='remember'>Запомните меня</label>
-						<a href='#'>Восстановить доступ</a>
-					</p>
-					<button type='submit'>Войти</button>
-				</form>
-				<button type='button'><img src='img/modal-close.svg'></button>
-			</div>	
-			-->
-		<script type='text/javascript' src='js/min-js.js'></script>	
+		<script type='text/javascript' src='js/app.min.js'></script>	
 	</body>
 </html>	
