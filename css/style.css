@@ -42,11 +42,11 @@ main {
 a {
 	text-decoration: none;
 }
-
+/*
 img {
 	width: 100%;
 }
-
+*/
 .header {	
 	width: 1160px;	
 	margin-right: auto;
@@ -161,7 +161,6 @@ img {
 	padding: 0 0 14px 36px;
 	width: 355px;
 	border: 2px solid transparent;
-	color: #b3b3b3;;
 }
 
 .header a {
@@ -197,6 +196,24 @@ img {
 	display: block;
 }
 
+
+.header-top input::placeholder {
+	color: #b3b3b3;
+}
+
+.header-top input:hover::placeholder {
+	color: #666666;
+}
+
+/*
+   input[type="search"]::-moz-placeholder {
+    color: #ffd595; 
+   }
+   input[type="search"]::-webkit-input-placeholder { color: #ffd595; }
+   input[type="search"]:-ms-input-placeholder { color: #ffd595; }
+   input[type="search"]::-ms-input-placeholder { color: #ffd595; }
+   input[type="search"]::placeholder { color: #ffd595; } 
+*/
 .search:hover {
 	display: block;
 	background-color: #000000;
@@ -547,6 +564,7 @@ main .name-slide {
 .services-flex .button {
 	padding: 0 16px 0 20px;
 	margin-top: 24px;
+	width: 160px;
 }
 
 .button::before {
@@ -712,27 +730,32 @@ main .name-slide {
 }
 
 .services::before {
+	position: absolute;
 	background-color: #e5e5e5;
 	content: '';
 	left: 0;
 	right: 0;
-	height: 288px;
-	position: absolute;
 	top: 72px;
+	bottom: -132px;
 	z-index: -1;
 }
 
 .service-flex {
-	display: none;
+	display: flex;
 	flex-direction: column;
 	margin-left: 242px;
+	width: 436px;
 }
 
-.service-flex.is-active {
+.service-slide {
+	display: none;
+}
+
+.service-slide.is-active {
 	display: flex;
 }
 
-.service-flex::before {
+.service-slide::before {
 	content: '';
 	position: absolute;
 	width: 8px;
@@ -742,10 +765,16 @@ main .name-slide {
 	right: 927px;
 }
 
-.services img {
-	width: 136px;
-	height: 164px;
-	margin: 57px 0 0 136px;
+.service-container .service-slide:nth-child(2) img {
+	margin: 59px 0 0 120px;
+}
+
+.service-container .service-slide:nth-child(3) img {
+	margin: 35px 0 0 105px;
+}
+
+.service-container .service-slide:last-child img {
+	margin: 35px 0px 10px 98px;
 }
 
 .service {
@@ -1117,6 +1146,12 @@ main .name-slide {
 	z-index: 99;
 }
 
+.map {
+	height: 559px;
+	width: 960px;
+	position: relative;
+}
+
 .overlay.is-active,
 .popup.is-active {
 	display: block;
@@ -1179,12 +1214,16 @@ main .name-slide {
 	padding-left: 20px;
 }
 
+.invalid input {
+	background-color: #f6dada;
+}
+
 .your-text {
 	margin: 9px 0 25px;
 }
 
 .your-text textarea {
-	width: 760px;
+	width: 740px;
 	background-color: #f2f2f2;
 	border: 0;
 	padding: 16px 0 0 19px;
