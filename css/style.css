@@ -1157,6 +1157,9 @@ left:2px;
 	position: absolute;
 	z-index: 10;
 	right: 0;
+	border: none;
+	overflow: hidden;
+	margin: 0;
 }
 
 .map img {
