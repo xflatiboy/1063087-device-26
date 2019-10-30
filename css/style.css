@@ -246,7 +246,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	width: 1160px;
-	margin: 65px auto 43px auto;
+	margin: 65px auto 45px auto;
 }
 
 .main {
@@ -353,7 +353,6 @@ a {
 	color: #000000;
 	font-weight: 300;
 	text-transform: none;
-	font-family: unset;
 	letter-spacing: 0.15px;
 	display: block;
 	font-size: 15px;
@@ -430,11 +429,11 @@ main .name-slide {
 	border: 1px solid black;
 	background-color: #ffffff;
 	border-radius: 50%;
-	width: 3px;
-	height: 3px;
-	top: 50%;
-	left: 50%;
-	transform: translateY(-2.5px) translateX(-2.5px);
+	width: 4px;
+	
+	height: 4px;
+top: 2px;
+left:2px;
 }
 
 .relative {
@@ -680,7 +679,6 @@ main .name-slide {
 	font-size: 13px;
 	color: #464646;
 	line-height: 1.54;
-	font-family: unset;
 	letter-spacing: 0.13px;
 	margin-top: 0;
 }
@@ -1352,7 +1350,7 @@ main .name-slide {
 	font-family: 'Gilroy', Arial, sans-serif;
 	letter-spacing: 3.2px;
 	height: 48px;
-	padding-top: 23px;
+	padding: 22px 0 0 2px;
 	margin: 0;
 	width: 267px;
 }
@@ -1361,7 +1359,7 @@ main .name-slide {
 	content: '';
 	background-color: #d9d9d9;
 	position: absolute;
-	height: 71px;
+	height: 70px;
 	right: 0;
 	width: 30000px;
 	top: 0;
@@ -1380,7 +1378,7 @@ main .name-slide {
 	bottom: 0;
 	right: 0;
 	width: 30000px;
-	top: 71px;
+	top: 70px;
 	z-index: -1;
 }
 
@@ -1426,7 +1424,7 @@ main .name-slide {
 	z-index: -1;
 	left: -74px;
 	background-color: #ebebeb;
-	height: 71px;
+	height: 70px;
 }
 
 .sorting .grey-button:active {
@@ -1448,11 +1446,11 @@ main .name-slide {
 }
 
 .down {
-	left: 741px;
+	left: 745px;
 }
 
 .up {
-	left: 711px;
+	left: 715px;
 }
 
 .down button,
