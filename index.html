@@ -233,13 +233,35 @@
 			</section>  	  
 			<section class='brands'>
 				<h2 class='visually-hidden'>Представленные бренды</h2>
+				<svg class='position-absolute' xmlns='http://www.w3.org/2000/svg' id='svgroot' viewBox='0 0 400 377' width='400' height='377'>
+					<filter id='filtersPicture'>
+						<feComposite result='inputTo_38' in='SourceGraphic' in2='SourceGraphic' operator='arithmetic' k1='0' k2='1' k3='0' k4='0' />
+						<feColorMatrix id='filter_38' type='saturate' values='0' data-filterid='38' />
+					</filter>
+				</svg>
 				<ul class='brands-flex'>
-					<li><a href='#'><img src='img/logo-1-color.jpg' alt='логотип представленного бренда dji' width='260' height='100'></a></li>
-					<li><a href='#'><img src='img/logo-2-color.jpg' alt='логотип представленного бренда spgadgets' width='260' height='100'></a></li>
-					<li><a href='#'><img src='img/logo-3-color.jpg' alt='логотип представленного бренда gopro' width='260' height='100'></a></li>
-					<li><a href='#'><img src='img/logo-4-color.jpg' alt='логотип представленного бренда vive' width='260' height='100'></a></li>
-				</ul>
-				</section>
+					<li class='brands-item'>
+						<svg xmlns='http://www.w3.org/2000/svg' class='svg-brand' viewBox='0 0 260 100' width='260' height='100'>
+							<image filter='url(&quot;#filtersPicture&quot;)' x='0' y='0' width='260' height='100' xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='img/logo-1-color.jpg'/>
+						</svg>
+					</li>
+					<li class='brands-item'>
+						<svg xmlns='http://www.w3.org/2000/svg' class='svg-brand' viewBox='0 0 260 100' width='260' height='100'>
+							<image filter='url(&quot;#filtersPicture&quot;)' x='0' y='0' width='260' height='100' xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='img/logo-2-color.jpg'/>
+						</svg>
+					</li>
+					<li class='brands-item'>
+						<svg xmlns='http://www.w3.org/2000/svg' class='svg-brand' viewBox='0 0 260 100' width='260' height='100'>
+							<image filter='url(&quot;#filtersPicture&quot;)' x='0' y='0' width='260' height='100' xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='img/logo-3-color.jpg'/>
+						</svg>
+					</li>
+					<li class='brands-item'>
+						<svg xmlns='http://www.w3.org/2000/svg' class='svg-brand' viewBox='0 0 260 100' width='260' height='100'>
+							<image filter='url(&quot;#filtersPicture&quot;)' x='0' y='0' width='260' height='100' xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='img/logo-4-color.jpg'/>
+						</svg>
+					</li>
+				</ul>			
+			</section>
 			<section class='information'>
 				<div class='about-us'>					
 					<h2 class='title-2'>О нас</h2>
@@ -266,7 +288,7 @@
 						Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
 					</p>					
 					<a id='map-handler' href='https://goo.gl/maps/Q3N7APpNAK6V2XhM9'>
-						<img src='img/map-jpg.jpg' width='560' height='222' alt='наш офис находится по адресу: город Москва, улица Строителей, дом 15' aria-label='Мы находимся по адресу г. Москва ул. Строителей д. 15'>
+						<img src='img/map-jpg.jpg' width='560' height='222' alt='наш офис находится по адресу: город Москва, улица Строителей, дом 15' aria-label='мы находимся по адресу г. Москва ул. Строителей д. 15'>
 					</a>
 					<div class='contact-with-us'>
 						<a href='#' class='button' id='message-us'>
@@ -341,7 +363,7 @@
 							<li><a href='#'>На device в twitter</a></li>
 						</ul>
 					</div>
-					<div class='htmlacademy' aria-label='На сайт htmlacademy с интенсивами'>
+					<div class='htmlacademy' aria-label='на сайт htmlacademy с интенсивами'>
 						<a href='https://htmlacademy.ru/intensive/htmlcss' title='ссылка на htmlacademy' >
 							<svg xmlns='http://www.w3.org/2000/svg' width='27' height='35' viewBox='0 0 26.943 34.09'>
 								<path d='M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z'/>
@@ -378,12 +400,12 @@
 						</span>
 					</form>
 				</div>
-				<button class='close' type='button' aria-label='Закрыть окно с формой сообщения'><img src='img/modal-close.svg' alt='закрыть'></button>
+				<button class='close' type='button' aria-label='закрыть окно с формой сообщения'><img src='img/modal-close.svg' alt='закрыть'></button>
 			</div>
 			<div class='map popup'>		
 				<iframe width='960' height='559' src='https://maps.google.com/maps?width=800&amp;height=440&amp;hl=en&amp;q=%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%20%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9%2015+(%D0%90%D0%B4%D1%80%D0%B5%D1%81%20%D0%B4%D0%B5%D0%B2%D0%B0%D0%B9%D1%81%D0%BE%D0%B2)&amp;ie=UTF8&amp;t=&amp;z=17&amp;iwloc=B&amp;output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'></iframe>
-				<img width='960' height='559' src="img/map-big-jpg.png" alt="карта" aria-label="Карта с адресом город Москва, улица строителей, строение 15"> -->
-			<button class='close' type='button' aria-label='Закрыть окно с картой'><img src='img/modal-close.svg' alt='закрыть'></button>
+				<img width='960' height='559' src='img/map-big-jpg.png' alt='карта' aria-label='карта с адресом город Москва, улица строителей, строение 15'> -->
+			<button class='close' type='button' aria-label='закрыть окно с картой'><img src='img/modal-close.svg' alt='закрыть'></button>
 			</div>
 		</div>
 		<script type='text/javascript' src='js/app.min.js'></script>	
