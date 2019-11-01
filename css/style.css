@@ -157,6 +157,7 @@ a {
 	padding: 0 0 14px 36px;
 	width: 355px;
 	border: 2px solid transparent;
+	line-height: 2;
 }
 
 .header a {
@@ -355,6 +356,7 @@ a {
 	display: block;
 	font-size: 15px;
 	line-height: 2.4;
+	/*word-break: break-word;*/
 }
 
 .main-navigation a {
@@ -403,9 +405,9 @@ a {
 .inputs,
 .slider input.visually-hidden {
 	position: absolute;
-	bottom: 150px;
+	bottom: 141px;
 	z-index: 2;
-	left: 1000px;
+	left: 999px;
 }
 
 .inputs label {
@@ -890,10 +892,10 @@ left:2px;
 
 .footer {
 	background-color: #464646;
-	height: 323px;
 	margin-top: 0;
 	margin-left: 0;
 	min-width: 1160px;
+	padding-bottom: 54px;
 }
 
 .hiddendiv {
@@ -1376,6 +1378,13 @@ left:2px;
 	width: 267px;
 }
 
+.filter-before {
+	display: inline-flex;
+	align-items: center;
+	padding: 0;
+	height: 70px;
+}
+
 .filter-before::before {
 	content: '';
 	background-color: #d9d9d9;
@@ -1412,21 +1421,27 @@ left:2px;
 	display: flex;
 	margin-bottom: 68px;
 	flex-wrap: wrap;
+	position: relative;
 }
 
 .sorting p {
 	background-color: #ebebeb;
 	width: 110px;
 	margin-right: 85px;
+	display: inline-flex;
+	align-items: center;
+	height: 70px;
+	padding: 0;
+	color: ;
 }
 
 .sorting a {
-	font-size: 14px;
-	color: rgba(0, 0, 0, 0.3);
 	line-height: 1.29;
 	font-weight: 400;
 	display: inline-flex;
 	align-items: center;
+	height: 70px;
+	color: #b3b3b3;
 }
 
 .grey-button {
@@ -1447,7 +1462,8 @@ left:2px;
 	z-index: -1;
 	left: -74px;
 	background-color: #ebebeb;
-	height: 70px;
+	top: 0;
+	bottom: 0;
 }
 
 .sorting .grey-button:active {
@@ -1461,7 +1477,6 @@ left:2px;
 .down, .up {
 	fill: rgba(0, 0, 0, 0.3);
 	position: absolute;
-	top: 19px;
 }
 
 .is-active {
@@ -1768,30 +1783,32 @@ left:2px;
 .new {
 	display: none;
 	border-radius: 100%;
-	border: solid 2px #000000;
-	opacity: 0.1;
+	border: solid 2px rgba(0,0,0,0.1);
 	width: 58px;
 	height: 58px;
-	/*background-color: #cd3944;*/
 	position: absolute;
 	top: 28px;
 	right: 28px;
+	z-index: 5;
+	align-items: center;
+	justify-content: center;
 }
 
 .new-text {
 	text-transform: uppercase;
-	text-align: center;
-	color: #cccccc;
+	color: rgba(0, 0, 0, 0.2);
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.7px;
 	font-weight: 800;
 	font-family: 'Gilroy', Arial, sans-serif;
 	padding-top: 4px;
+	padding: 0;
+	margin: 0;
 }
 
-.new.is-active {
-	display: block;
+.is-new .new {
+	display: flex;
 }
 
 .products {
