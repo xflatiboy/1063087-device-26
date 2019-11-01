@@ -34,11 +34,11 @@ body {
 	padding: 0;
 }
 
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-  -webkit-appearance:none;
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+	-webkit-appearance:none;
 }
 
 .main {
@@ -336,7 +336,7 @@ a {
 
 .services-menu::before {
 	content: '';
-	background: url('../img/Plus.svg') no-repeat;
+	background: url('../img/plus1.svg') no-repeat;
 	width: 16px;
 	height: 16px;
 	position: absolute;
@@ -1496,10 +1496,6 @@ left:2px;
 	fill: #000000;
 }
 
-.down {
-
-}
-
 .up {
 	margin-right: 20px;
 }
@@ -1925,7 +1921,7 @@ left:2px;
 }
 /* Для мозилы, ширина дива со страницами*/
 @-moz-document url-prefix() {.buttons
- {width: 110px;}
+	{width: 110px;}
 }
 /* Для IE */
 _:-ms-fullscreen, :root .buttons { 
