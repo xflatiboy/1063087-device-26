@@ -18,9 +18,9 @@
 				</div>
 				<div class='user-menu'>
 					<ul class='header-nav'>
-						<li><a href='#'>Войти</a></li>
-						<li><a href='#' title='ссылка на страницу сравнения товаров'>Сравнить</a></li>
-						<li><a href='#' title='ссылка на страницу корзины, с выбранными товарами'>Корзина</a></li>
+						<li class='header-nav__1'><a href='#'>Войти</a></li>
+						<li class='header-nav__2'><a href='#' title='ссылка на страницу сравнения товаров'>Сравнить</a></li>
+						<li class='header-nav__3'><a href='#' title='ссылка на страницу корзины, с выбранными товарами'>Корзина</a></li>
 					</ul>
 				</div>
 			</div>
@@ -153,38 +153,38 @@
 			</section>
 			<section class='section-items'>  		 
 				<ul class='items'>
-					<li>
-						<a href='catalog.html'>
+					<li class='items__1'>
+						<a class='items__a' href='catalog.html'>
 							<span class='container'><img src='img/popular-1.svg' alt='картинка очков' width='97' height='55'></span>
 							<p class='text-items'>Виртуальная реальность</p>
 						</a>						
 					</li>					
-					<li>
-						<a href='catalog.html'>
+					<li class='items__2'>
+						<a class='items__a' href='catalog.html'>
 							<span class='container'><img src='img/popular-2.svg' alt='картинка моноподов' width='86' height='117'></span>
 							<p class='text-items'>Моноподы для&nbsp;селфи</p>
 						</a>
 					</li>
-					<li>
-						<a href='catalog.html'>
+					<li class='items__3'>
+						<a class='items__a' href='catalog.html'>
 							<span class='container'><img src='img/popular-3.svg' alt='картинка экшн-камер' width='71' height='87'></span>
 							<p class='text-items'>Экшн-камеры</p>
 						</a>
 					</li>
-					<li>
-						<a href='catalog.html'>
+					<li class='items__4'>
+						<a class='items__a' href='catalog.html'>
 							<span class='container'><img src='img/popular-4.svg' alt='картинка фитнес браслетов' width='107' height='65'></span>
 							<p class='text-items'>Фитнес-браслеты</p>
 						</a>
 					</li>
-					<li>
-						<a href='catalog.html'>
+					<li class='items__5'>
+						<a class='items__a' href='catalog.html'>
 							<span class='container'><img src='img/popular-5.svg' alt='картинка умных часов' width='56' height='98'></span>
 							<p class='text-items'>Умные часы</p>
 						</a>
 					</li>
-					<li>
-						<a href='catalog.html'>
+					<li class='items__6'>
+						<a class='items__a' href='catalog.html'>
 							<span class='container'><img src='img/popular-6.svg' alt='картинка квадрокоптеров' width='132' height='69'></span>
 							<p class='text-items'>Квадрокоптеры</p>
 						</a>
@@ -313,7 +313,7 @@
 					<div class='user-menu-footer'>
 						<ul class='flex-user'>
 							<li>
-								<a href='#'>
+								<a class='user-menu-footer_a' href='#'>
 									<svg class='user-svg-index' xmlns='http://www.w3.org/2000/svg' width='13' height='12' viewBox='0 0 13 12'>
 										<path fill='#ffc600' d='M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z'/>
 									</svg>
@@ -321,7 +321,7 @@
 								</a>
 							</li>
 							<li>
-								<a href='#' title='ссылка на страницу сравнения товаров'>
+								<a class='user-menu-footer_a' href='#' title='ссылка на страницу сравнения товаров'>
 									<svg class='compare-svg-index' xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'>
 										<path fill='#ffc600' d='M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z'/>
 									</svg>
@@ -329,7 +329,7 @@
 								</a>
 							</li>
 							<li>
-								<a href='#' title='ссылка на страницу корзины, с выбранными товарами'>
+								<a class='user-menu-footer_a' href='#' title='ссылка на страницу корзины, с выбранными товарами'>
 									<svg  class='cart-svg-index' xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'>
 										<path d='M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z'/>
 										<path d='M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z'/>
@@ -358,9 +358,9 @@
 				<div class='bot-footer'>					
 					<div class='social-footer'>
 						<ul class='flex-social'>
-							<li><a href='#'>На device в facebook</a></li>
-							<li><a href='#'>На device в instagram</a></li>
-							<li><a href='#'>На device в twitter</a></li>
+							<li class='flex-social_li'><a href='#'>На device в facebook</a></li>
+							<li class='flex-social_li'><a href='#'>На device в instagram</a></li>
+							<li class='flex-social_li'><a href='#'>На device в twitter</a></li>
 						</ul>
 					</div>
 					<div class='htmlacademy' aria-label='на сайт htmlacademy с интенсивами'>

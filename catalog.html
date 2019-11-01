@@ -18,12 +18,12 @@
 				</div>
 				<div class='user-menu'>
 					<ul class='header-nav'>
-						<li>
+						<li class='header-nav__1'>
 							<a href='#' title='ссылка на ваш профиль'>Валентин Петухов</a>
 							<button type='submit' aria-label='кнопка чтобы выйти из вашего профиля на сайте device'>Выйти</button>
 						</li>
-						<li><a href='#' title='ссылка на страницу сравнения товаров'>Сравнить</a></li>
-						<li><a href='#' title='ссылка на страницу корзины, с выбранными товарами'>Корзина</a></li>
+						<li class='header-nav__2'><a href='#' title='ссылка на страницу сравнения товаров'>Сравнить</a></li>
+						<li class='header-nav__3'><a href='#' title='ссылка на страницу корзины, с выбранными товарами'>Корзина</a></li>
 					</ul>
 				</div>
 			</div>
@@ -68,7 +68,7 @@
 				<a href='#' title='ссылка на страницу с моноподами для селфи'>Моноподы для селфи</a>
 			</nav>
 		</div>
-		<main>
+		<main class='main'>
 			<div class='main-div'>
 				<div class='filter-flex'>
 					<form class='filter' method='get' action='#'>
@@ -152,23 +152,27 @@
 				</div>    
 				<section class='menu-items'>
 					<div class='sorting'>
-						<p class='h2'>Сортировка:</p>
-						<a href='#' class='grey-button is-active'>По цене</a>
-						<a href='#' class='grey-button'>По типу</a>
-						<a href='#' class='grey-button'>По популярности</a>
-						<div class='up'>
-							<a href='#' aria-label='по возрастанию'>
-								<svg xmlns='http://www.w3.org/2000/svg' width='11' height='10' viewBox='0 0 11 10'>
-									<path  d='M5.5 0L0 10h11z'/>
-								</svg>
-							</a>
-						</div>
-						<div class='down is-active'>
-							<a href='#' aria-label='по убыванию'>
-								<svg xmlns='http://www.w3.org/2000/svg' width='11' height='10' viewBox='0 0 11 10'>
-									<path d='M5.5 10L0 0h11'/>
-								</svg>
-							</a>
+						<div class='sorting-controls'>
+							<p class='h2'>Сортировка:</p>
+							<div class='sorting-vars'>
+								<a href='#' class='grey-button is-active'>По цене</a>
+								<a href='#' class='grey-button'>По типу</a>
+								<a href='#' class='grey-button'>По популярности</a>
+							</div>
+							<div class='up'>
+								<a href='#' aria-label='по возрастанию'>
+									<svg xmlns='http://www.w3.org/2000/svg' width='11' height='10' viewBox='0 0 11 10'>
+										<path  d='M5.5 0L0 10h11z'/>
+									</svg>
+								</a>
+							</div>
+							<div class='down is-active'>
+								<a href='#' aria-label='по убыванию'>
+									<svg xmlns='http://www.w3.org/2000/svg' width='11' height='10' viewBox='0 0 11 10'>
+										<path d='M5.5 10L0 0h11'/>
+									</svg>
+								</a>
+							</div>
 						</div>
 					</div>    
 					<div class='products'>
@@ -306,9 +310,9 @@
 				<div class='bot-footer'>          
 					<div class='social-footer'>
 						<ul class='flex-social'>
-							<li><a href='#'>На device в facebook</a></li>
-							<li><a href='#'>На device в instagram</a></li>
-							<li><a href='#'>На device в twitter</a></li>
+							<li class='flex-social_li'><a href='#'>На device в facebook</a></li>
+							<li class='flex-social_li'><a href='#'>На device в instagram</a></li>
+							<li class='flex-social_li'><a href='#'>На device в twitter</a></li>
 						</ul>
 					</div>
 					<div class='htmlacademy' aria-label='на сайт htmlacademy с интесивами'>
