@@ -12,7 +12,7 @@
 			<div class='header-top'>
 				<div class='search-flex'>					
 					<form class='flex-form' action='#' method='get'>
-						<input name='search' placeholder='Поиск по сайту' type='search'>
+						<input class='input_search' name='search' placeholder='Поиск по сайту' type='search'>
 						<button class='search' type='submit'>Найти</button>			
 					</form>
 				</div>
@@ -389,18 +389,18 @@
 						<div class='form-login'>
 							<p class='data invalid'>
 								<label>Ваше имя:
-									<input type='text' name='name' placeholder='Имя Фамилия'>
+									<input type='text' name='name' required placeholder='Имя Фамилия'>
 								</label>
 							</p>
 							<p class='data'>
 								<label>Ваш e-mail:
-									<input type='text' name='e-mail' placeholder='email@example.com'>
+									<input type='email' name='e-mail' required placeholder='email@example.com'>
 								</label>
 							</p>
 						</div>
 						<p class='your-text'>
 							<label>Текст письма:					
-								<textarea name='text' rows='9' placeholder='В свободной форме'></textarea>
+								<textarea name='text' rows='9' required placeholder='В свободной форме'></textarea>
 							</label>
 						</p>
 						<span class='form-button'>
